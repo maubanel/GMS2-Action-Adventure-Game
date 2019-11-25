@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch2 - Page 4</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="page04.html">Player Collision with Tileset</option>
+				</optgroup>
+				<optgroup label="Chapter 3 - Teleporter">
+					<option value="../ch3/page01.html">Add Teleporter</option>
+					<option value="../ch3/page02.html">Create Sand Room</option>
+					<option value="../ch3/page03.html">Refactor Obj Player Step</option>
+					<option value="../ch3/page04.html">Leaving Room Castle</option>
+					<option value="../ch3/page05.html">Entering Room Desert</option>
+					<option value="../ch3/page06.html">Going Back to Room Castle</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Dialogue">
+					<option value="../ch4/page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="../ch4/page02.html">Dialogue Boxes - Array Message</option>
+					<option value="../ch4/page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="../ch4/page04.html">Dialogue Boxes - Question</option>
+					<option value="../ch4/page05.html">Dialogue Boxes - User Input</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Collectibles">
+					<option value="../ch5/page01.html">Collectibles - Setup Objects</option>
+					<option value="../ch5/page02.html">Collectibles - Collect Gem</option>
+					<option value="../ch5/page03.html">Draw HUD Backgroun d</option>
+				</optgroup>
+				<optgroup label="Chapter 6 - Pathfinding">
+					<option value="../ch6/page01.html">Pathfinding Zombie Setup</option>
+					<option value="../ch6/page02.html">Pathfinding</option>
+					<option value="../ch6/page03.html">Zombie Chase State</option>
+					<option value="../ch6/page04.html">Zombie Chase Player</option>
+					<option value="../ch6/page05.html">Returning to Patrol</option>
+				</optgroup>
+				<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+				</optgroup>
+				<optgroup label="Chapter 8 - Audio">
+					<option value="../ch8/page01.html">Audio - SFX</option>
+					<option value="../ch8/page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+				</optgroup>
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="page01.html">Importing Player Object</option>
+					<option value="page02.html">Creating Collision Volumes in Room</option>
+					<option value="page03.html">Finding Distance For Collision From Origin</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Player Collision with Tileset</b>
+
+	<p>
+		What we will be doing is checking to see if the side in which the player is moving is overlapping with a collision volume that it will be put back outside the collision volume.
+
+		<ul>
+		<li>Check to see two corners of direction we are moving in.  So for example if we are moving right we would check the top right corner pixel and bottom left corner pixel and see if any are overlapping with the <tt><b>Background_Collision_Tiles</b></tt></li> tilemap.</ll>
+		<li>If either of these overlap move player back outside the boundary by adjusting the player position to a 32 by 32 boundary and subtract its relative position from its origin to the sprite_bbox_right</li>
+		</ul>
+
+	<p>
+		We will be using <b><a href="gms2tutorials:///ShowHelp?tag=tilemap_get_at_pixel">user_get_at_pixel(tilemap_element_id, x, y)</a></b> to see if there is a collision tile at the point in space.  Lets find two points in the level, one that has a collision and one that doesn't to test to see what this function returns.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/TwoSpotsOnScreen.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		So at room position <tt><b>(52, 45)</b></tt> is on top of a collision volume and <tt><b>(110, 112)</b></tt> is in an open area. Add to obj_player step event the following debug message to see what we get. 
+
+		<h3><tt><b>obj_player: Step Event</b></tt></h3>
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/ShowDebugTilemapGetPixel.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>
+	<p>.	Now look in the <tt><b> Output Window </b></tt>at (52, 45) with the collision is an ID of 1 and the empty spot of (110, 112) is 0.  So any non 0 value will be a collision with that point.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/OneAndZeroCollisionDebug.png" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Lets look at moving right.  We will worry about the top right and bottom right hand side of the bounding box of the player in world space. This can be found in <b><a href="gms2tutorials:///ShowHelp?tag=bbox_right">bbox_right</a></b>, <b><a href="gms2tutorials:///ShowHelp?tag=bbox_bottom">bbox_bottom</a></b> and <b><a href="gms2tutorials:///ShowHelp?tag=bbox_top">bbox_top</a></b>.
+	
+	<p>
+		Delete the two <tt><b>show_debug_message(string)</b></tt> lines as we no longer need them.  We will instead check the top right and bottom right corner of the player collision volume to see if it collides with an occupied tile in the <tt><b>Background_Collision_Tiles</b></tt> layer.  
+	
+	<p>
+		First we check that there is player movement (if the player is not moving there is no point in checking collisions.  Then we will check if the player is moving to the right.  We will create two local variables that stores the result of the top right and bottom  right collisionc check. 
+
+	<p>
+		Lastly we check to see if either <tt><b>t1</b></tt> or <tt><b>t2</b></tt> are not equal to <tt><b>0</b></tt> (no collision).  We will print a message again.
+
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/RightCollisionDebug.png" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Run over the collision volume and see if we get the collision message.  When we exit it we should get the no collision message.  This should only update if we are moving to the right.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/ShowCollisionDebug.gif" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Let's replace the debug messages and actually align the sprite. There is a quick (computationally) way of doing this.  This only works with power of 2 sizes (our player is 64 by 64).  This aligns a player to a 32 pixel boundary using binary arithmetic: <tt><b>x = x & ~31;</b></tt>.
+
+	<p>
+		So since the right hand side is colliding we want to align to the right hand side of the sprite so we alter this to <tt><b>x = bbox_right & ~31</b></tt>.  Now we need to adjust the sprite based on its origin, so we subtract that variable we created in the Create event <tt><b>sprite_bbox_right</b></tt>.
+
+		<h3><tt><b>obj_player: Step Event</b></tt></h3>
+		
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/RepositionPlayerToRightSide.png" alt="Illustration of computer science variable as a box">
+
+		<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Run to the right and you should stop to the right of the collision volume.  Pleaes note that the other directions don't work so you can get stuck inside a collision volume.  We will fix this next.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/CollisionPlayerRight.gif" alt="Illustration of computer science variable as a box">
+
+	<p>
+		We need to fix one issue.  I want to add an <tt><b>else if</b></tt> after moving right.  We need to move the collision correction inside the <tt><b>if (x_axis < 0)</b></0></tt> statement like so:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/MoveBinaryMath.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Lets do the other 4 directions.  Copy and paste the following to resolve collisions for moving left, down and up.
+<p>
+<p>
+		<tt>
+			//Look to see if left side of player collision overlaps with a collision tile</br>
+	else if (x_axis<0)</br>
+	{</br>
+	&nbsp; &nbsp;t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top);</br>
+	&nbsp; &nbsp;t2 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom);</br>
+	</br>
+	&nbsp; &nbsp;if (t1 != 0 || t2 != 0)</br>
+	&nbsp; &nbsp;{</br>
+	&nbsp; &nbsp; &nbsp; &nbsp; //Forces player back on the x to a 32 pixel boundary</br>
+	&nbsp; &nbsp; &nbsp; &nbsp; //    of the right hand side collision volume.  Then</br>
+	&nbsp; &nbsp; &nbsp; &nbsp; //	  adjust the position to the location of the origin </br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x = (((bbox_left + 32) & ~31)-1) - sprite_bbox_left;</br>
+	&nbsp; &nbsp; }</br>
+}</br>
+</br>
+//Look to see if bottom side of player collision overlaps with a collision tile</br>
+else if (y_axis > 0)</br>
+{</br>
+&nbsp; &nbsp;t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom);</br>
+&nbsp; &nbsp;t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom);</br>
+</br>
+&nbsp; &nbsp;if (t1 != 0 || t2 != 0)</br>
+&nbsp; &nbsp;{</br>
+&nbsp; &nbsp;&nbsp; &nbsp;//Forces player back on the x to a 32 pixel boundary</br>
+&nbsp; &nbsp;&nbsp; &nbsp;//    of the right hand side collision volume.  Then</br>
+&nbsp; &nbsp;&nbsp; &nbsp;//	  adjust the position to the location of the origin </br>
+&nbsp; &nbsp;&nbsp; &nbsp;y = ((bbox_bottom & ~31) -1 ) - sprite_bbox_bottom;</br>
+&nbsp; &nbsp;}</br>
+}</br>
+</br>
+//Look to see if left side of player collision overlaps with a collision tile</br>
+else if (y_axis<0)</br>
+{</br>
+&nbsp; &nbsp;t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top);</br>
+&nbsp; &nbsp;t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top);</br>
+</br>
+&nbsp; &nbsp;if (t1 != 0 || t2 != 0)</br>
+&nbsp; &nbsp;{</br>
+&nbsp; &nbsp;&nbsp; &nbsp;//Forces player back on the x to a 32 pixel boundary</br>
+&nbsp; &nbsp;&nbsp; &nbsp;//    of the right hand side collision volume.  Then</br>
+&nbsp; &nbsp;&nbsp; &nbsp;//	  adjust the position to the location of the origin </br>
+&nbsp; &nbsp;&nbsp; &nbsp;y = (((bbox_top + 32) & ~31)) - sprite_bbox_top;</br>
+&nbsp; &nbsp;}</br>
+}</br>
+</tt>
+
+<h3><tt><b>obj_player: Step Event</b></tt></h3>
+	
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/CollisionRightUpDown.png" alt="Illustration of computer science variable as a box">
+
+<p>
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.	You should stop before each wall in all directions and not able to get through them.  There should be no jittering or artifacts either!
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/CheckAllFourDirectionsCollision.gif" alt="Illustration of computer science variable as a box">
+
+<p>
+	Now that the collision is in I want to fix up some collision issues I don't like.  Run around the game and make sure the player can't enter areas you don't want them to.  I am going to adjust how high the player can go up to a wall by lowering it by one tile.  I make some final adjustments.
+
+	<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/AdjustCollisionsUp.gif" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Now we are not meant to see the collision volumes, they should be invisible. Open <tt><b>rm_castle</b></tt> and select layer <tt><b>Background_Collision_Tiles</b></tt> and press the eyball button to hide the layer.
+		<h3><tt><b>rm_castle</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/HideBackgroundCollisionTiles.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.	Now you can walk around and the player should stop at the correct spot in the level.  Next up we will be adding another room to the game.
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/FinalCollisionHiddenInGame.gif" alt="Illustration of computer science variable as a box">
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="page03.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="../ch3/page01.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

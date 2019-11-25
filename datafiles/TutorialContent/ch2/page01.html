@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch2 - Page 1</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="page01.html">Importing Player Object</option>
+					<option value="page02.html">Creating Collision Volumes in Room</option>
+					<option value="page03.html">Finding Distance For Collision From Origin</option>
+					<option value="page04.html">Player Collision with Tileset</option>
+				</optgroup>
+				<optgroup label="Chapter 3 - Teleporter">
+					<option value="../ch3/page01.html">Add Teleporter</option>
+					<option value="../ch3/page02.html">Create Sand Room</option>
+					<option value="../ch3/page03.html">Refactor Obj Player Step</option>
+					<option value="../ch3/page04.html">Leaving Room Castle</option>
+					<option value="../ch3/page05.html">Entering Room Desert</option>
+					<option value="../ch3/page06.html">Going Back to Room Castle</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Dialogue">
+					<option value="../ch4/page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="../ch4/page02.html">Dialogue Boxes - Array Message</option>
+					<option value="../ch4/page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="../ch4/page04.html">Dialogue Boxes - Question</option>
+					<option value="../ch4/page05.html">Dialogue Boxes - User Input</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Collectibles">
+					<option value="../ch5/page01.html">Collectibles - Setup Objects</option>
+					<option value="../ch5/page02.html">Collectibles - Collect Gem</option>
+					<option value="../ch5/page03.html">Draw HUD Backgroun d</option>
+				</optgroup>
+				<optgroup label="Chapter 6 - Pathfinding">
+					<option value="../ch6/page01.html">Pathfinding Zombie Setup</option>
+					<option value="../ch6/page02.html">Pathfinding</option>
+					<option value="../ch6/page03.html">Zombie Chase State</option>
+					<option value="../ch6/page04.html">Zombie Chase Player</option>
+					<option value="../ch6/page05.html">Returning to Patrol</option>
+				</optgroup>
+				<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+				</optgroup>
+				<optgroup label="Chapter 8 - Audio">
+					<option value="../ch8/page01.html">Audio - SFX</option>
+					<option value="../ch8/page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+				</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Importing Player Object</b>
+	
+	<p>
+		Let's import the player from the GMS2-BackgroundsAndSprites project.  If you have not completed it, you can find the player in <a href="https://github.com/maubanel/GMS2-RPG-4-Dir-Controls" target="_blank">RPG Controls on GitHub</a>. You are looking to import <tt><b>obj_player</b></tt> and all the sprites associated with it.  Make sure you have access to this game object.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/RPGPlayerControlsBackgroundProject.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Right click on <tt><b>Objects</b></tt> in the <tt><b>Resources</b></tt> folder and right click and select <tt><b>Add Existing</b></tt> and look for the <tt><b>obj_player</b></tt> in the previous project or the github project file above you just downloaded:
+		
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/AddExistingObjPlayer.gif" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Look at the <tt><b>Sprites</b></tt> tab in the <tt><b>Resources</b></tt> folder and see that there is only the one sprite that the object defaults to. It doesn't include all the other sprites that we need for this object.  We will import them in a bit. 
+		
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/MissingLotsOfSprites.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Go to <tt><b>rm_castle</b></tt> and select the <tt><b>Instances</b></tt> layer and drag <tt><b>obj_gamepad</b></tt> to outside the level and <tt><b>obj_player</b></tt> to the doorway of the castle.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/DragControllerAndPlayerInRoom.png" alt="Illustration of computer science variable as a box">
+		
+		<p>
+		Go to <tt><b>Sprites</b></tt> header in the <tt><b>Resources</b></tt> tab and press <tt><b>Add Existing</b></tt> and select the five missing sprites that the player calls in their script file. It should include <tt><b>spr_player_down</b></tt>, <tt><b>spr_player_right_idle</b></tt>, <tt><b>spr_player_right</b></tt>, <tt><b>spr_player_up_idle</b></tt> and <tt><b>spr_player_up</b></tt>.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/Add5MorePlayerSprites.gif" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Make sure you have all 6 sprites:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/All6PlayerSprites.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Open <tt><b>rm_castle</b></tt> and go to <tt><b>Viewport 0</b></tt> and make sure <tt><b>Object Following</b></tt> is set to <tt><b>obj_player</b></tt>.  Notice that I have already adjusted the <tt><b>Horizontal Border</b></tt> and <tt><b>Vertical Border</b></tt>.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/RoomViewport0.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Move the player around the screen.
+
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/PlayerInGame.gif" alt="Illustration of computer science variable as a box">
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="../page01.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page02.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

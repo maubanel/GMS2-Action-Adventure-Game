@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch3 - Page 3</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 3 - Teleporter">
+					<option value="page03.html">Refactor Obj Player Step</option>
+					<option value="page04.html">Leaving Room Castle</option>
+					<option value="page05.html">Entering Room Desert</option>
+					<option value="page06.html">Going Back to Room Castle</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Dialogue">
+					<option value="../ch4/page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="../ch4/page02.html">Dialogue Boxes - Array Message</option>
+					<option value="../ch4/page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="../ch4/page04.html">Dialogue Boxes - Question</option>
+					<option value="../ch4/page05.html">Dialogue Boxes - User Input</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Collectibles">
+					<option value="../ch5/page01.html">Collectibles - Setup Objects</option>
+					<option value="../ch5/page02.html">Collectibles - Collect Gem</option>
+					<option value="../ch5/page03.html">Draw HUD Backgroun d</option>
+				</optgroup>
+				<optgroup label="Chapter 6 - Pathfinding">
+					<option value="../ch6/page01.html">Pathfinding Zombie Setup</option>
+					<option value="../ch6/page02.html">Pathfinding</option>
+					<option value="../ch6/page03.html">Zombie Chase State</option>
+					<option value="../ch6/page04.html">Zombie Chase Player</option>
+					<option value="../ch6/page05.html">Returning to Patrol</option>
+				</optgroup>
+				<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+				</optgroup>
+				<optgroup label="Chapter 8 - Audio">
+					<option value="../ch8/page01.html">Audio - SFX</option>
+					<option value="../ch8/page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+				</optgroup>
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="../ch2/page01.html">Importing Player Object</option>
+					<option value="../ch2/page02.html">Creating Collision Volumes in Room</option>
+					<option value="../ch2/page03.html">Finding Distance For Collision From Origin</option>
+					<option value="../ch2/page04.html">Player Collision with Tileset</option>
+					</optgroup>
+					<optgroup label="Chapter 3 - Teleporter">
+					<option value="page01.html">Add Teleporter</option>
+					<option value="page02.html">Create Sand Room</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Refactor Obj Player Step</b>
+
+<p>
+	To make our state machine a bit easier we are going to clean up our player step event.  Since it is doing three things, getting controls, moving player in the room and updating animations we can put these in three scripts as functions and then call them reducing clutter and making the logic a bit easier to understand.
+
+<p>
+	We will be creating three function scripts <tt><b>scr_player_controls</b></tt>, <tt><b>scr_player_movement</b></tt> and <tt><b>scr_player_animation</b></tt>.
+
+	<h3><tt><b>obj_player: Step Event</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/PlayerStepTo3Functions.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+	Copy and paste each section into <tt><b>scr_player_controls</b></tt>, <tt><b>scr_player_movement</b></tt> and <tt><b>scr_player_animation</b></tt> that you will create.  Then call each of these scripts in the Step event:
+
+	<h3><tt><b>obj_player: Step Event</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/SeparatePlayerStep3Functions.gif" alt="Illustration of computer science variable as a box">
+	
+<p> 
+	So your four files should look lik:
+	
+<h3><tt><b>obj_player: Step Event</b></tt></h3>
+<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/PlayerStepTo3Functions.png" alt="Illustration of computer science variable as a box">
+
+<h3><tt><b>scr_player_controls</b></tt></h3>
+<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerControls.png" alt="Illustration of computer science variable as a box">
+
+<h3><tt><b>scr_player_movement</b></tt></h3>
+<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerMovement.png" alt="Illustration of computer science variable as a box">
+
+<h3><tt><b>scr_player_animation</b></tt></h3>
+<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerAnimation.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Woops we have a run-time error:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ErrorXAxisYAxis.png" alt="Illustration of computer science variable as a box">
+	
+	<p>
+		We have a problem when we use the keyword <tt><b>var</b></tt> we are making this variable local to a single script (or event script).  Now we use <tt><b>x_axis</b></tt> and <tt><b>y_axis</b></tt> in all four scripts so we need this to be accessible by the entire game object.  Copy and cut these two lines out of <tt><b>scr_player_movement</b></tt>:
+
+		<h3><tt><b>scr_player_movement</b></tt></h3>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/RevoveXYAxisFromControlScr.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Paste it into the <b>VERY TOP</b> of the  step event and remove the <tt><v>var</v></tt> to make it accessible to all scripts in the game objectL
+
+		<h3><tt><b>obj_player: Step Event</b></tt></h3>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/MoveXYAxisBackToStep.png" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now it should be back to exaclty the same as it was before we refactored the step event.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/BackToNormal.gif" alt="Illustration of computer science variable as a box">
+	
+	<p>
+		Now we can do the same thing with the collision logic in the player step and separate it into a <tt><b>scr_player_collision</b></tt> script.  Copy and cut the collision logic:
+
+		<h3><tt><b>obj_player: Step Event</b></tt></h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/CutAndPasteCollisionLogic.png" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Paste the text into a new <tt><b>scr_player_collision</b></tt> script:
+
+		<h3><tt><b>scr_player_collision</b></tt></h3>
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/CreateNewScrCollisionScript.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Go back to the player step and call this newly created script at the bottom (the order matters!).  Isn't this much easier to look at and understand?
+
+		<h3><tt><b>obj_player: Step Event</b></tt></h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/AddCollisionToStep.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now it should be back to exaclty the same as it was before we separated the collision logic. Next up we will start to deal with the room transition.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/GameBackToNormal.png" alt="Illustration of computer science variable as a box">
+		
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="page02.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page04.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

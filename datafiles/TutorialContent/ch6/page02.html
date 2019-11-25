@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch6 - Page 2</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 6 - Pathfinding">
+					<option value="page02.html">Pathfinding</option>
+					<option value="page03.html">Zombie Chase State</option>
+					<option value="page04.html">Zombie Chase Player</option>
+					<option value="page05.html">Returning to Patrol</option>
+				</optgroup>
+				<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+				</optgroup>
+				<optgroup label="Chapter 8 - Audio">
+					<option value="../ch8/page01.html">Audio - SFX</option>
+					<option value="../ch8/page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+				</optgroup>
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="../ch2/page01.html">Importing Player Object</option>
+					<option value="../ch2/page02.html">Creating Collision Volumes in Room</option>
+					<option value="../ch2/page03.html">Finding Distance For Collision From Origin</option>
+					<option value="../ch2/page04.html">Player Collision with Tileset</option>
+					</optgroup>
+					<optgroup label="Chapter 3 - Teleporter">
+					<option value="../cn3/page01.html">Add Teleporter</option>
+					<option value="../ch3/page02.html">Create Sand Room</option>
+					<option value="../ch3/page03.html">Refactor Obj Player Step</option>
+					<option value="../ch3/page04.html">Leaving Room Castle</option>
+					<option value="../ch3/page05.html">Entering Room Desert</option>
+					<option value="../ch3/page06.html">Going Back to Room Castle</option>
+					</optgroup>
+					<optgroup label="Chapter 4 - Dialogue">
+					<option value="../ch4/page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="../ch4/page02.html">Dialogue Boxes - Array Message</option>
+					<option value="../ch4/page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="../ch4/page04.html">Dialogue Boxes - Question</option>
+					<option value="../ch4/page05.html">Dialogue Boxes - User Input</option>
+					</optgroup>
+					<optgroup label="Chapter 5 - Collectibles">
+					<option value="../ch5/page01.html">Collectibles - Setup Objects</option>
+					<option value="../ch5/page02.html">Collectibles - Collect Gem</option>
+					<option value="../ch5/page03.html">Draw HUD Backgroun d</option>
+					</optgroup>
+					<optgroup label="Chapter 6 - Pathfinding">
+					<option value="page01.html">Pathfinding Zombie Setup</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Pathfinding</b>
+	<p>
+		Now we are going to create a path for the zombie to roam.  Now I am cautioning you that in the past this mode has been VERY slow and crashed often. Save your work now before starting. We will be using paths for the Zombie to walk around the room with. This requires no logic and we just lay out a track to where the Zombie will roam. Create a new Path and call it <tt><b>path_enemy</b></tt>: 
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/CreatePathEnemy.png" alt="Illustration of computer science variable as a box">
+	
+	<p>
+		Now we open <tt><b>rm_castle</b></tt> and add a <tt><b>Path</b></tt> Layer and place it under the <tt><b>Instances</b></tt> Path Layer and call it <tt><b>Zombie_Path</b></tt>. 
+		<p>
+		<h3><tt><b>rm_castle</b></tt></h3>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ZombiePathLayerRoom.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Select the path you just created <tt><b>path_enemy</b></tt>:
+
+		<h3><tt><b>rm_castle</b></tt></h3>
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/SelectPathEnemy.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Press the Smooth Curve radio button in the path so that the turns are not all 90 degrees and the zombie moves more naturally.
+		<h3><tt><b>rm_castle</b></tt></h3>
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/SmoothCurvePath.png" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Left click around the level and draw a path for the zombie.  Give the enemy a path for patrolling.
+
+		<h3><tt><b>rm_castle</b></tt></h3>
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/DrawPathZombie.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Keep clicking until you are back close to the beginning.  Press the <tt><b>CLosed</b></tt> radio button and the loop will fill in by itself!
+
+		<h3><tt><b>rm_castle</b></tt></h3>
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ClosePathLoop.gif" alt="Illustration of computer science variable as a box">
+	
+		<p>
+		Scale the three zombie sprites to be <tt><b>64</b></tt> by <tt><b>64</b></tt> :
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ScaleThreeSpritesZombie.png" alt="Illustration of computer science variable as a box">
+		
+		<p>
+		Place zombie into <tt><b>rm_castle</b></tt>> and put him close to the start of your path. 
+<h3><tt><b>rm_castle</b></tt></h3>
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/PlaceZombieAtStartingPoint.png" alt="Illustration of computer science variable as a box">
+
+		<p>
+		Now we need to trigger the ObjZombie to follow this path. We will be using a new function that GameMaker provides. Paths do not start running by default we need to start them in code.  This is done through the <b><a href="gms2tutorials:///ShowHelp?keyword=path_start">path_start(path, speed, endaction, absolute)</a></b> function.
+		<p>
+	To start the enemy down the path add top the create event in the zombie.
+
+	<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/PlaceZombieAtStartingPoint.png" alt="Illustration of computer science variable as a box">
+
+		<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Follow the zombie around and see how it follows the path.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ZombieFollowsPath.gif" alt="Illustration of computer science variable as a box">	
+
+<p>
+		I noticed that the sprite was following the path by its origin.  I moved the origin of all three sprites to <tt><b>Middle Center</b></tt> and adjusted the path so that the zombie did not pass any solid objects.
+
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AdjustZombieOrigin.png" alt="Illustration of computer science variable as a box">	
+		
+		<p>
+		Add a new script called <tt><b>scr_set_zombie_directions</b></tt>.  The pathfniding uses the direction that the player is in so we can select the best sprite based on whether they are facing in the angle they are moving in.  Add to this new script:
+
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ScrSetZombieDirections.png" alt="Illustration of computer science variable as a box">	
+		<p>
+		Open up the zombie and add a regular step event to the enemy and call this new script:
+
+		<h3><tt><b>obj_zombie: Step | Step Event</b></tt></h3>
+
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ZombieStepCallAnim.png" alt="Illustration of computer science variable as a box">	
+
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Follow the zombie around and see how it follows the path and faces the direction it is walking in.  Next up we will have the zombie chase the player.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AnimationFramePatrol.gif" alt="Illustration of computer science variable as a box">	
+
+		
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="page01.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page03.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

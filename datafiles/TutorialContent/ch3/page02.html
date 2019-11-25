@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch3- Page 2</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 3 - Teleporter">
+					<option value="page02.html">Create Sand Room</option>
+					<option value="page03.html">Refactor Obj Player Step</option>
+					<option value="page04.html">Leaving Room Castle</option>
+					<option value="page05.html">Entering Room Desert</option>
+					<option value="page06.html">Going Back to Room Castle</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Dialogue">
+					<option value="../ch4/page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="../ch4/page02.html">Dialogue Boxes - Array Message</option>
+					<option value="../ch4/page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="../ch4/page04.html">Dialogue Boxes - Question</option>
+					<option value="../ch4/page05.html">Dialogue Boxes - User Input</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Collectibles">
+					<option value="../ch5/page01.html">Collectibles - Setup Objects</option>
+					<option value="../ch5/page02.html">Collectibles - Collect Gem</option>
+					<option value="../ch5/page03.html">Draw HUD Backgroun d</option>
+				</optgroup>
+				<optgroup label="Chapter 6 - Pathfinding">
+					<option value="../ch6/page01.html">Pathfinding Zombie Setup</option>
+					<option value="../ch6/page02.html">Pathfinding</option>
+					<option value="../ch6/page03.html">Zombie Chase State</option>
+					<option value="../ch6/page04.html">Zombie Chase Player</option>
+					<option value="../ch6/page05.html">Returning to Patrol</option>
+				</optgroup>
+				<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+				</optgroup>
+				<optgroup label="Chapter 8 - Audio">
+					<option value="../ch8/page01.html">Audio - SFX</option>
+					<option value="../ch8/page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+				</optgroup>
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="../ch2/page01.html">Importing Player Object</option>
+					<option value="../ch2/page02.html">Creating Collision Volumes in Room</option>
+					<option value="../ch2/page03.html">Finding Distance For Collision From Origin</option>
+					<option value="../ch2/page04.html">Player Collision with Tileset</option>
+					</optgroup>
+					<optgroup label="Chapter 3 - Teleporter">
+					<option value="page01.html">Add Teleporter</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Create Sand Room</b>
+
+<p>
+	Now we need a room to teleport to.  We won't get too complicated, let's create a new room and make it into a desert.  Right click on <tt><b>rm_castle</b></tt> and select <tt><b>Duplicate</b></tt>:
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/DupeRmCastle.png" alt="Illustration of computer science variable as a box">
+
+<p>
+	Select <tt><b>Background_Opaque_Tiles</b></tt> layer and select the sand tile.  Pick the <tt><b>Paint Bucket</b></tt> or <tt><b>Erase</b></tt> tool and start replacing all the opaque objects with sand. 
+<h3><tt><b>rm_desert</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ReplaceOpaqueWithSand.gif" alt="Illustration of computer science variable as a box">
+
+<p>
+	Select <tt><b>Background_Opaque_Tiles</b></tt> layer and select the sand tile.  Pick the <tt><b>Paint Bucket</b></tt> or <tt><b>Erase</b></tt> tool and start replacing all the opaque objects with sand. 
+	<h3><tt><b>rm_desert</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/EraseTransparentTiles.gif" alt="Illustration of computer science variable as a box">
+
+<p>
+	Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_desert</b></tt> and press the eyeball button to make the collision layer visible. Pick the <tt><b>Erase</b></tt> tool and start removing all collisions not on the outer edge.
+	<h3><tt><b>rm_desert</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/EraseCollisionTilesNotOnEdge.gif" alt="Illustration of computer science variable as a box">	
+
+	<p>
+	Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_desert</b></tt> and press the eyeball button to make the collision layer visible. Go to the <tt><b>Room Editor</b></tt> tab.  Selecdt the pink brush and make sure you have selected the pencil tool.  Make sure the entire edge has collision so player can't leave the room.
+	 <h3><tt><b>rm_desert</b></tt></h3>
+	 <p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/CollisionRoundLevel.gif" alt="Illustration of computer science variable as a box">	
+	
+	<p>
+	Select the <tt><b>Block_Player_Tiles</b></tt> layer and move the teleporter to a different part of the room. Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_desert</b></tt> and press the eyeball button to make the collision layer visible. Erase the old collision volume and add new collision volumes in the new location like so:
+	 <h3><tt><b>rm_desert</b></tt></h3>
+	 <p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/MoveTeleporterInDesert.gif" alt="Illustration of computer science variable as a box">	
+	
+	
+</ul>
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="page01.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page03.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

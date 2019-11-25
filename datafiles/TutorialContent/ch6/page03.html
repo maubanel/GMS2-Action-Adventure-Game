@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch6 - Page 3</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 6 - Pathfinding">
+					<option value="page03.html">Zombie Chase State</option>
+					<option value="page04.html">Zombie Chase Player</option>
+					<option value="page05.html">Returning to Patrol</option>
+				</optgroup>
+				<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+				</optgroup>
+				<optgroup label="Chapter 8 - Audio">
+					<option value="../ch8/page01.html">Audio - SFX</option>
+					<option value="../ch8/page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+				</optgroup>
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="../ch2/page01.html">Importing Player Object</option>
+					<option value="../ch2/page02.html">Creating Collision Volumes in Room</option>
+					<option value="../ch2/page03.html">Finding Distance For Collision From Origin</option>
+					<option value="../ch2/page04.html">Player Collision with Tileset</option>
+					</optgroup>
+					<optgroup label="Chapter 3 - Teleporter">
+					<option value="../cn3/page01.html">Add Teleporter</option>
+					<option value="../ch3/page02.html">Create Sand Room</option>
+					<option value="../ch3/page03.html">Refactor Obj Player Step</option>
+					<option value="../ch3/page04.html">Leaving Room Castle</option>
+					<option value="../ch3/page05.html">Entering Room Desert</option>
+					<option value="../ch3/page06.html">Going Back to Room Castle</option>
+					</optgroup>
+					<optgroup label="Chapter 4 - Dialogue">
+					<option value="../ch4/page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="../ch4/page02.html">Dialogue Boxes - Array Message</option>
+					<option value="../ch4/page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="../ch4/page04.html">Dialogue Boxes - Question</option>
+					<option value="../ch4/page05.html">Dialogue Boxes - User Input</option>
+					</optgroup>
+					<optgroup label="Chapter 5 - Collectibles">
+					<option value="../ch5/page01.html">Collectibles - Setup Objects</option>
+					<option value="../ch5/page02.html">Collectibles - Collect Gem</option>
+					<option value="../ch5/page03.html">Draw HUD Backgroun d</option>
+					</optgroup>
+					<optgroup label="Chapter 6 - Pathfinding">
+					<option value="page01.html">Pathfinding Zombie Setup</option>
+					<option value="page02.html">Pathfinding</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Zombie Chase State</b>
+	<p>
+	We want the zombie to chase the player when he gets a certain distance away and can see the player (and can’t see through walls). Open the zombie create event and add another marcro state called CHASE right after the previous macro and assign it a value of 1:
+	<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AddChaseMacroToZombie.png" alt="Illustration of computer science variable as a box">	
+
+	<p>
+		We also want to know the range that triggers the zombie to chase the player. This will be calculated in pixels.  Lets start with a small number for testing, so you almost have to touch the enemy to get it to switch to CHASE. Add to the end of the zombie create event:
+		<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AddEnemyRangeZombieCreate.png" alt="Illustration of computer science variable as a box">	
+
+<p>
+	So we will add to the zombie step event script and check to see that the distance between the enemy and the player is less than the <tt><b>enemy_range</b></tt> variable then switch to CHASE state. We also terminate the path movement as the zombie is no longer following the path and will chase the player.
+
+	<h3><tt><b>obj_zombie: Step Event</b></tt></h3>
+
+	<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/StateChaseInitialStepZombie.png" alt="Illustration of computer science variable as a box">	
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Approach the zombie and it should stop the path then get stuck in the CHASE state when you get too close:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ChangingStatesZombieInitial.gif" alt="Illustration of computer science variable as a box">	
+
+	<p>
+		Since this is in a step event every frame we will be stopping the pathfinding and changing states.  We only need to do this once.  We can use the state as a switch and only make a change if the zombie is in <tt><b>PATROL</b></tt> state.
+
+	<h3><tt><b>obj_zombie: Step Event</b></tt></h3>
+
+	<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/CheckIfInPatrolState.png" alt="Illustration of computer science variable as a box">	
+		
+	<p>
+		Now how do we have the zombie chase the player without running over water, a wall or any other part you don't want the enemy to walk on (typically the same areas the player can't walk on)? We will now use GameMaker’s pathfinding to create a path to chase the player. This pathfinding goes along a path that is full of free cells.  
+
+	<p>
+		We need to get access to this layer id.  To do this we call the <b><a href="gms2tutorials:///ShowHelp?keyword=layer_get_id">layer_get_id(layer)</a></b> function.
+		<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
+		<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/LayerGetID.png" alt="Illustration of computer science variable as a box">	
+		
+	<p>
+		We need to get access to this to the tilemap holding this layer.  To do this we call the <b><a href="gms2tutorials:///ShowHelp?keyword=layer_tilemap_get_id">layer_tilemap_get_id(layer id)</a></b> function.
+		<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
+		<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/TileMapGetID.png" alt="Illustration of computer science variable as a box">	
+		
+	<p>The first function is: <b><a href="gms2tutorials:///ShowHelp?keyword=mp_grid_create">mp_grid_create(xstart, ystart, hcells, vcells, cellwidth, cellheight)</a></b>
+
+	<blockquote>
+		With this function you can create an mp_grid for the motion planning functions. It returns an index that must be used in all other mp_grid function calls. The x and y coordinates indicate the position of the top-left corner of the grid, hcells and vcells indicate the number of horizontal and vertical cells to be created within the grid, and cell width and cell height indicate the size of the cells in pixels. You can create and maintain multiple grid structures at the same moment if you need them for different things, but be aware that these are complex functions and the more you use and the higher the cell resolution then the slower your game could be. - Gamemaker Manual
+	</blockquote>
+	<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
+	<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/EnemyGridCreate.png" alt="Illustration of computer science variable as a box">	
+	
+
+	<p>
+		We need to add cells to the collision volume in this grid.  To do this we use the <b><a href="gms2tutorials:///ShowHelp?keyword=tilemap_get_at_pixel">tilemap_get_at_pixel(tilemap_element_id, x, y)</a></b> and <b><a href="gms2tutorials:///ShowHelp?keyword=mp_grid_add_cell">mp_grid_add_cell(id, h, v)</a></b> 
+		<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
+		<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AddCollisionsToGrid.png" alt="Illustration of computer science variable as a box">	
+
+<p>
+	How do we test to know if we have done it correctly? We can’t just start using it as we don’t know if this has no bugs. What we want to do is overlay this grid to see if the red parts match where our collision volumes lie. We can create a temporary script and use the function <b><a href="gms2tutorials:///ShowHelp?keyword=mp_grid_draw">mp_grid_draw(grid)</a></b> and is pretty self explanatory. Add a new draw event to the zombie and add the following:
+	<h3><tt><b>obj_zombie: Draw Event</b></tt></h3>
+		<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/DrawGridDebug.png" alt="Illustration of computer science variable as a box">	
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now you see that green is where the zombie can travel and red it blocked.  This looks correct to me.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/MPGridDrawCorrect.gif" alt="Illustration of computer science variable as a box">	
+
+	<p>
+		Now lets undo the draw event debug and move on to having the zombie chase the player using the path on the next page.
+		<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/CommentOutDebugDraw.png" alt="Illustration of computer science variable as a box">	
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="page02.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page04.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+
