@@ -20,3 +20,5 @@ y = room_height;
 x = room_width/2;
 
 vspeed = -3;
+
+obj_player.image_alpha = 0;

@@ -93,7 +93,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/BackToNormal.gif" alt="Illustration of computer science variable as a box">
 	
 		<p>
-	Now we want to restrict player movement to when the player is in <tt><b>INGAME</b></tt> state. So we will add a check to the <tt><b>obj_player</b></tt>> Step Event:
+	Now we want to restrict player movement to when the player is in <tt><b>INGAME</b></tt> state. So we will add a check to the <tt><b>obj_player</b></tt> Collision | obj_teleporter Event:
 <h3><tt><b>obj_player: Collision | obj_teleporter Event</b></tt></h3>
 	<p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/AddStateChangeOnTeleporterCollision.gif" alt="Illustration of computer science variable as a box">
@@ -146,8 +146,17 @@
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/FadeInRay.gif" alt="Illustration of computer science variable as a box">	
 			
+<p> Now that is the quicker way of implementing the fade but we can't guarantee how long it will take as it is totally dependant on the length of time it takes to generate the frame (it is set to 30fps).  A better way is to calculate it based on delta time in milliseconds.  We do so by changing the <tt><b>Create</b></tt> and <tt><b>Step</b> events like so:
+	
+	<h3><tt><b>obj_teleporter_ray Create Events</b></tt></h3>
+	<p>	
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/TeleporterFadeInSecondsCreate.png" alt="Illustration of computer science variable as a box">
+	
+	<h3><tt><b>obj_teleporter_ray Step Events</b></tt></h3>
+	<p>	
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/TeleporterFadeInSecondsStep.png" alt="Illustration of computer science variable as a box">
 	<p>
-		Since you can't control the player the custom is to make it semi-translucent to indicate to the player that you are not in the normal state.  Add a translucency to the player and call an alarm to change rooms:
+		Play the game and make sure it still fades in and count to 3 seconds.  Since you can't control the player the custom is to make it semi-translucent to indicate to the player that you are not in the normal state.  Add a translucency to the player and call an alarm to change rooms:
 		<h3><tt><b>obj_player: Collision | obj_teleporter Event</b></tt></h3>	
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/MakePlayerTransluAndAddAlarm.png" alt="Illustration of computer science variable as a box">

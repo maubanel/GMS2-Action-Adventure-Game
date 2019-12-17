@@ -81,10 +81,10 @@
 	<b>Creating Collision Volumes in Room</b>
 	
 	<p>
-		Now we use sprites for backgrounds and non-moving objects because they render faster than game objects (which include Sprites). Objects have a lot of overhead (all the variables and functionality that come with this class) that make them much more “expensive”. 
+		Now we use sprites for backgrounds and non-moving objects because they render faster than game objects (which include Sprites). Objects have a lot of overhead (all the variables and functionality that come with this class) that make them much more &quot;expensive&quot;. 
 
 	<p>
-		Now we don’t know what tiles in our layer we should collide with. We are going to create a layer for collisions that will be hidden in the final game. It will have one type of tile attached to it.  
+		Now we don&apos;t know what tiles in our layer we should collide with. We are going to create a layer for collisions that will be hidden in the final game. It will have one type of tile attached to it.  
 		
 	<p>
 		Lets start by creating a new sprite and call it <tt><b>spr_collision</b></tt>. Change the size to 32 by 32. Click the <tt><b>Edit Image</b></tt> button. We will create a 32 by 32 block with a solid color. Use the bucket tool to fill in with a pink color (or any other color that is not being used in your level currently). Double click on the layer and change the Opacity to 35%.
@@ -93,7 +93,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/CreateCollisionSprite.gif" alt="Illustration of computer science variable as a box">
 
 	<p>
-		This needs to be part of a tileset. The one item about a Tile Set in GameMaker is that the first tile <b>has</b>to be empty. Go to the <tt><b>Resize Sprite</b></tt> and click on the <tt><b>Resize Canvas</b></tt> selection and set the <tt><b>Width</b></tt> to <tt><b>64</b></tt>. Also, click on the <tt><b>right arrow</b></tt>> next to it so the blank space is on the left hand side and the pink square on the right hand side (right justifying the sprite we have created).
+		This needs to be part of a tileset. The one item about a Tile Set in GameMaker is that the first tile <b>has</b> to be empty. Go to the <tt><b>Resize Sprite</b></tt> and click on the <tt><b>Resize Canvas</b></tt> selection and set the <tt><b>Width</b></tt> to <tt><b>64</b></tt>. Also, click on the <tt><b>right arrow</b></tt> next to it so the blank space is on the left hand side and the pink square on the right hand side (right justifying the sprite we have created).
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/AddBlankTileForSet.gif" alt="Illustration of computer science variable as a box">
@@ -114,7 +114,7 @@
 		Since we will not be rendering this layer in the game we want it on the to player (that is why we made it partially translucent.  This way we can see each 32 by 32 section that has collision on it.  
 		
 	<p>
-		Open the room <tt><b>rm_castle</b></tt>>. Create a new <tt><b>Tile Layer</b></tt> on top and call it Background_Collision_Tiles.
+		Open the room <tt><b>rm_castle</b></tt>. Create a new <tt><b>Tile Layer</b></tt> on top and call it Background_Collision_Tiles.
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/AddCollisionTIleLayer.png" alt="Illustration of computer science variable as a box">

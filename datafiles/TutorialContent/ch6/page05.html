@@ -87,12 +87,9 @@
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AddReturnMacroZombie.png" alt="Illustration of computer science variable as a box">
-	
-	<p>
-		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AddReturnMacroZombie.png" alt="Illustration of computer science variable as a box">	
 		
 	<p>
-		Open the <tt><b>scr_enemy_chase</b></tt> scriptand add to the end of the script a check to see if it should chase else go back to <tt><b>PATROL</b></tt>>. We end the path of the enemy chase and switch to the RETURN state when the player has gone twice the trigger distance away from the enemy.
+		Open the <tt><b>scr_enemy_chase</b></tt> scriptand add to the end of the script a check to see if it should chase else go back to <tt><b>PATROL</b></tt>. We end the path of the enemy chase and switch to the RETURN state when the player has gone twice the trigger distance away from the enemy.
 		<h3><tt><b>scr_enemy_chase</b></tt></h3>
 		<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/GoToReturnState.png" alt="Illustration of computer science variable as a box">
@@ -118,13 +115,13 @@
 		<p>
 			We need to end the path of the zombie chasing.  We change the state to <tt><b>RETURN</b></tt>. We call the function <tt><b>scr_return_to_path(path, interval)</b></tt> and pass it our initial patrolling enemy path <tt><b>path_enemy</b></tt> and check it 20 times along this long path (interval set to <tt><b>.05</b></tt>).  We get the return position for both x and y then set a new path and start it.  Open <tt><b>scr_enemy_chanse</b></tt> and add at the bottom:
 
-		<h3><tt><b>scr_enemy_chase/b></tt></h3>
+		<h3><tt><b>scr_enemy_chase</b></tt></h3>
 		<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ReturnToPath.png" alt="Illustration of computer science variable as a box">
 		
 		<p>
 			Then we need to open up the zombie step event and add at the bottom a check to see if we are close enough to the path to return to <tt><b>PATROL</b></tt> state.  If we are we end the previous path, start the original patrol path, update the position to the closest point that the player is at then change the <tt><b>state</b></tt> back to <tt><b>CONTROL</b></tt>.
-			<h3><tt><b>obj_npc_tiger: Step Event</b></tt></h3>
+			<h3><tt><b>obj_zombie: Step Event</b></tt></h3>
 		<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ReturnToPatrol.png" alt="Illustration of computer science variable as a box">
 		

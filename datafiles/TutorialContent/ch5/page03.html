@@ -80,7 +80,7 @@
 	<p style="color:rgb(85, 109, 130)">
 	<b>Draw HUD Background</b>
 	<p>
-		Now we are going to draw a small version of the gem on the Heads Up Display (HUD) on the top of the screen. We will use our <tt><b>obj_game_controller</b></tt>> for this and add a <tt><b>DrawGUI</b></tt>> event type. First lets draw a transparent rectangle to higlight the HUD. Please add:
+		Now we are going to draw a small version of the gem on the Heads Up Display (HUD) on the top of the screen. We will use our <tt><b>obj_game_controller</b></tt> for this and add a <tt><b>DrawGUI</b></tt> event type. First lets draw a transparent rectangle to higlight the HUD. Please add:
 
 		<h3><tt><b>obj_game_controller: Draw GUI Event</b></tt></h3>
 
@@ -94,13 +94,13 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH5/SolidBlueHUD.png" alt="Illustration of computer science variable as a box">
 
 	<p>
-		I don’t like fact that the blue obscures the game screen. Lets make it transluscent. 
+		I don&rsquo;t like fact that the blue obscures the game screen. Lets make it transluscent. 
 		
 	<p>
 		Lets look at the manual for <b><a href="gms2tutorials:///ShowHelp?keyword=draw_set_alpha">draw_set_alpha(real)</a></b>. Now the tricky thing is that if you don't reset the alpha back to 1 it will affect every other sprite that it gets to after it draws the hud. This might include game objects in the room.  The draw event carries over to all future draw events that come after it. 
 		
 	<p>
-		So be careful, if you reduce the alpha always set it back to 100. This is only true for Gamemaker Draw events. 
+		So be careful, if you reduce the alpha always set it back to 100% which is for this built in variable <tt><b>1</b></tt>. This is only true for Gamemaker Draw events. 
 
 	<h3><tt><b>obj_game_controller: Draw GUI Event</b></tt></h3>
 	<p>

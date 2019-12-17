@@ -80,7 +80,7 @@
 	<p style="color:rgb(85, 109, 130)">
 	<b>Zombie Chase State</b>
 	<p>
-	We want the zombie to chase the player when he gets a certain distance away and can see the player (and can’t see through walls). Open the zombie create event and add another marcro state called CHASE right after the previous macro and assign it a value of 1:
+	We want the zombie to chase the player when he gets a certain distance away and can see the player (and can&rsquo;t see through walls). Open the zombie create event and add another marcro state called CHASE right after the previous macro and assign it a value of 1:
 	<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
 
 	<p>
@@ -116,7 +116,7 @@
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/CheckIfInPatrolState.png" alt="Illustration of computer science variable as a box">	
 		
 	<p>
-		Now how do we have the zombie chase the player without running over water, a wall or any other part you don't want the enemy to walk on (typically the same areas the player can't walk on)? We will now use GameMaker’s pathfinding to create a path to chase the player. This pathfinding goes along a path that is full of free cells.  
+		Now how do we have the zombie chase the player without running over water, a wall or any other part you don't want the enemy to walk on (typically the same areas the player can't walk on). We will now use GameMaker&rsquo;s pathfinding to create a path to chase the player. This pathfinding goes along a path that is full of free cells.  
 
 	<p>
 		We need to get access to this layer id.  To do this we call the <b><a href="gms2tutorials:///ShowHelp?keyword=layer_get_id">layer_get_id(layer)</a></b> function.
@@ -147,7 +147,7 @@
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AddCollisionsToGrid.png" alt="Illustration of computer science variable as a box">	
 
 <p>
-	How do we test to know if we have done it correctly? We can’t just start using it as we don’t know if this has no bugs. What we want to do is overlay this grid to see if the red parts match where our collision volumes lie. We can create a temporary script and use the function <b><a href="gms2tutorials:///ShowHelp?keyword=mp_grid_draw">mp_grid_draw(grid)</a></b> and is pretty self explanatory. Add a new draw event to the zombie and add the following:
+	How do we test to know if we have done it correctly? We can&rsquo;t just start using it as we don&rsquo;t know if this has no bugs. What we want to do is overlay this grid to see if the red parts match where our collision volumes lie. We can create a temporary script and use the function <b><a href="gms2tutorials:///ShowHelp?keyword=mp_grid_draw">mp_grid_draw(grid)</a></b> and is pretty self explanatory. Add a new draw event to the zombie and add the following:
 	<h3><tt><b>obj_zombie: Draw Event</b></tt></h3>
 		<p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/DrawGridDebug.png" alt="Illustration of computer science variable as a box">	

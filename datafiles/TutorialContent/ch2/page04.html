@@ -84,7 +84,7 @@
 		What we will be doing is checking to see if the side in which the player is moving is overlapping with a collision volume that it will be put back outside the collision volume.
 
 		<ul>
-		<li>Check to see two corners of direction we are moving in.  So for example if we are moving right we would check the top right corner pixel and bottom left corner pixel and see if any are overlapping with the <tt><b>Background_Collision_Tiles</b></tt></li> tilemap.</ll>
+		<li>Check to see two corners of direction we are moving in.  So for example if we are moving right we would check the top right corner pixel and bottom right corner pixel and see if any are overlapping with the <tt><b>Background_Collision_Tiles</b></tt></li> tilemap.</ll>
 		<li>If either of these overlap move player back outside the boundary by adjusting the player position to a 32 by 32 boundary and subtract its relative position from its origin to the sprite_bbox_right</li>
 		</ul>
 
@@ -149,7 +149,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/CollisionPlayerRight.gif" alt="Illustration of computer science variable as a box">
 
 	<p>
-		We need to fix one issue.  I want to add an <tt><b>else if</b></tt> after moving right.  We need to move the collision correction inside the <tt><b>if (x_axis < 0)</b></0></tt> statement like so:
+		We need to fix one issue.  I want to only do this adjustment if the player is moving right.  I did not include it within the scope of looking for the direction.  We need to move the collision correction inside the <tt><b>if (x_axis > 0)</b></0></tt> statement like so:
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/MoveBinaryMath.png" alt="Illustration of computer science variable as a box">
@@ -230,13 +230,31 @@ else if (y_axis<0)</br>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/HideBackgroundCollisionTiles.png" alt="Illustration of computer science variable as a box">
 
 	<p>
-	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.	Now you can walk around and the player should stop at the correct spot in the level.  Next up we will be adding another room to the game.
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.	Now you can walk around and the player should stop at the correct spot in the level. 
 
 <p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/FinalCollisionHiddenInGame.gif" alt="Illustration of computer science variable as a box">
 
+	<p>
+		There is an issue if your sprite size is different from your collision size.  In my case my sprite is <tt><b>64 x 64`</b></tt> and the collision square is <tt><b>`32 x 32`</b></tt>.  Now we only check the corners so if we enter a collision space where no corners touch we can pass through it like so:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/CollisionDiff.gif" alt="Illustration of computer science variable as a box">
+
+	<p> 
+		We need to add enough collision checking so that the gap between checks is not larger than the collision volume.  Lets add one more check in the middle right, left, bottom and top.
+
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/AddThirdCollCheckRight.png" alt="Illustration of computer science variable as a box">
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/AddThirdCheckLeftBottom.png" alt="Illustration of computer science variable as a box">
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH2/AddThirdCheckTop.png" alt="Illustration of computer science variable as a box">
+
+<p>
+	Next up we will be adding another room to the game.
 <br>
-</p>
+
 <p>
 
 </div>

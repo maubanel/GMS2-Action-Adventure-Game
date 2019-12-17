@@ -88,7 +88,7 @@
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ZombiePathSpeedAndPath.png" alt="Illustration of computer science variable as a box">	
 
 	<p>
-		Check to see if we are in the chase state and then call a new 
+		Check to see if we are in the chase state and then call a new script that will chase the player.
 
 	<h3><tt><b>obj_zombie: Step Event</b></tt></h3>
 	<p>
@@ -96,7 +96,7 @@
 	<p>
 		
 	<p>
-		Now we set up this grid because gamemaker provides a function that dynamically creates a path based on this collision grid so the enemy won’t run into a grid section. We can create a path dynamically in script using: <b><a href="gms2tutorials:///ShowHelp?keyword=mp_grid_path">mp_grid_path(d, path, xstart, ystart, xgoal, ygoal, allowdiag)</a></b>. Create a new script called <tt><b>scr_enemy_chase</b></tt> and add:
+		Now we set up this grid because gamemaker provides a function that dynamically creates a path based on this collision grid so the enemy won&#39;t run into a grid section. We can create a path dynamically in script using: <b><a href="gms2tutorials:///ShowHelp?keyword=mp_grid_path">mp_grid_path(d, path, xstart, ystart, xgoal, ygoal, allowdiag)</a></b>. Create a new script called <tt><b>scr_enemy_chase</b></tt> and add:
 
 	<p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/EnemyChaseScriptChasingPlayerTake1.png" alt="Illustration of computer science variable as a box">	
@@ -121,13 +121,13 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AdjustEnemyRange.png" alt="Illustration of computer science variable as a box">
 	
 <p>
-		Open ScrEnemyChaseStep and only adjust path every 20 frames:
-		<h3><tt><b>obj_zombie: Step Event</b></tt></h3>
+		Open scr_enemy_chase and only adjust path every 20 frames:
+		<h3><tt><b>scr_enemy_chase</b></tt></h3>
 		<p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/AddDelayToChase.png" alt="Illustration of computer science variable as a box">	
 
 <p>
-	Play the game and test your work.  On the next page we will look at returning to patrol if the player gets away from the zombie.
+	Play the game and test your work.  The zombie should have a slight delay when you change directions and it should feel a little bit more natural. On the next page we will look at returning to patrol if the player gets away from the zombie.
 		
 </div>
 

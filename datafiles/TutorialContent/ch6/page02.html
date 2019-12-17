@@ -124,19 +124,19 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/ScaleThreeSpritesZombie.png" alt="Illustration of computer science variable as a box">
 		
 		<p>
-		Place zombie into <tt><b>rm_castle</b></tt>> and put him close to the start of your path. 
+		Place zombie into <tt><b>rm_castle</b></tt> and put him close to the start of your path. 
 <h3><tt><b>rm_castle</b></tt></h3>
 		<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/PlaceZombieAtStartingPoint.png" alt="Illustration of computer science variable as a box">
 
 		<p>
-		Now we need to trigger the ObjZombie to follow this path. We will be using a new function that GameMaker provides. Paths do not start running by default we need to start them in code.  This is done through the <b><a href="gms2tutorials:///ShowHelp?keyword=path_start">path_start(path, speed, endaction, absolute)</a></b> function.
+		Now we need to trigger the <tt><b>obj_zombie</b></tt>> to follow this path. We will be using a new function that GameMaker provides. Paths do not start running by default we need to start them in code.  This is done through the <b><a href="gms2tutorials:///ShowHelp?keyword=path_start">path_start(path, speed, endaction, absolute)</a></b> function.
 		<p>
-	To start the enemy down the path add top the create event in the zombie.
+	To start the enemy down the path add to the bottom of the create event:
 
 	<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
 	<p>
-		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/PlaceZombieAtStartingPoint.png" alt="Illustration of computer science variable as a box">
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH6/PathStartZombie.png" alt="Illustration of computer science variable as a box">
 
 		<p>
 		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Follow the zombie around and see how it follows the path.
