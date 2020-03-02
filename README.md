@@ -24,7 +24,7 @@ In this walk through:
 * Dialogue Boxes - Question
 * Dialogue Boxes - User Input
 * Collectibles - Setup Objects
-* *Collectibles - Collect Gem
+* Collectibles - Collect Gem
 * Draw HUD Background
 * Pathfinding Zombie Setup
 * Pathfinding
