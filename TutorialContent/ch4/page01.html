@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch4 - Page 1</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 4 - Dialogue">
+					<option value="page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="page02.html">Dialogue Boxes - Array Message</option>
+					<option value="page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="page04.html">Dialogue Boxes - Question</option>
+					<option value="page05.html">Dialogue Boxes - User Input</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Collectibles">
+					<option value="../ch5/page01.html">Collectibles - Setup Objects</option>
+					<option value="../ch5/page02.html">Collectibles - Collect Gem</option>
+					<option value="../ch5/page03.html">Draw HUD Backgroun d</option>
+				</optgroup>
+				<optgroup label="Chapter 6 - Pathfinding">
+					<option value="../ch6/page01.html">Pathfinding Zombie Setup</option>
+					<option value="../ch6/page02.html">Pathfinding</option>
+					<option value="../ch6/page03.html">Zombie Chase State</option>
+					<option value="../ch6/page04.html">Zombie Chase Player</option>
+					<option value="../ch6/page05.html">Returning to Patrol</option>
+				</optgroup>
+				<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+				</optgroup>
+				<optgroup label="Chapter 8 - Audio">
+					<option value="../ch8/page01.html">Audio - SFX</option>
+					<option value="../ch8/page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+				</optgroup>
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="../ch2/page01.html">Importing Player Object</option>
+					<option value="../ch2/page02.html">Creating Collision Volumes in Room</option>
+					<option value="../ch2/page03.html">Finding Distance For Collision From Origin</option>
+					<option value="../ch2/page04.html">Player Collision with Tileset</option>
+					</optgroup>
+					<optgroup label="Chapter 3 - Teleporter">
+					<option value="../cn3/page01.html">Add Teleporter</option>
+					<option value="../ch3/page02.html">Create Sand Room</option>
+					<option value="../ch3/page03.html">Refactor Obj Player Step</option>
+					<option value="../ch3/page04.html">Leaving Room Castle</option>
+					<option value="../ch3/page05.html">Entering Room Desert</option>
+					<option value="../ch3/page06.html">Going Back to Room Castle</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Dialogue Boxes - Basic Message</b>
+	<p>
+		Lets import a sprite to act as an NPC.  This character will not animate, we will just talk to it.  Right click on the <tt><b>Sprites</b> title in the <tt><b>Resources</b></tt> menu and select <tt><b>Create Sprite</b></tt>.  Press the <tt><b>Import</b></tt> button and navigate to <tt><b>TutorialResources | Sprites | spr_tiger.png</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_teleporter_ray.png">here</a>). Name the sprite <tt><b>spr_npc_tiger</b></tt>.
+
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH4/AddNpcTigerSprite.gif" alt="Illustration of computer science variable as a box">
+
+  <p>
+		Now lets create an object from this sprite. Right click on the <tt><b>Objects</b> title in the <tt><b>Resources</b></tt> menu and select <tt><b>Create Object</b></tt>. Bind the <tt><b>spr_npc_tiger</b></tt> to this object and call it <tt><b>obj_npc_tiger</b></tt>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH4/CreateObjNpcTiger.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		You should have in this project a <tt><b>Sprites | Messages | spr_dialobue_messages</b></tt> that holds the buttons for the message box.  There is an OK, Next Arrow, Yes and No button icon for the messaging system.  There is also a  <tt><b>Sprites | Messages | spr_message_background</b></tt> that holds the background for the game messages.
+
+	<p>
+		There are 7 scripts in the <tt><b>Scripts | Messages</b></tt> folder.  You will be using 4 of them and the messaging system uses the other three.  The 4 we care about are:
+
+		<ol>
+		<li><tt><b>draw_dialogue_message(x, y, text, id, player_id, space_above, is_random, typewriter_delay)</b></tt> is used to display a simple message box.  It draws a message box above the character that is speaking and accepts either a simple string or an array of multiple strings.  If there is more than one string then they are all played before the menu closes. </li>
+		<li><tt><b>draw_dialogue_question(x, y, text, id, player_id, space_above, typewriter_delay)</b></tt> has a text array with three components.  This function asks a yes/no question with two answers basing on how the player answers in the game. The first array is a question, the second array string is an answer to the affirmative (player presses yes) and the final third string array is for the negative when the player presses no.</li>
+		<li><tt><b>draw_dialogue_input(x, y, question, variable, id, player_id, space_above, typewriter_delay)</b></tt> asks a quetion and allows the user to input an answer in a text box with the keyboard.  This requires a question in an array or string and an answer to be a single string array.</li>
+		<li><tt><b>scr_message_number()</b></tt> returns a number of which message is being displayed.  This allows you to put login in the character with the text box to make decisions on what should be displayed</li>
+		</ol>
+
+	<p>
+		Lets start with drawing a simple message.  Add a new create event to <tt><b>obj_npc_tiger</b></tt>.  We will do the most simple type of message by just displaying a string.  We will add a basic salutation that the NPC initially asks you.
+
+		<h3><tt><b>obj_npc_tiger: Create Event</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH4/AddBasicSalutation.png" alt="Illustration of computer science variable as a box">
+		
+	
+	<p>
+		We will trigger the box when the player collides with the collision volume of the tiger npg.  Add a collision with obj_player event. We pass the position of the npc to the messaging system, the text message as a string, the id of the instance of the npc and the id of the instance of the player that has triggered the event. We put a margin of 32 pixels above the NPC to separate its head from the message box.  We set is_random to false as since there is noly one message there is no need to randomize the one we play.  We set the typewrite effect to 0 for now.
+
+		<h3><tt><b>obj_npc_tiger: Collision | obj_player Event</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH4/AddASimpleDialogueMessagePlayerCollision.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Open <tt><b>rm_castle</b></tt> and add a new <tt><b>Instance Layer</b></tt> underneath <tt><b>Intances</tt> and call it <tt><b>NPC_Instances</b></tt>.  Drag and drop <tt><b>obj_npc_tiger</b></tt> into the level close to the player. 
+
+		<h3><tt><b>rm_castle</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH4/AddLayerAndNPCToRoom.png" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  Run into the NPC and see the dialogue message pops up.  There are two ways to close the message box.  Either hit the <tt><b>Enter</b></tt> button or walk outside of the collision volume and in both cases the message box dissapears.  There is a 3 second cool down period to where another message box will not appear.
+
+		<h3><tt><b>rm_castle</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH4/BasicMessageBoxOneMessage.gif" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Lets add the typewriter effect to game.  Go back to the collision event in the npc and change the typewiter_delay to 2 frames between letters.
+
+		<h3><tt><b>obj_npc_tiger: Collision | obj_player Event</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH4/SetTypewriteDelayForBasicMessage.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>.  Run into the NPC and see the dialogue message pops up.  Now the text appears slowly. You can't skip the message box until the typewriter completes.  Pressing the <tt><b>Enter</b></tt> button fast forwards and finishes the typing skipping the effect. Next page we will display a message with multiple paragraphs.
+
+		<h3><tt><b>rm_castle</b></tt></h3>
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH4/TypewriterEffectBasicMessage.gif" alt="Illustration of computer science variable as a box">
+		
+		
+		
+
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="../ch3/page04.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page02.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

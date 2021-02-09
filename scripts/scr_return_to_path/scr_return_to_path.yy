@@ -1,8 +1,12 @@
 {
-    "id": "3294def6-ec93-40f2-979b-245f7bc84b10",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_return_to_path",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Helper",
+    "path": "folders/Scripts/Helper.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_return_to_path",
+  "tags": [],
+  "resourceType": "GMScript",
 }

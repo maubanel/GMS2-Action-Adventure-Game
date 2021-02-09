@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch3 - Page 1</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 3 - Teleporter">
+					<option value="page01.html">Add Teleporter</option>
+					<option value="page02.html">Create Sand Room</option>
+					<option value="page03.html">Refactor Obj Player Step</option>
+					<option value="page04.html">Leaving Room Castle</option>
+					<option value="page05.html">Entering Room Desert</option>
+					<option value="page06.html">Going Back to Room Castle</option>
+				</optgroup>
+				<optgroup label="Chapter 4 - Dialogue">
+					<option value="../ch4/page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="../ch4/page02.html">Dialogue Boxes - Array Message</option>
+					<option value="../ch4/page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="../ch4/page04.html">Dialogue Boxes - Question</option>
+					<option value="../ch4/page05.html">Dialogue Boxes - User Input</option>
+				</optgroup>
+				<optgroup label="Chapter 5 - Collectibles">
+					<option value="../ch5/page01.html">Collectibles - Setup Objects</option>
+					<option value="../ch5/page02.html">Collectibles - Collect Gem</option>
+					<option value="../ch5/page03.html">Draw HUD Backgroun d</option>
+				</optgroup>
+				<optgroup label="Chapter 6 - Pathfinding">
+					<option value="../ch6/page01.html">Pathfinding Zombie Setup</option>
+					<option value="../ch6/page02.html">Pathfinding</option>
+					<option value="../ch6/page03.html">Zombie Chase State</option>
+					<option value="../ch6/page04.html">Zombie Chase Player</option>
+					<option value="../ch6/page05.html">Returning to Patrol</option>
+				</optgroup>
+				<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+				</optgroup>
+				<optgroup label="Chapter 8 - Audio">
+					<option value="../ch8/page01.html">Audio - SFX</option>
+					<option value="../ch8/page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+				</optgroup>
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="../ch2/page01.html">Importing Player Object</option>
+					<option value="../ch2/page02.html">Creating Collision Volumes in Room</option>
+					<option value="../ch2/page03.html">Finding Distance For Collision From Origin</option>
+					<option value="../ch2/page04.html">Player Collision with Tileset</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Add Teleporter</b>
+
+	<p>
+		Now we will add the ability to switch between two rooms. We will need a teleporter and teleporter ray sprite.  Find the file in <tt><b>TutorialResources | Sprites | spr_teleporter_ray.png</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_teleporter_ray.png">here</a>).
+		
+	<p>
+		Add a new Sprite by clicking on the <tt><b>Sprite</b></tt> header in the <tt><b>Resource</b></tt> menu and select <tt><b>Create Sprite</b></tt>. Press the Import button and go to the folder you downloaded and select <tt><b>spr_teleporter_ray.png</b></tt> and call the sprite <tt><b>spr_teleporter_ray</b></tt>. 
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/CreateTeleporterRaySprite.gif" alt="Illustration of computer science variable as a box">
+	
+	<p>
+		Now do the exact same thing and create a new sprite and Import <tt><b>spr_teleporter.png</b></tt> and call it <tt><b>spr_teleporter</b></tt>.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ImportTeleporterSprite.gif" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Now we want the teleporter only to trigger when you are in the center middle of it. We will make the collision volume (which is a trigger volume to activate the room change) very small. Open the Collision Mask and change the <tt><b>Mode</b></tt> from <tt><b>Automatic</b></tt> to <tt><b>Manual</b></tt>. Then change <tt><b>Left</b></tt> to <tt><b>50</b></tt>, <tt><b>Right</b></tt> to <tt><b>77</b></tt>, <tt><b>Top</b></tt> to <tt><b>100</b></tt> and <tt><b>Bottom</b></tt> to <tt><b>140</b></tt>. Now we have a collision volume that is triggered inside the teleporter.
+		
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/TeleporterCollisionZone.png" alt="Illustration of computer science variable as a box">
+		
+<p>
+	We need to create a small finite state machine for the player.  We have to watch for a few things:
+	<ul>
+<li>If the player collides with the teleporter go to the second room</li>
+<li>Change state of player to out of game.</li>
+<li>Stop user control</li>
+<li>When in new room start in TELEPORTER state, walk off teleporter</li>
+<li>Change state back to ingame.</li>
+
+<p>
+	Lets use a <b><a href="gms2tutorials:///ShowHelp?keyword=variables">macros</a></b> to store the player state.  Remember a macro is a globally accessible non-mutable (cannot be altered at run time) name that will represent the state of the player. Open  the player create event and add at the top (typically we will place macros before variables):
+
+	<h3><tt><b>obj_player: Create Event</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/PlayerStateMacro.png" alt="Illustration of computer science variable as a box">
+
+	Now lets create variable that stores the macro containing the player state. The player starts the game in <tt><b>INGAME</b></tt> so we will default to this state.  Open the player create event and add to the bottom:
+
+	<h3><tt><b>obj_player: Create Event</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/HoldStateOfPlayer.png" alt="Illustration of computer science variable as a box">
+	
+<p>
+	Create a new <tt><b>Game Object</b></tt> and bind the <tt><b>spr_teleporter</b></tt> sprite to it and call it <tt><b>obj_teleporter</b>.
+	
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/HoldStateOfPlayer.png" alt="Illustration of computer science variable as a box">
+
+<p>
+	Create a new <tt><b>Game Object</b></tt> and bind the <tt><b>spr_teleporter</b></tt> sprite to it and call it <tt><b>obj_teleporter</b></tt>.
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/CreateObjTeleporter.png" alt="Illustration of computer science variable as a box">
+
+<p>
+	Create a new <tt><b>Game Object</b></tt> and bind the <tt><b>spr_teleporter_ray</b></tt> sprite to it and call it <tt><b>obj_teleporter_ray</b></tt>.
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/CreateObjTeleporterRay.png" alt="Illustration of computer science variable as a box">
+
+<p>
+	Go to <tt><b>rm_castle</b></tt> and add a new layer that will be on top of the player.  Call it <tt><b>Block_Player_Tiles</b></tt>:
+	<h3><tt><b>rm_castle:</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/AddBlocksPlayerTileLayerToRoom.png" alt="Illustration of computer science variable as a box">
+
+<p>
+ Now drag and drop <tt><b>obj_teleporter</b></tt> on the <tt><b>Block_Player_Tiles</b></tt> in the castle room:
+ <h3><tt><b>rm_castle:</b></tt></h3>
+ <p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/PlaceTeleporterInCastle.png" alt="Illustration of computer science variable as a box">
+	
+<p>
+	Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_castle</b></tt> and press the eyeball button to make the collision layer visible. Go to the <tt><b>Room Editor</b></tt> tab.  Selecdt the pink brush and make sure you have selected the pencil tool.  Cover the solid parts of the teleporter with collision blocks.
+ 	<h3><tt><b>rm_castle:</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/AddCollisionToTeleporter.png" alt="Illustration of computer science variable as a box">
+
+<p>
+	Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_castle</b></tt> and press the eyeball button to hide the collision layer again. On the next page we will create another room to teleport to!
+	<h3><tt><b>rm_castle:</b></tt></h3>
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/HideTeleporterCollisions.png" alt="Illustration of computer science variable as a box">
+
+</ul>
+<br>
+</p>
+<p>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="../ch2/page04.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page02.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

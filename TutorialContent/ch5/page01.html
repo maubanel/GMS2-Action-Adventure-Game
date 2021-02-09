@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch5 - Page 1</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 5 - Collectibles">
+					<option value="page01.html">Collectibles - Setup Objects</option>
+					<option value="page02.html">Collectibles - Collect Gem</option>
+					<option value="page03.html">Draw HUD Backgroun d</option>
+				</optgroup>
+				<optgroup label="Chapter 6 - Pathfinding">
+					<option value="../ch6/page01.html">Pathfinding Zombie Setup</option>
+					<option value="../ch6/page02.html">Pathfinding</option>
+					<option value="../ch6/page03.html">Zombie Chase State</option>
+					<option value="../ch6/page04.html">Zombie Chase Player</option>
+					<option value="../ch6/page05.html">Returning to Patrol</option>
+				</optgroup>
+				<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+				</optgroup>
+				<optgroup label="Chapter 8 - Audio">
+					<option value="../ch8/page01.html">Audio - SFX</option>
+					<option value="../ch8/page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+				</optgroup>
+				<optgroup label="Chapter 2 - Player Collision">
+					<option value="../ch2/page01.html">Importing Player Object</option>
+					<option value="../ch2/page02.html">Creating Collision Volumes in Room</option>
+					<option value="../ch2/page03.html">Finding Distance For Collision From Origin</option>
+					<option value="../ch2/page04.html">Player Collision with Tileset</option>
+					</optgroup>
+					<optgroup label="Chapter 3 - Teleporter">
+					<option value="../cn3/page01.html">Add Teleporter</option>
+					<option value="../ch3/page02.html">Create Sand Room</option>
+					<option value="../ch3/page03.html">Refactor Obj Player Step</option>
+					<option value="../ch3/page04.html">Leaving Room Castle</option>
+					<option value="../ch3/page05.html">Entering Room Desert</option>
+					<option value="../ch3/page06.html">Going Back to Room Castle</option>
+					</optgroup>
+					<optgroup label="Chapter 4 - Dialogue">
+					<option value="../ch4/page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="../ch4/page02.html">Dialogue Boxes - Array Message</option>
+					<option value="../ch4/page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="../ch4/page04.html">Dialogue Boxes - Question</option>
+					<option value="../ch4/page05.html">Dialogue Boxes - User Input</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Collectibles - Setup Objects</b>
+	<p>
+		Lets add an object for the player to collect in the game.  We will use a rare gem.
+
+	<p>
+		We will need both a full size sprite and a HUD sprite that is smaller. Right click on the <tt><b>Sprites</b> title in the <tt><b>Resources</b></tt> menu and select <tt><b>Create Sprite</b></tt>.  Press the <tt><b>Import</b></tt> button and navigate to <tt><b>TutorialResources | Sprites | spr_gem.png</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_gem.png">here</a>). Name the sprite <tt><b>spr_gem</b></tt>.
+
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH5/GemImportMenu.png" alt="Illustration of computer science variable as a box">
+
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH5/SprGem.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Repeat the above and import <tt><b>spr_gem_hud.png</b></tt>	naming it <tt><b>spr_gem_hud</b></tt>:	
+
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH5/SprGemHUD.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Now we have a lot of sprites in our sprites folder, lets clean them up. Right click on the <tt><b>Sprites</b></tt> title in the <tt><b>Resources</b></tt> menu and select <tt><b>Add Group</b></tt>. Call it <tt><b>Player</b></tt>. Drag the 6 player sprites into the folder.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH5/AddPlayerGroup.gif" alt="Illustration of computer science variable as a box">
+
+<p>
+		Organize the rest of the sprite folder to your liking.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH5/OrganizeRestOfSpritesFolder.gif" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Organize your game objects into groups as well.
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH5/OrganizeObjectsInGroups.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Add a new Game Object and call it <tt><b>obj_gem</b></tt> and bind <tt><b>spr_gem</b></tt> to it and place it in a logical group:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH5/ObjGem.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Add a new Game Object and call it <tt><b>obj_gem_hud</b></tt> and bind <tt><b>spr_gem_hud</b></tt> to it and place it in a logical group:
+
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH5/ObjGemHud.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Next up we will be placing these in the room and collecting them.
+		
+		
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="../ch4/page05.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page02.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

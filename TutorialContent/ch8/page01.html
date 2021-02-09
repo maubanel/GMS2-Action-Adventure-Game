@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<!-- EDIT THIS-->
+		<title>Tutorial - GameMaker Action Adventure Game - Ch8 - Page 1</title>
+		<!-- DO NOT EDIT THIS-->
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../style.css" type="text/css" media="screen" title="style" charset="UTF-8"/>
+		<script type="text/javascript">
+			var changePage = function(){
+				var newPage = document.getElementById("page-select");
+				window.location.replace(newPage.value);
+				}
+		</script>
+
+	</head>
+
+<!-- EDIT THIS - This section is where you can add an index to your tutorial -->
+<body>
+<!-- EDIT THIS - Your Tutorial title -->
+	<h2 style="border-radius:0.5em 0.5em 0 0; margin:0;">Tutorial - Action Adventure Game</h2>
+<!-- EDIT THIS - Here you list the pages in your tutorial, with the current one at the top -->
+		<div class="head">
+			<select id="page-select" onChange="changePage()">
+				<optgroup label="Chapter 8 - Audio">
+				<option value="page01.html">Audio - SFX</option>
+				<option value="page02.html">Audio - Music</option>
+				</optgroup>
+				<optgroup label="---Previous Pages">
+					<optgroup label="Chapter 1 - Overview">
+					<option value="../page01.html"><b>Top Down Adventure Game</b></option>
+					</optgroup>
+					<optgroup label="Chapter 2 - Player Collision">
+					<option value="../ch2/page01.html">Importing Player Object</option>
+					<option value="../ch2/page02.html">Creating Collision Volumes in Room</option>
+					<option value="../ch2/page03.html">Finding Distance For Collision From Origin</option>
+					<option value="../ch2/page04.html">Player Collision with Tileset</option>
+					</optgroup>
+					<optgroup label="Chapter 3 - Teleporter">
+					<option value="../cn3/page01.html">Add Teleporter</option>
+					<option value="../ch3/page02.html">Create Sand Room</option>
+					<option value="../ch3/page03.html">Refactor Obj Player Step</option>
+					<option value="../ch3/page04.html">Leaving Room Castle</option>
+					<option value="../ch3/page05.html">Entering Room Desert</option>
+					<option value="../ch3/page06.html">Going Back to Room Castle</option>
+					</optgroup>
+					<optgroup label="Chapter 4 - Dialogue">
+					<option value="../ch4/page01.html">Dialogue Boxes - Basic Message</option>
+					<option value="../ch4/page02.html">Dialogue Boxes - Array Message</option>
+					<option value="../ch4/page03.html">Chaining Dialogue Boxes Together</option>
+					<option value="../ch4/page04.html">Dialogue Boxes - Question</option>
+					<option value="../ch4/page05.html">Dialogue Boxes - User Input</option>
+					</optgroup>
+					<optgroup label="Chapter 5 - Collectibles">
+					<option value="../ch5/page01.html">Collectibles - Setup Objects</option>
+					<option value="../ch5/page02.html">Collectibles - Collect Gem</option>
+					<option value="../ch5/page03.html">Draw HUD Backgroun d</option>
+					</optgroup>
+					<optgroup label="Chapter 6 - Pathfinding">
+					<option value="../ch6/page01.html">Pathfinding Zombie Setup</option>
+					<option value="../ch6/page02.html">Pathfinding</option>
+					<option value="../ch6/page03.html">Zombie Chase State</option>
+					<option value="../ch6/page04.html">Zombie Chase Player</option>
+					<option value="../ch6/page05.html">Returning to Patrol</option>
+					</optgroup>
+					<optgroup label="Chapter 7 - Front End">
+					<option value="../ch7/page01.html">Front End</option>
+					</optgroup>
+				</optgroup>
+			</select>
+		</div>
+	
+<!-- EDIT THIS - Main tutorial body goes here -->
+<div class="body-scroll">
+	<p>
+	If you want to see tutorial in a separate web browswer window <a href="gms2tutorials:///openBrowser">click here</a>.
+	
+	<p style="color:rgb(85, 109, 130)">
+	<b>Audio - SFX</b>
+	<p>
+		Now I am generally happy with what we have done to date so lets add audio.  Even though there is a lot more we can do, we will wrap up this tutorial by adding sound to the game. If the core mechanic does not include audio, we typically wait until we are happy with what we have before we add audio. 
+		
+		<p>
+			OK, lets import three button sounds.  One for stepping on the button and holding it, one for selecting it and one for walking off of it.  Lets start by finding the location of <tt><b>TutorialResources | Audio | snd_button_hold.wav</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Audio/snd_button_hold.wav">here</a>). Right click on <tt><b>Sounds</b></tt> and select <tt><b>Create Sound</b></tt>.  Press the three dots and select the above file. Call it <tt><b>snd_button_hold</b></tt>.
+
+		<p>
+			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/ImportSoundButtonHold.png" alt="Illustration of computer science variable as a box">
+			
+		
+		<p>
+			Repeat and add another sound for <tt><b>snd_button_pressed</b></tt>
+
+		<p>
+			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/ImportSndButtonPressed.png" alt="Illustration of computer science variable as a box">
+
+		<p>
+			Repeat and add another sound for <tt><b>snd_button_release</b></tt>
+
+			<p>
+			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/ImportSndButtonReleased.png" alt="Illustration of computer science variable as a box">
+			
+		<p>
+			Now lets call the sound effects, put them as a second priority and set them to non-looping.  Open <tt><b>scr_fe_text</b></tt> and add a sound for each image change state of the buttons in the FE.
+<h3><tt><b>Helper | scr_fe_text</b></tt></h3>
+			<p>
+			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/AddButtonCallsToFEText.png" alt="Illustration of computer science variable as a box">
+			
+			<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Walk around and press the buttons in the FE screen and listen to the three audio states.
+		
+		<p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/52O9K1iZL50" frameborder="0" allow=" encrypted-media;" allowfullscreen></iframe>
+			
+	<p>
+		Lets add a sound when leaving the credits screen.  Open <tt><b>obj_credits_conroller</b></tt> and add:
+
+		<h3><tt><b>obj_credits_controller</b></tt></h3>
+
+	<p>
+			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/PlayQuitCreditsSound.png" alt="Illustration of computer science variable as a box">
+
+	<p>
+		Lets make a footstep sound in the game. Create a new sound and press the three dots icon to load <tt><b>snd_footsteps.wav</b></tt> and call it <tt><b>snd_footsteps</b></tt>. 
+		
+	<p>
+			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/SndFootstepsImports.png" alt="Illustration of computer science variable as a box">
+	
+	<p>
+			Open <tt><b>scr_player_movement</b></tt> and add a footstep sound to the game.  Make sure you don't launch the sound multiple times by checkint to see if it is already playing and stop playign footsteps when the player stops:
+			<p>
+			<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/AddFootstepSounds.png" alt="Illustration of computer science variable as a box">
+
+			<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Confirm that quitting the credits screen makes a sound and also make sure that footsteps work in the front end and game:
+		
+	<p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/IM30xosy-Sw" frameborder="0" allow=" encrypted-media;" allowfullscreen></iframe>
+
+	<p>
+		Now lets have a sound for picking up the game. Create a new Sound file and load file <tt><b>snd_gem.wav</b></tt> and call it <tt><b>snd_gem</b></tt>.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/SndGemImport.png" alt="Illustration of computer science variable as a box">
+		
+	<p>
+		Then open the gem object and add to the collision event script and play the gem sound:
+	<h3><tt><b>obj_gem: Collision | obj_player</b></tt></h3>
+		<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/PlayGemSound.png" alt="Illustration of computer science variable as a box">
+	<p>
+
+	<p>
+		Now lets have a final sound effect for walking through the teleporter. Create a new Sound file and load file <tt><b>snd_transporter.wav</b></tt> and call it <tt><b>snd_transporter</b></tt>.
+	
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/ImportSndTransporter.png" alt="Illustration of computer science variable as a box">
+		
+		<p>
+		Now lets open up <tt><b>obj_player</b></tt> collision event with the transporter and play the transporter sound.  Also, lets stop the footstep sound from playing:
+		<h3><tt><b>obj_player: Collision | obj_teleporter</b></tt></h3>
+	<p>
+		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH8/StartTransporterSound.png" alt="Illustration of computer science variable as a box">
+
+
+	<p>
+		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Make sure the gem and teleporter sound play.  Next up lets add music to the game.
+		
+	<p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/b3NxK5J_72U" frameborder="0" allow=" encrypted-media;" allowfullscreen></iframe>
+
+</div>
+
+<div class="footer">
+	<div class="buttons">
+		<div class="clear">
+			<div style="float:left"> <!-- Button commented out as we are on the index and can't go back -->
+				<a href="../ch7/page01.html"  class="prev">
+				<div id="button-prev"></div> 
+				</a>
+			</div>
+			<div style="float:right"> <!-- Set the next page to go to here -->
+				<a href="page02.html" class="next">
+					<div id="button-next"></div>
+				</a>
+			</div>
+		</div>	
+	</div>
+<!-- Footer copyright notice - set this to your own or whatever is required (remove the text but leave the <h5> tags to just have the bar) -->
+<h5>&copy; Copyright Mauby Games 2018</h5>
+</div>
+
+</body>
+</html>
+
+
+

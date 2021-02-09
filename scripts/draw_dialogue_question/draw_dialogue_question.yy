@@ -1,8 +1,12 @@
 {
-    "id": "7af53ece-5362-43fa-b122-b642b37ec433",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "draw_dialogue_question",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Messages",
+    "path": "folders/Scripts/Messages.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "draw_dialogue_question",
+  "tags": [],
+  "resourceType": "GMScript",
 }
