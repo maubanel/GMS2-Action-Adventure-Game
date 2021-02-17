@@ -81,90 +81,123 @@
 	<b>Refactor Obj Player Step</b>
 
 <p>
-	To make our state machine a bit easier we are going to clean up our player step event.  Since it is doing three things, getting controls, moving player in the room and updating animations we can put these in three scripts as functions and then call them reducing clutter and making the logic a bit easier to understand.
+	To make our state machine a bit easier we are going to clean up our player step event.  Since it is doing four things, getting controls, moving player, collision detection and updating animations, we can put these in four scripts as functions and then call them reducing clutter and making the logic a bit easier to understand and kepp up to date.  Right click and select <tt><b>Create Script</b></tt> and call it <tt><b>scr_player_controls</b>
+
 
 <p>
-	We will be creating three function scripts <tt><b>scr_player_controls</b></tt>, <tt><b>scr_player_movement</b></tt> and <tt><b>scr_player_animation</b></tt>.
-
-	<h3><tt><b>obj_player: Step Event</b></tt></h3>
-
-<p>
-	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/PlayerStepTo3Functions.png" alt="Illustration of computer science variable as a box">
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerControlsEmpty.jpg" alt="create a script called scr_player_controls">
 
 	<p>
-	Copy and paste each section into <tt><b>scr_player_controls</b></tt>, <tt><b>scr_player_movement</b></tt> and <tt><b>scr_player_animation</b></tt> that you will create.  Then call each of these scripts in the Step event:
+	Copy and cut and the controls (line 7 through 77) and leave the <tt><b>x_axis</b></tt> & <tt><b>y_axis</b></tt> variables alone.
 
 	<h3><tt><b>obj_player: Step Event</b></tt></h3>
 
 <p>
-	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/SeparatePlayerStep3Functions.gif" alt="Illustration of computer science variable as a box">
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/SelectControlsInScript.jpg" alt="select all the controls in the obj_player script">
 	
+	<p>
+	Paste the controls into <tt><b>x_axis</b></tt> & <tt><b>scr_player_controls</b></tt>.
+
+	<h3><tt><b>scr_player_controls</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/FinishedPlayerControls.jpg" alt="paste controls into the scr_player_controls script">
+
+	<p>
+	Now we need to share <tt><b>x_axis</b></tt> & <tt><b>y_axis</b></tt> between scripts so they can no longer be vars.  Open up the <tt><b>obj_player Create Event</b></tt> 
+
+	<h3><tt><b>obj_player: Create Event</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/PlayerCreateAxisVars.jpg" alt="add x and y axis variables to obj_player create">
+
+	<p>
+	Open up the <tt><b>step</b></tt> event and remove the <tt><b>var</b></tt> so that the controls are set to 0 each frame (we don't want the last frame's movements to apply here).  Then call the newly created script <tt><b>scr_player_control()</b></tt>.
+
+	<h3><tt><b>obj_player: Step Event</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ResetVarCallFunc.jpg" alt="zero out controls call new function">
+
+
+	<p>
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt> and you should notice no difference.
+
+	<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/GameTheSame.gif" alt="zero out controls call new function">
+	
+
+	<p>
+	Lets repeat this for the player movement. Copy and cut the script that moves the player (7 lines including comments).  Replace it with a call to a script we will add <tt><b>scr_player_movement()</b></tt>.
+
+	<h3><tt><b>obj_player: Step Event</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/AddScrMovementToStep.jpg" alt="copy and cut movement and call scr_player_movement()">
 <p> 
-	So your four files should look lik:
-	
-<h3><tt><b>obj_player: Step Event</b></tt></h3>
-<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/PlayerStepTo3Functions.png" alt="Illustration of computer science variable as a box">
-
-<h3><tt><b>scr_player_controls</b></tt></h3>
-<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerControls.png" alt="Illustration of computer science variable as a box">
-
-<h3><tt><b>scr_player_movement</b></tt></h3>
-<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerMovement.png" alt="Illustration of computer science variable as a box">
-
-<h3><tt><b>scr_player_animation</b></tt></h3>
-<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerAnimation.png" alt="Illustration of computer science variable as a box">
 
 	<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Woops we have a run-time error:
+	Right click on <tt><b>Scripts</b></tt> and press <tt><b>Create Script</b></tt> and name it <tt><b>scr_player_movement</b></tt>.  Paste the script inside the curly braces.
+
+	<h3><tt><b>scr_player_movement</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerMovement.jpg" alt="paste text into scr_movement">
+<p> 
 
 	<p>
-		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ErrorXAxisYAxis.png" alt="Illustration of computer science variable as a box">
-	
-	<p>
-		We have a problem when we use the keyword <tt><b>var</b></tt> we are making this variable local to a single script (or event script).  Now we use <tt><b>x_axis</b></tt> and <tt><b>y_axis</b></tt> in all four scripts so we need this to be accessible by the entire game object.  Copy and cut these two lines out of <tt><b>scr_player_movement</b></tt>:
-
-		<h3><tt><b>scr_player_movement</b></tt></h3>
-	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/RevoveXYAxisFromControlScr.png" alt="Illustration of computer science variable as a box">
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt> and you should notice no difference.
 
 	<p>
-		Paste it into the <b>VERY TOP</b> of the  step event and remove the <tt><v>var</v></tt> to make it accessible to all scripts in the game objectL
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/GameTheSame.gif" alt="zero out controls call new function">
+	<p>
+	Lets repeat this for the player collision detection. Copy and cut the script that handles player collision.  Replace it with a call to a script we will add <tt><b>scr_player_collision()</b></tt>.
 
-		<h3><tt><b>obj_player: Step Event</b></tt></h3>
-	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/MoveXYAxisBackToStep.png" alt="Illustration of computer science variable as a box">
-		
-	<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now it should be back to exaclty the same as it was before we refactored the step event.
+	<h3><tt><b>obj_player: Step Event</b></tt></h3>
 
-	<p>
-		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/BackToNormal.gif" alt="Illustration of computer science variable as a box">
-	
-	<p>
-		Now we can do the same thing with the collision logic in the player step and separate it into a <tt><b>scr_player_collision</b></tt> script.  Copy and cut the collision logic:
-
-		<h3><tt><b>obj_player: Step Event</b></tt></h3>
-	<p>
-		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/CutAndPasteCollisionLogic.png" alt="Illustration of computer science variable as a box">
-		
-	<p>
-		Paste the text into a new <tt><b>scr_player_collision</b></tt> script:
-
-		<h3><tt><b>scr_player_collision</b></tt></h3>
-		<p>
-		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/CreateNewScrCollisionScript.png" alt="Illustration of computer science variable as a box">
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/AddScrCollisionToStep.jpg" alt="copy and cut collision and call scr_player_collision()">
+<p> 
 
 	<p>
-		Go back to the player step and call this newly created script at the bottom (the order matters!).  Isn't this much easier to look at and understand?
+	Right click on <tt><b>Scripts</b></tt> and press <tt><b>Create Script</b></tt> and name it <tt><b>scr_player_collision</b></tt>.  Paste the script inside the curly braces.
 
-		<h3><tt><b>obj_player: Step Event</b></tt></h3>
-	<p>
-		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/AddCollisionToStep.png" alt="Illustration of computer science variable as a box">
+	<h3><tt><b>scr_player_collision</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerCollision.jpg" alt="paste text into scr_player_collision()">
+<p> 
 
 	<p>
-		Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now it should be back to exaclty the same as it was before we separated the collision logic. Next up we will start to deal with the room transition.
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt> and you should notice no difference.
 
 	<p>
-		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/GameBackToNormal.png" alt="Illustration of computer science variable as a box">
-		
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/GameTheSame.gif" alt="zero out controls call new function">
+	<p>
+	Lets repeat this for the player animation. Copy and cut the script that selects the sprite for the player.  Replace it with a call to a script we will add <tt><b>scr_player_animation()</b></tt>.
+
+	<h3><tt><b>obj_player: Step Event</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/AddScrMovementToAnimation.jpg" alt="copy and cut movement and call scr_player_movement()">
+<p> 
+
+	<p>
+	Right click on <tt><b>Scripts</b></tt> and press <tt><b>Create Script</b></tt> and name it <tt><b>scr_player_animation</b></tt>.  Paste the script inside the curly braces.
+
+	<h3><tt><b>scr_player_animation</b></tt></h3>
+
+<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/ScrPlayerAnimation.jpg" alt="paste text into scr_movement">
+<p> 
+
+	<p>
+	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt> and you should notice no difference.
+
+	<p>
+	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/GameTheSame.gif" alt="zero out controls call new function">
+
+
 <br>
 </p>
 <p>
