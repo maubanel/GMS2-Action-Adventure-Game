@@ -81,7 +81,7 @@
 	<b>Leaving Room Castle</b>
 
 <p>
-	Now we want to restrict player movement to when the player is in <tt><b>INGAME</b></tt> state. So we will add a check to the <tt><b>obj_player</b></tt>> Step Event:
+	Now we want to restrict player movement to when the player is in the teleporter by changing the state<tt><b>INGAME</b></tt> state. So we will add a check to the <tt><b>obj_player</b></tt> Step Event:
 <h3><tt><b>obj_player: Step Event</b></tt></h3>
 	<p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/MoveOnlyINGAME.png" alt="Illustration of computer science variable as a box">
@@ -93,7 +93,7 @@
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/BackToNormal.gif" alt="Illustration of computer science variable as a box">
 	
 		<p>
-	Now we want to restrict player movement to when the player is in <tt><b>INGAME</b></tt> state. So we will add a check to the <tt><b>obj_player</b></tt> Collision | obj_teleporter Event:
+	When the player is in the teleporter we want to change the player state.  So first we need to check for a collision with the teleporter in <tt><b>obj_player</b></tt> Collision | obj_teleporter Event:
 <h3><tt><b>obj_player: Collision | obj_teleporter Event</b></tt></h3>
 	<p>
 	<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/AddStateChangeOnTeleporterCollision.gif" alt="Illustration of computer science variable as a box">
@@ -116,7 +116,7 @@
 			Play the game and make sure the player switches to the appropriate idle animation.
 
 	<p>
-		Now we want to add the Teleporter Ray and  to right after the state change these two lines:
+		Now we want to add the Teleporter Ray and  to right after the state change these two lines. (I believe the layer is Block_Player_Tiles and NOT Blocks...)
 
 	<p>
 		<img class="center" src="http://marcaubanel.com/gamemaker/GMS2-Images/Action-Adventure-Game/CH3/SpawnRay.png" alt="Illustration of computer science variable as a box">
