@@ -17,7 +17,7 @@ Lets look at how we have a level that is larger than a single screen.  This way 
 
 Go back to `rm_castle` and turn off  `Background_Transparent_Tiles`, `Background_Opaque_Tiles` and  `Background_Animated_Tiles`.  Turn them back on, we see we have animated water, solid opaque ground and building and a graveyard and bridge made mostly with transparent tiles.  Remember than layers on top of each other affets the render order. So the transparent are on top of the opaque which is on top of the animated tiles. Only half the level is completed.  You will complete the rest later.
 
-
+https://user-images.githubusercontent.com/5504953/152532272-599f88cb-17b7-4b28-909f-216bbfe0a42d.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
