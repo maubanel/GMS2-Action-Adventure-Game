@@ -31,8 +31,9 @@ Refresh your web browser when the next transitional webpage loads up.
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+A link for you repository will pop up.  Click on the link.
 
-![](images/linkToGitHub.png)
+![click on link](images/linkToGitHub.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
