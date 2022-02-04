@@ -9,6 +9,7 @@ Lets now take a look at a level that is larger than a single screen and putting 
 ## In This Tutorial
 
 * Setting Up Room.  How to create a level larger than screen.
+* Dealing with player collisions
 
 
 ## Software Needed 
@@ -23,8 +24,9 @@ Lets now take a look at a level that is larger than a single screen and putting 
 ## Table of Contents
 
 <kbd></kbd> &nbsp;&nbsp; [Setting Up](setting-up/README.md#user-content-setting-up) <br>
-
 <kbd></kbd> &nbsp;&nbsp; [Room Size](room-size/README.md#user-content-room-size) <br>
+<kbd></kbd> &nbsp;&nbsp; [Importing Player Animations](player-anim/README.md#user-content-importing-player-animations) <br>
+
 
 <!-- LICENSE -->
 ## License
