@@ -57,7 +57,7 @@ Open the **spr_player_right** up again and change the framerate to `12` **FPS**.
 
 Hit the <kbd>Play</kbd> button on the sprite and it should animate fairly qiuckly like so:
 
-
+https://user-images.githubusercontent.com/5504953/152546988-1e473998-528f-49bb-a00f-06bfde5d2b52.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
