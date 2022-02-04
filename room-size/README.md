@@ -31,7 +31,13 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now the problem is that our room is 4096 x 4096. We want it to be the standard default 1024 by 768. How do we create a camera in the level that follows our character so we can navigate this level? Double click your `rm_castle` and look at the bottom left for Viewports and Cameras.
+
+Click on the arrow to open the menu. Click the tab `Viewports and Cameras` in the `Room | Properties` section.   Click to open the triangle for `Viewport 0`. Click on the radio button for `Enable Viewports` and `Clear Viewport Background` (which clears untiled areas with the background color).  In the  `Viewport 0` click on the `Visible` radio button. Then keep the Camera and Vieport properties at their default settings which is 1024 x 768.
+
+A white box appears in the level to show where the viewport will start at.
+
+![use viewports and make viewport 0 visible](images/useViewports.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
