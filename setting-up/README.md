@@ -23,16 +23,16 @@ The first thing you need to do is clone the project.  Got to [Github Classrom GM
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
+Refresh your web browser when the next transitional webpage loads up.
 
-![](images/.png)
+![refresh browser](images/refreshBrowser.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 
-
-![](images/.png)
+![](images/linkToGitHub.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
