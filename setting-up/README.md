@@ -39,9 +39,9 @@ A link for you repository will pop up.  Click on the link.
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Press the **Pencil** button on the top right of the **README.md** file and change the name to your name!  Press the <kbd>Commit</kbd> button.
 
-
-![](images/.png)
+![add name to readme file](images/editREADME.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
