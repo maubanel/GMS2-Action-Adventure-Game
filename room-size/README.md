@@ -43,7 +43,11 @@ A white box appears in the level to show where the viewport will start at.
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
+
+Now it plays the top left corner of the level and is only playing a portion of the level.  This is exactly what we wanted.  This is the same part of the level that the whitebox showed in the eidtor.  We will have the camera follow the player on the next page so they can explore the entire level.
+
+![play the game and notice it is using the viewport](images/usingViewportsInGame.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
