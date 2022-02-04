@@ -95,8 +95,9 @@ Now for left and right I can just invert the sprite as it is symmetrical on the 
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Open up 
-![alt_text](images/p1InRoom.png)
+Open up **rm_castle** and make sure you are on the **Instances** layer.  Drag a copy of **obj_player** into the top left corner of the room inside the white box.
+
+![drag obj_player in rm_castle](images/p1InRoom.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
