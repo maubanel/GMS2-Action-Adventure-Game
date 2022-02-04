@@ -8,18 +8,8 @@ Lets now take a look at a level that is larger than a single screen and putting 
 
 ## In This Tutorial
 
-* Creating art assets
-* Space ship vehicle physics
-* Shooting
-* Animating obstacles
-* Audio sound effects
-* Add variables and comments to all scripts without changing functionality
-* Add flame behind ship when accelerating
-* Add ship explosion animation
-* Change player death and end game timing
-* Add friction and maximum speed
-* Use timeline for spawning rocks and add custom spawning script
-* Trigger waves either by time or by score
+* Setting Up Room.  How to create a level larger than screen.
+
 
 ## Software Needed 
 * Tested on GameMake Studio2.3.7.606
@@ -34,6 +24,7 @@ Lets now take a look at a level that is larger than a single screen and putting 
 
 <kbd></kbd> &nbsp;&nbsp; [Setting Up](setting-up/README.md#user-content-setting-up) <br>
 
+<kbd></kbd> &nbsp;&nbsp; [Room Size](room-size/README.md#user-content-room-size) <br>
 
 <!-- LICENSE -->
 ## License
