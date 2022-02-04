@@ -23,7 +23,9 @@ https://user-images.githubusercontent.com/5504953/152532272-599f88cb-17b7-4b28-9
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Notice that the room size is larger than a screen and represents the entire level and is 4096 by 4096. See that the entire level is scaled to fit on the screen and is a square ratio.  The game engine scaled it down so I can see it on my screen.
+
+![square room](images/baseLevel.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
