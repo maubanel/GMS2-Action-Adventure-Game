@@ -15,7 +15,7 @@ Lets look at how we have a level that is larger than a single screen.  This way 
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Go back to `rm_castle` and turn off  `Background_Transparent_Tiles`, `Background_Opaque_Tiles` and  `Background_Animated_Tiles`.  Turn them back on, we see we have animated water, solid opaque ground and building and a graveyard made mostly with transparent tiles.  Remember than layers on top of each other affets the render order. So the transparent are on top of the opaque which is on top of the animated tiles. Only half the level is completed.  You will complete the rest later.
+Go back to `rm_castle` and turn off  `Background_Transparent_Tiles`, `Background_Opaque_Tiles` and  `Background_Animated_Tiles`.  Turn them back on, we see we have animated water, solid opaque ground and building and a graveyard and bridge made mostly with transparent tiles.  Remember than layers on top of each other affets the render order. So the transparent are on top of the opaque which is on top of the animated tiles. Only half the level is completed.  You will complete the rest later.
 
 
 
