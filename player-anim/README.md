@@ -126,7 +126,13 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-![alt_text](images/.png)
+Now to make this constant we need to add some logic. In the horizontal axis:
+
+1. Check to see if a horizontal button is pressed and vertical button is not.
+2. Or check to see if a horizontal button is pressed and it is the last button pressed (so pressed more recently than a vertical button)
+3.  If either of the above are true then move horizontally else move vertically.
+
+![alt_text](images/CheckForLastKey.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
