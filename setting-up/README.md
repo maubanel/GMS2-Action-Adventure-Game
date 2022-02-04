@@ -55,7 +55,7 @@ Select the <kbd>Code</kbd> button and select <kbd>Open With GitHub Desktop</kbd>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-**GitHub Desktop** opens up with the folder url ready to clone.  Select a folder to install the software to and press the <kbd>Clone</kbd> button.
+**GitHub Desktop** opens up with the folder url ready to clone.  Make sure on **PC** it is NOT a **OneDrive** folder. Select a folder to install the software to and press the <kbd>Clone</kbd> button.
 
 ![select directory then clone repository](images/cloneRepository.png)
 
@@ -63,8 +63,9 @@ Select the <kbd>Code</kbd> button and select <kbd>Open With GitHub Desktop</kbd>
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Navigate to the folder you just cloned and double click the `.yyp` project file.
 
-![alt_text](images/.png)
+![open up .yyp project](images/openProject.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
