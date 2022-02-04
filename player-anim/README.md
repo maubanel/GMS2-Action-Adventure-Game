@@ -57,8 +57,6 @@ Open the **spr_player_right** up again and change the framerate to `12` **FPS**.
 
 Hit the <kbd>Play</kbd> button on the sprite and it should animate fairly qiuckly like so:
 
-
-
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
