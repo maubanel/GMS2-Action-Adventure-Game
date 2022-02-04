@@ -17,7 +17,7 @@
 
 The first thing you need to do is clone the project.  Got to [Github Classrom GMS2-Action-Adventure-Game-Starter](https://classroom.github.com/a/jbdkir0E) and accept the assignment.
 
-![](images/.png)
+![accept github classroom invitation](images/AcceptGitHubClassroom.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
