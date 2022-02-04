@@ -55,8 +55,9 @@ Select the <kbd>Code</kbd> button and select <kbd>Open With GitHub Desktop</kbd>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
+**GitHub Desktop** opens up with the folder url ready to clone.  Select a folder to install the software to and press the <kbd>Clone</kbd> button.
 
-![alt_text](images/.png)
+![select directory then clone repository](images/cloneRepository.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
