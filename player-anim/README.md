@@ -79,7 +79,7 @@ Now change the **Origin** to `Middle Center`.
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Change the **Frames per Second** to `12` and the **Origin** to `Middle Center`.
+Change the **Frames per Second** to `12`**Fps** and the **Origin** to `Middle Center`.
 
 ![set origin to middle center and fps to 12](images/fpsOriginPUp.png)
 
