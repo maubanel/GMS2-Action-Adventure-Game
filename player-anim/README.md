@@ -71,7 +71,7 @@ Now change the **Origin** to `Middle Center`.
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-*Right click* on **Sprites** and select **New | Sprite** and name it `spr_player_up`.
+*Right click* on **Sprites** and select **New | Sprite** and name it `spr_player_up`. Repeat the above process and you should change **Vertical Cell Offset** to `1`. Press the <kbd>Convert</kbd> button.
 
 ![alt_text](images/spr_player_up.png)
 
@@ -79,7 +79,9 @@ Now change the **Origin** to `Middle Center`.
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Change the **Frames per Second** to `12` and the **Origin** to `Middle Center`.
+
+![set origin to middle center and fps to 12](images/fpsOriginPUp.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
