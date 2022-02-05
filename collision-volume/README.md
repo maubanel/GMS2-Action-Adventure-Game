@@ -43,7 +43,7 @@ Create a new **Tileset** and call it `tls_collision`. Assign the `spr_collision`
 
 Click on Tileset Properties button and set the Tile Width and Tile Height to 32:
 
-![alt_text](images/.png)
+![change tileset width and height ot 32](images/resizeTileset.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
