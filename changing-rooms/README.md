@@ -40,11 +40,23 @@ Now we want the teleporter only to trigger when you are in the center middle of 
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+We need to create a small finite state machine for the player.  We have to watch for a few things:
+
+* If the player collides with the teleporter go to the second room
+* Change state of player to out of game.
+* Stop user control
+* When in new room start in TELEPORTER state, walk off teleporter
+* Change state back to ingame.
+
+Lets use an enumerator to store the player state.  An enumerator is a constant which makes it non-mutable (cannot be altered at run time) name that will represent the state of the player. Open the player create event and add at the top (typically we will place macros before variables):
+
+![create player_state enumerator](images/createEnum.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+
+Now lets create variable that stores the macro containing the player state. The player starts the game in INGAME so we will default to this state.  Open the **obj_player | Create** event and add to the bottom:
 
 ![alt_text](images/.png)
 
