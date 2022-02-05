@@ -92,13 +92,60 @@ https://user-images.githubusercontent.com/5504953/152658087-5044cd66-775b-4a32-b
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now lets have the camera follow the player as well as starting in the middle of the castle.  Open up **rm_castle** and move the player to the center.  Open up **Viewport 0** and add `obj_player` to **Object Folowing**.  Lets adjust where the camera is at the begining of the level and make **X Pos** equal to `306` and **Y Pos** to `400`.  It should look like so:
+
+![camera follow player and start in correct position](images/adjustCamInRoom.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+Lets do the other 3 directions.  Copy and paste the following to resolve collisions for moving left, down and up.
 
-![alt_text](images/.png)
+```
+else if (hspeed < 0) // Check top left and bottom for collision when moving left
+{
+	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top);
+	var t2 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom);
+
+	if (t1 != 0 || t2 != 0)
+	{
+		//Forces player back on the x to a 32 pixel boundary
+		// of the right hand side collision volume. Then
+		//	adjust the position to the location of the origin 
+		    x = (((bbox_left + left_offset) & ~31)) -2  +  left_offset;
+	}
+}
+
+else if (vspeed > 0) // Check bottom left and bottom right for collision when moving down
+{
+	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom);
+	var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom);
+
+	if (t1 != 0 || t2 != 0 )
+	{
+		//Forces player back on the x to a 32 pixel boundary
+		// of the right hand side collision volume. Then
+		//	adjust the position to the location of the origin 
+		y = ((bbox_bottom & ~31) -1 ) + bottom_offset;
+	}
+}
+
+
+else if (vspeed < 0) // Check top left and top right for collision when moving up
+{
+	var t1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_top);
+	var t2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_top);
+
+	if (t1 != 0 || t2 != 0)
+	{
+		//Forces player back on the x to a 32 pixel boundary
+		// of the right hand side collision volume. Then
+		//	adjust the position to the location of the origin 
+		y = (((bbox_top + 32) & ~31)) + top_offset;
+	}
+}
+```
+![add collision for three other directions](images/addThreeCollisions.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
