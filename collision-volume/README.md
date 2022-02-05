@@ -6,7 +6,11 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+    Now we use sprites for backgrounds and non-moving objects because they render faster than game objects (which include Sprites). Objects have a lot of overhead (all the variables and functionality that come with this class) that make them much more &quot;expensive&quot;. 
+
+    Now we don't know what tiles in our layer we should collide with. We are going to create a layer for collisions that will be hidden in the final game. It will have one type of tile attached to it.  
+		
+		
 
 <br>
 
@@ -14,6 +18,8 @@ Chapter introduction here.
 
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
+
+Lets start by creating a new sprite and call it `spr_collision`. Change the size to 32 by 32. Click the <kbd>Edit Image</kbd> button. We will create a 32 by 32 block with a solid color. Use the bucket tool to fill in with a pink color (or any other color that is not being used in your level currently). Double click on the layer and change the Opacity to 35%.
 
 ![alt_text](images/.png)
 
