@@ -19,7 +19,7 @@ What we will be doing is checking to see if the side in which the player is movi
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-We will be using `user_get_at_pixel(tilemap_element_id, x, y)` to see if there is a collision tile at the point in space.  Lets find two points in the level, one that has a collision and one that doesn't to test to see what this function returns. So at room position (11, 75)is on top of a collision volume and (47, 113) is in an open area. To do this put the cursor in the middle of the tile and the room x,y will be shown in the bottom left corner of the room. A
+We will be using `tilemap_get_at_pixel(tilemap_element_id, x, y)` to see if there is a collision tile at the point in space.  Lets find two points in the level, one that has a collision and one that doesn't to test to see what this function returns. So at room position (11, 75) is on top of a collision volume and (47, 113) is in an open area. To do this put the cursor in the middle of the tile and the room x,y will be shown in the bottom left corner of the room. A
 
 ![pick collision and empty slot](images/pickTwoSpots.png)
 
@@ -27,9 +27,9 @@ We will be using `user_get_at_pixel(tilemap_element_id, x, y)` to see if there i
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-dd to **obj_player | Step** event the following debug message to see what we get. 
+Add to the bottom of **obj_player | Step** event the following debug message to see what we get. I expect a 1 (true) for (11, 75) and 0 (false) for (47, 113). This would confirm we are getting a response on whether our collision tile is in this quadrant.
 
-![](images/.png)
+![check if collision call works](images/debugMessageCollision.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
