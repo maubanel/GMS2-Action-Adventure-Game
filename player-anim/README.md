@@ -140,6 +140,8 @@ Now to make this constant we need to add some logic. In the horizontal axis:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you should be able to turn while still holding the another button down consistently on both axis.
 
+https://user-images.githubusercontent.com/5504953/152624841-a485a792-b9e1-4464-9ca9-09d62a52db56.mp4
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
