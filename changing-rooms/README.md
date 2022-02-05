@@ -26,7 +26,7 @@ Download the teleporter ray sprite here: [spr_teleporter_ray.png](images/spr_tel
 
 Now do the exact same thing and create a new sprite and Import [spr_teleporter.png](images/spr_teleporter.png).
 
-![alt_text](images/.png)
+![import teleporter into a new sprite](images/sprTeleporter.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
