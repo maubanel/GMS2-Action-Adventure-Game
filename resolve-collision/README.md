@@ -160,13 +160,15 @@ https://user-images.githubusercontent.com/5504953/152658933-1ed150f3-d286-4ce2-b
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now we are not meant to see the collision volumes, they should be invisible. When you are happy with them open **rm_castle** and select layer **Collision** and press the eyeball button to hide the layer.
+
+![hide collisions in game](images/hideInGame.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can walk around and the player should stop at the correct spot in the level. This works even though we can't see the tiles!
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
