@@ -6,30 +6,29 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-We need to get access to the TileSheet and check on each corner of the player's collision volume if there is a collision with the player.  If there is we will move the player outside the collision volume.  We first need to get access to the collision layer we just created.
+We need to get access to the **TileSheet** and check on each corner of the player's collision volume if there is a collision between the player and the tile(s) they are standing on.  If there is we will move the player back outside the collision volume in the **End Step**.  Remember when we are using `vspeed` and `hspeed` the player does not move until AFTER the **Step Event** runs.  We first need to get access to the collision layer we just created.
 
 <br>
 
 ---
 
-
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-We will be using a function called <a href="gms2tutorials:///ShowHelp?tag=layer_get_id">layer_get_id(layer_name)</a> to get access to the layer. Remember layer_name is a string so it is the name of the layer surrounded by quotation marks, for example: "the_name_of_the_layer".
+We will be using a function called `layer_get_id(layer_name) `to get access to the layer. Remember `layer_name` is a string so it is the name of the layer surrounded by quotation marks, for example: "the_name_of_the_layer".
 
-Now double click on obj_player and edit the Create Event and add get a variable to hold the reference to the id of the Collision layer we created in the room:
+Now *double click* on `obj_player` and edit the **Create Event** and add get a variable to hold the reference to the id of the **Collision** layer we created in the room:
 
-![alt_text](images/.png)
+![get layer id](images/getLayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-Now that we have the  ID for the layer, we need a variable to store the reference to the tilemap that is used by that layer.
+Now that we have the  **ID** for the layer, we need a variable to store the reference to the tilemap that is used by that layer. Since a layer can be of different types (game objects, backgrounds etc..) we need access to the **Tilemap**.
 
-We will be using <a href="gms2tutorials:///ShowHelp?tag=layer_tilemap_get_id">layer_tilemap_get_id(layer_id)</a> to get access to the tilemap so we can check whether there is a collision on a specific point in the room. This function can be used to retrieve the unique ID value of the tilemap element on a layer.
+We will be using `layer_tilemap_get_id(layer_id)` to get access to the tilemap so we can check whether there is a collision on a specific point in the room. This function can be used to retrieve the **unique ID** value of the tilemap element on a layer.
 
-<h3>obj_player: Create Event </h3>
+Open up **obj_player | Create Event**.
 
 ![alt_text](images/.png)
 
@@ -37,9 +36,9 @@ We will be using <a href="gms2tutorials:///ShowHelp?tag=layer_tilemap_get_id">la
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We also need to know how far the edge of the collision volume from the Origin of the sprite for each direction.  We will be using <a href="gms2tutorials:///ShowHelp?tag=sprite_get_bbox_left">sprite_get_bbox_left(sprite_index)</a> and <a href="gms2tutorials:///ShowHelp?tag=sprite_get_xoffset">sprite_get_xoffset(sprite_index)</a>
+We also need to know how far the edge of the collision volume from the **Origin** of the sprite for each direction.  We will be using `sprite_get_bbox_left` to get the left hand pixel of the collision mox.
 
-What will the return us if we subtract sprite_get_xoffset(sprite_index) from sprite_get_bbox_left(sprite_index)?  We get the distance from the origin to the edge of the collision volume.  This will be how much we need to displace the character by relative to the edge of the collision in game.  Lets look at a diagram:
+What will be the return  if we subtract `sprite_get_xoffset(sprite_index) `from `sprite_get_bbox_left(sprite_index)`?  We get the distance from the origin to the edge of the collision volume.  This will be how much we need to displace the character by relative to the edge of the collision in game.  Lets look at a diagram:
 
 ![alt_text](images/.png)
 
@@ -65,7 +64,7 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-To make the collision as simple as possible we want the collision volume to be identical in all sprites regardless of the direction.  We don't want the size of the collision changing when the player chnages animation.  
+To make the collision as simple as possible we want the collision volume to be identical in all sprites regardless of the direction.  We don't want the size of the collision changing when the player changes animation.  
 
 Open all of the player sprites and change the Collision Mask Mode from Automatic to Manual and adjust Left and Top to 0.  Adjust Right to 58 and Bottom to 63.  Make sure you do this exactly the same on ALL player sprites:
 
