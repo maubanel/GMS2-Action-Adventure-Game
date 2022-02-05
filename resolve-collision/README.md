@@ -170,6 +170,8 @@ Now we are not meant to see the collision volumes, they should be invisible. Whe
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can walk around and the player should stop at the correct spot in the level. This works even though we can't see the tiles!
 
+https://user-images.githubusercontent.com/5504953/152661007-0ba6390a-5b82-4707-b1c0-29f65a7e8972.mp4
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
