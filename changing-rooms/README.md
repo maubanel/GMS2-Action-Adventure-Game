@@ -56,9 +56,9 @@ Lets use an enumerator to store the player state.  An enumerator is a constant w
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Now lets create variable that stores the macro containing the player state. The player starts the game in INGAME so we will default to this state.  Open the **obj_player | Create** event and add to the bottom:
+Now lets create variable that stores the macro containing the player state. The player starts the game in `player_state.in_game` so we will default to this state.  Open the **obj_player | Create** event and add to the bottom:
 
-![alt_text](images/.png)
+![store state variable](images/storeState.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
