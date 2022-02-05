@@ -6,10 +6,10 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-    Now we use sprites for backgrounds and non-moving objects because they render faster than game objects (which include Sprites). Objects have a lot of overhead (all the variables and functionality that come with this class) that make them much more &quot;expensive&quot;. 
+Now we use sprites for backgrounds and non-moving objects because they render faster than game objects (which include Sprites). Objects have a lot of overhead (all the variables and functionality that come with this class) that make them much more &quot;expensive&quot;. 
 
-    Now we don't know what tiles in our layer we should collide with. We are going to create a layer for collisions that will be hidden in the final game. It will have one type of tile attached to it.  
-		
+Now we don't know what tiles in our layer we should collide with. We are going to create a layer for collisions that will be hidden in the final game. It will have one type of tile attached to it.  
+    
 		
 
 <br>
