@@ -51,21 +51,18 @@ Click on Tileset Properties button and set the Tile Width and Tile Height to 32:
 
 Since we will not be rendering this layer in the game we want it on the to player (that is why we made it partially translucent.  This way we can see each 32 by 32 section that has collision on it.  
 
+Open the room **rm_castle**. *Create* a new **Tile Layer** on the very top and call it `Collision`.
 
-Open the room rm_castle. Create a new Tile Layer on top and call it Background_Collision_Tiles.
-
-![alt_text](images/.png)
+![alt_text](add tile layer named collision/collisionLayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Select the Collision layer and the newly created tileset and paint every tile that you want the player to not be able to walk on. Make sure that you block the outside of the entire level and all areas you don’t want the player to walk on. Because of the perspective when we are moving up we will move the collision tile two tiles above the meeting between ground and walls.
+Select the Collision layer and the newly created tileset and paint every tile that you want the player to not be able to walk on. Make sure that you block the outside of the entire level and all areas you don’t want the player to walk on. Because of the perspective when we are moving up we will move the collision tile one tile above the meeting between ground and walls so the player can go in front of objects and give the illusions of 3 dimensions. 
 
+Start with the outside edges, then do the castle, the water and the graveyard.
 
-I ended up adjusting the Opacity to 50%.
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
