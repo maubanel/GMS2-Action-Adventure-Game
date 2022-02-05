@@ -40,11 +40,17 @@ We also need to know how far the edge of the collision volume from the **Origin*
 
 What will be the return  if we subtract `sprite_get_xoffset(sprite_index)`from `sprite_get_bbox_left(sprite_index)`?  We get the distance from the origin to the edge of the collision volume.  This will be how much we need to displace the character by relative to the edge of the collision in game.  Lets look at a diagram:
 
+`sprite_get_xoffset(sprite_index)` gives us the local position of the x and y offset of the **Origin** in the sprite.  We need to ensure it is the same in ALL of our sprites!
+
 ![diagram of sprite_get_xoffset(sprite_index)](images/spr_xyoffset.png)
+
+`sprite_get_bbox_left(sprite_index)` gives us the distance from **Origin** to the left side of the bounding box. 
 
 ![diagram of sprite_get_bbox_left(sprite_index)](images/spr_bbox.png)
 
-![alt_text](images/.png)
+So lets get the offset for all four sides and save it in the **obj_player | Create** event.
+
+![get all four offsets](images/fourOffsets.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
