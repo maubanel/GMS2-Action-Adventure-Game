@@ -14,6 +14,10 @@ Lets now add another level and change rooms.  We will add a teleporter to the le
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
+Download the teleporter ray sprite here: [spr_teleporter_ray.png](images/spr_teleporter_ray.png).
+		
+*Right click* on **Sprites** and select **New | Sprite** and name it `spr_teleporter_ray`. Press the Import button and go to the folder you downloaded `spr_teleporter_ray.png`. 
+
 ![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
