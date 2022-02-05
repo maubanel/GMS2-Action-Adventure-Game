@@ -56,14 +56,20 @@ So lets get the offset for all four sides and save it in the **obj_player | Crea
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Lets add this to the player's create event and print some debug to confirm our above assumptions:
-<h3>obj_player: Create Event </h3>
+To make the collision as simple as possible we want the collision volume to be identical in all sprites regardless of the direction.  We don't want the size of the collision changing when the player changes animation. For collisions to work properly all animations HAVE to have the same collision volume. Lets tighten the volume a bit on the horizontal axis and top as we want the player to get close to the walls with as little a gap as possible.
 
-![alt_text](images/.png)
+Open all of the player sprites and change the **Collision Mask Mode** from **Automatic** to **Manual** and adjust **Left** and **Top** to `4`.  Adjust **Right** to `55` and leave the **Bottom** to `63`.  Make sure you do this exactly the same on ALL player sprites:
+
+![change collision offsets](images/collisionOffsets.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+
+Lets add this to the player's create event and print some debug to confirm our above assumptions:
+<h3>obj_player: Create Event </h3>
+
+![alt_text](images/.png)
 
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button
 .  Look at the Output window and confirm that these variables are doing what we think they should be:
@@ -74,11 +80,7 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-To make the collision as simple as possible we want the collision volume to be identical in all sprites regardless of the direction.  We don't want the size of the collision changing when the player changes animation.  
 
-Open all of the player sprites and change the Collision Mask Mode from Automatic to Manual and adjust Left and Top to 0.  Adjust Right to 58 and Bottom to 63.  Make sure you do this exactly the same on ALL player sprites:
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
