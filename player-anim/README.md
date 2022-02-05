@@ -156,6 +156,8 @@ Now for animations we need to wait until after the player has moved.  Press the 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the player faces the right direction, but keeps walking when stopped.
 
+https://user-images.githubusercontent.com/5504953/152625525-620becea-0eea-433b-8277-263a4b807097.mp4
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
