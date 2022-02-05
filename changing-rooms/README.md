@@ -32,6 +32,8 @@ Now do the exact same thing and create a new sprite and Import [spr_teleporter.p
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Now we want the teleporter only to trigger when you are in the center middle of it. We will make the collision volume (which is a trigger volume to activate the room change) very small. Open the **Collision Mask** in `spr_teleporter` and change the **Mode** from **Automatic** to `Manual`. Then change **Left** to `50`, **Right** to `77`, **Top** to `100` and **Bottom** to `140`. Now we have a collision volume that is triggered inside the teleporter.
+
 ![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
