@@ -76,19 +76,18 @@ So lets visualize what the value we are trying to aquire?
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Lets add this to the player's create event and print some debug to confirm our above assumptions:
-<h3>obj_player: Create Event </h3>
+Lets add some print statements to the player's create event and print some debug to confirm our above assumptions.  Do we get the value we expect?
 
+![print four collision offsets](images/confirmOffsetsCorrect.png)
 
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button
 .  Look at the Output window and confirm that these variables are doing what we think they should be:
 
 ![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Lets go back to the player and get the relative difference for top, right and bottom.  First start by deleting the debug printing as we no longer need this information.
 
