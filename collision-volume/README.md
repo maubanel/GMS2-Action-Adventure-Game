@@ -2,7 +2,7 @@
 
 ### Creating Collision Volume in Room
 
-<sub>[previous](../player-anim/README.md#user-content-importing-player-animations) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
+<sub>[previous](../player-anim/README.md#user-content-importing-player-animations) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../collision-check/README.md#user-content-four-corner-collision-check)</sub>
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
@@ -80,9 +80,9 @@ ___
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - ADD NEXT PAGE">
+<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Collision Check">
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-| [previous](../player-anim/README.md#user-content-importing-player-animations)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../)|
+| [previous](../player-anim/README.md#user-content-importing-player-animations)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../collision-check/README.md#user-content-four-corner-collision-check)|
 |---|---|---|
