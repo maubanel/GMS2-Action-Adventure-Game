@@ -78,7 +78,7 @@ So since the right hand side is colliding we want to align to the right hand sid
 
 Make changes to **obj_player | End Step** event.
 
-![alt_text](images/.png)
+![right move collisions](images/movePlayerRight.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
