@@ -84,7 +84,7 @@ Make changes to **obj_player | End Step** event.
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run to the right and you should stop to the right of the collision volume.  Pleaes note that the other directions don't work so you can get stuck inside a collision volume.  We will fix this by adding more collision directions.
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
