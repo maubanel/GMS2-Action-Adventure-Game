@@ -21,7 +21,7 @@ What we will be doing is checking to see if the side in which the player is movi
 
 We will be using `user_get_at_pixel(tilemap_element_id, x, y)` to see if there is a collision tile at the point in space.  Lets find two points in the level, one that has a collision and one that doesn't to test to see what this function returns.
 
-![alt_text](images/.png)
+![pick collision and empty slot](images/pickTwoSpots.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
@@ -29,7 +29,7 @@ We will be using `user_get_at_pixel(tilemap_element_id, x, y)` to see if there i
 
 So at room position (52, 45)is on top of a collision volume and (110, 112) is in an open area. Add to **obj_player | Step** event the following debug message to see what we get. 
 
-![pick collision and empty slot](images/pickTwoSpots.png)
+![](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
