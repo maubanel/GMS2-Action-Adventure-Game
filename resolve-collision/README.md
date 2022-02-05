@@ -184,7 +184,8 @@ https://user-images.githubusercontent.com/5504953/152661062-18f941dd-76e7-4ba0-a
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-We need to add enough collision checking so that the gap between checks is not larger than the collision volume.  Lets add one more check in the middle right, left, bottom and top.
+
+We need to add enough collision checking so that the gap between checks is not larger than the collision volume.  Lets add one more check in the middle right, left, bottom and top. We will now check if any of the three pionts collide.
 
 ![add collision to center top, right, left, and bottom](images/addCenterToFourSidex.png)
 
@@ -192,7 +193,10 @@ We need to add enough collision checking so that the gap between checks is not l
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-![alt_text](images/.png)
+I created a test cross of collisions to test to make sure I can't bypass the collisions. Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now I have all collisions working.
+
+Hide the collisions and erase the the test cross.
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
