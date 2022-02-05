@@ -170,7 +170,7 @@ Open up all three animations and look for the frame where the two feet are next 
 
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
-![alt_text](images/.png)
+https://user-images.githubusercontent.com/5504953/152625805-c7b90fd5-5029-4555-9e16-a986fcb3d31c.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
