@@ -71,16 +71,8 @@ https://user-images.githubusercontent.com/5504953/152644052-99bc71a4-cc71-478e-b
 
 You can double check your work by turning layer visibity on and off on all but the collision layer to make sure that you block out all unwanted areas to walk on and that you can't escape the room.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
 
 ___
 
