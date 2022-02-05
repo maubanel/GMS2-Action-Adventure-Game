@@ -144,7 +144,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now for animations we need to wait until after the player has moved.  Press the <kbd>Add Event</kbd> and select a **Step | End Step** event. We will then add some logic to pick the sprite facing the correct direction.  Again, since the right walk cycle is symmetrical horizontally we can just mirror it to get the left direction.
+
+![add four directions sprites as animation chnages in end step](images/FourAnimations.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
