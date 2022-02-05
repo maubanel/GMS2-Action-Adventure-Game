@@ -25,7 +25,9 @@ Lets start by creating a new sprite and call it `spr_collision`. Change the size
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+This needs to be part of a tileset. The one rule about a **Tile Set** in **GameMaker** is that the first tile **has** to be empty. Go to the **Resize Sprite** and click on the **Resize Canvas** selection and set the ***Width*** to `64`. Also, click on the <kbd>-><kbd> next to it so the blank space is on the left hand side and the pink square on the right hand side (right justifying the sprite we have created).
+
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
