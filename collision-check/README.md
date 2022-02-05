@@ -88,12 +88,14 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![alt_text](images/collisionOffsetsDebug.png)
 
-Lets go back to the player and get the relative difference for top, right and bottom.  First start by deleting the debug printing as we no longer need this information.
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-<h3>obj_player: Create Event </h3>
+##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Lets go back to the player and comment out the debug printing as we no longer need this information.
 
-![alt_text](images/.png)
+![comment out debug](images/commentOutDebug.png)
+
 
 ___
 
