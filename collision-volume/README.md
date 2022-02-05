@@ -63,6 +63,7 @@ Select the Collision layer and the newly created tileset and paint every tile th
 
 Start with the outside edges, then do the castle, the water and the graveyard.
 
+https://user-images.githubusercontent.com/5504953/152644052-99bc71a4-cc71-478e-bcdb-e0da4ee643a6.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
