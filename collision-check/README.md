@@ -30,7 +30,7 @@ We will be using `layer_tilemap_get_id(layer_id)` to get access to the tilemap s
 
 Open up **obj_player | Create Event**.
 
-![alt_text](images/.png)
+![alt_text](images/getLayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
@@ -38,7 +38,11 @@ Open up **obj_player | Create Event**.
 
 We also need to know how far the edge of the collision volume from the **Origin** of the sprite for each direction.  We will be using `sprite_get_bbox_left` to get the left hand pixel of the collision mox.
 
-What will be the return  if we subtract `sprite_get_xoffset(sprite_index) `from `sprite_get_bbox_left(sprite_index)`?  We get the distance from the origin to the edge of the collision volume.  This will be how much we need to displace the character by relative to the edge of the collision in game.  Lets look at a diagram:
+What will be the return  if we subtract `sprite_get_xoffset(sprite_index)`from `sprite_get_bbox_left(sprite_index)`?  We get the distance from the origin to the edge of the collision volume.  This will be how much we need to displace the character by relative to the edge of the collision in game.  Lets look at a diagram:
+
+![diagram of sprite_get_xoffset(sprite_index)](images/spr_xyoffset.png)
+
+![diagram of sprite_get_bbox_left(sprite_index)](images/spr_bbox.png)
 
 ![alt_text](images/.png)
 
