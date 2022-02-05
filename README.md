@@ -29,6 +29,7 @@ Lets now take a look at a level that is larger than a single screen and putting 
 <kbd></kbd> &nbsp;&nbsp; [Creating Collision Volume in Room](collision-volume/README.md#user-content-creating-collision-volume-in-room) <br>
 <kbd></kbd> &nbsp;&nbsp; [Four Corner Collision Check](collision-check/README.md#user-content-four-corner-collision-check) <br>
 <kbd></kbd> &nbsp;&nbsp; [Resolve Collision](resolve-collision/README.md#user-content-resolve-collision) <br>
+<kbd></kbd> &nbsp;&nbsp; [Changing Rooms](resolve-changing-rooms/README.md#user-content-changing-rooms) <br>
 
 <!-- LICENSE -->
 ## License
