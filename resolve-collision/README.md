@@ -178,7 +178,7 @@ https://user-images.githubusercontent.com/5504953/152661007-0ba6390a-5b82-4707-b
 
 There is an issue if your sprite size is different from your collision size.  In this case our sprite is `64 x 64` and the collision square is `32 x 32`.  Now we only check the corners so if we enter a collision space where no corners touch we can pass through it like so:
 
-
+https://user-images.githubusercontent.com/5504953/152661062-18f941dd-76e7-4ba0-a46e-ead8dab950a7.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
