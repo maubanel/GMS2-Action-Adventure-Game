@@ -75,7 +75,7 @@ Lets add the typewriter effect to game.  Go back to the collision event in the n
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run into the NPC and see the dialogue message pops up.  Now the text appears slowly. You can't skip the message box until the typewriter completes.  Pressing **Enter** button fast forwards and finishes the typing skipping the effect. The next **Enter** will close the message box. 
 
-
+https://user-images.githubusercontent.com/5504953/152686664-215682b8-d70d-46f3-9972-6e5c4a7f2258.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
