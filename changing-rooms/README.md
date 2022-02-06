@@ -171,10 +171,10 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-When the player is in the teleporter we want to change the player state.  So first we need to check for a collision with the teleporter in obj_player Collision | obj_teleporter Event:
-<h3>obj_player: Collision | obj_teleporter Event</h3>
+When the player is in the teleporter we want to change the player state.  So first we need to check for a collision with the teleporter in **obj_player Collision | obj_teleporter Event** and change the state to `obj_player.teleporter`.  Set the `speed` to `0`. 
 
-![alt_text](images/.png)
+
+![change state on collision set speed to 0](images/collisionSpeed.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
