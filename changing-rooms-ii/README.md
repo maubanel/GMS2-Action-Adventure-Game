@@ -169,9 +169,7 @@ Open up **obj_player | End Step** event and when we change rooms we set the dire
 
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
-Go to obj_player and add an Alarm | Alarm1 event. Then make the image alpha solid again, change the state back to INGAME and get the layer_id and tilemap for this new room (otherwise it will be the one from the previous room as the player persists through levels).
-
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the transition is complete but we cannot go back to the castle through the teleporter.
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
