@@ -121,8 +121,9 @@ Open up the **obj_player | Collision** event and only allow this state change wh
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
+Now open up **obj_player | End Step** and a a state change when we change rooms.  Go from `teleporter` to `teleport_arrive`.  Then when in the `teleport_arrive` state fade in the player.
 
-![alt_text](images/.png)
+![fade in player for teleport arrive](images/teleportArrive.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
