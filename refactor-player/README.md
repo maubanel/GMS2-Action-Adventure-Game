@@ -62,7 +62,7 @@ Repeat this for animation.  Select the animation portion of **obj_player | End S
 
 Go back to **obj_player | End Step** and delete the animations.  Instead call the `select_animations()` function.
 
-![alt_text](images/deleteAnims.png)
+![call select_animations()](images/deleteAnims.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
@@ -76,23 +76,26 @@ https://user-images.githubusercontent.com/5504953/152680300-de454759-27bc-4329-9
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we want it to be off when the game is started at the beginning.  So we need to open the ray's step event and add a check for INGAME state and then set the alpha off.
+Go back to **obj_player | End Step** event and select the collision checking code.
 
-![alt_text](images/.png)
+![copy script](images/selectCollision.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Also don't forget that we spawned the ray previously.  Since we changed our design when we added the room we need to comment out or delete the instance_create_layer() call so we don't create multiple unecessary rays!
+Now create a new script called `resolve_collisions` and paste the collision script between the curly braces.
 
-![alt_text](images/.png)
+![paste script](images/endStepCopyColl.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter. Now go back to the the castle room. Now it should be working as we planned.  This is enough, now lets look at adding some text boxes.
+Replace all of the collision script that you pasted in **obj_player | End Step**.  Replace it with a call to `resolve_collisions()` function.
+
+![call resolve_collisions()](images/replaceCollScript.png)
+
 
 ___
 
