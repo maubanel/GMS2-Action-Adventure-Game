@@ -63,7 +63,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. R
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Lets add the typewriter effect to game.  Go back to the collision event in the npc and change the typewiter_delay to 2 frames between letters.
+
+![add 2 frame delay for typewriter effect](images/typewriterMessage.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
