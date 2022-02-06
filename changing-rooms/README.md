@@ -180,9 +180,8 @@ When the player is in the teleporter we want to change the player state.  So fir
 
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter. You will notice that the player stops but still keeps walking stuck in the last animation state.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run towards the teleporter. You will notice that the player stops but still keeps walking on the spot stuck in the last animation state.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
