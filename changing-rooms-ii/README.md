@@ -31,9 +31,9 @@ Lets have the ray start as an invisible sprite.  We will fade it in when the pla
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Lets add a fade in on the ray.  Open the ray object and add a Create Event and make it transparent:
+Press the <kbd>Add Event</kbd> and select a **Step | Step** event. If **fade** is true then start to fade for 3 seconds (we take one divided by room speed (60) then divided by three to get three seconds of fading in.  We then clamp the value between 0 and 1.
 
-![alt_text](images/.png)
+![add fade logic](images/addFadeLogic.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
