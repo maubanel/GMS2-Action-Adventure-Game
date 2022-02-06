@@ -147,17 +147,17 @@ Add a collision volume for both teleporters in **rm_desert** and **rm_castle**. 
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
+Now we want to restrict player movement to when the player is in the teleporter by changing the state. We will only allow the player to get input and move when in the in_game state.  Open up **obj_player | Step** event and add an `if` statement around all the input and movement code.
 
-
-![alt_text](images/.png)
+![add if statement for state to step event in obj_player](images/ifStep.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we want to restrict player movement to when the player is in the teleporter by changing the stateINGAME state. So we will add a check to the obj_player Step Event:
+Do the same thing for the **obj_player | End Step** event.
 
-![alt_text](images/.png)
+![add if state to end step](images/ifEndStep.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
