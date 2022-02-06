@@ -137,26 +137,23 @@ https://user-images.githubusercontent.com/5504953/152677827-113749fc-c28c-4212-9
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-Now open up **obj_teleporter_ray | Create** event. Check to see if the player exists.  Only set the `image_alpha` to `0` if the state is `in_game`.
+Now open up **obj_teleporter_ray | Create** event. Check to see if the player exists.  Only set the `image_alpha` to `0` if the state is `in_game`. Set it to `1` if the state is `teleporter arrive`.
 
-
-![alt_text](images/teleporterRay.png)
+![set ray to 0 or 1 depending on state](images/teleporterRay.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we need to switch states as we change rooms. Open script the create event script on the player and add another Macro player state called TELEPORTERLEAVE.
+Open up **obj_teleporter_ray | Step** event and add a fade out when the state is `teleporter_arrive`.
 
-![alt_text](images/.png)
+![fade out in teleport arrive](images/triggerFadeOut.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open the player alarm0 event and change the player state.
-
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the teleporter ray fades out as the player fades in.
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
