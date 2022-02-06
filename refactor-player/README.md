@@ -92,7 +92,7 @@ Now create a new script called `resolve_collisions` and paste the collision scri
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Replace all of the collision script that you pasted in **obj_player | End Step**.  Replace it with a call to `resolve_collisions()` function.
+Replace all of the collision script that you pasted in **obj_player | End Step** with a call to `resolve_collisions()` function.
 
 ![call resolve_collisions()](images/replaceCollScript.png)
 
