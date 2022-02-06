@@ -95,6 +95,8 @@ Open up **obj_npc_tiger** and press the <kbd>Add Event</kbd> and select a **Crea
 
 Open the **obj_npc_tiger | Collision**  event and alter which message to pass.  We want to pass the entire array so we use the array name without the brackets so it sends the entire list to the function. Lets randomize the order.
 
+https://user-images.githubusercontent.com/5504953/152687270-868137f7-623d-4378-83e1-a682aca6e028.mp4
+
 ![call message array with randomness](images/callArrrayMessages.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
