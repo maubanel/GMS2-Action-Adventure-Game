@@ -102,6 +102,7 @@ Replace all of the collision script that you pasted in **obj_player | End Step**
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Test that the collisions still work the same as before.
 
+https://user-images.githubusercontent.com/5504953/152680891-515cf713-3093-434e-a6d9-dcc86f3af3c8.mp4
 
 ___
 
