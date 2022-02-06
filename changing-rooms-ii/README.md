@@ -39,18 +39,17 @@ Press the <kbd>Add Event</kbd> and select a **Step | Step** event. If **fade** i
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Add a step event to the ray object then fade it in slowly and clamp it so the value can't exceed 1 (could cause problems).
+Go back to the **obj_player | Collision** event and trigger the switch to start the fade.
 
-![alt_text](images/.png)
+![start fade in collision event](images/triggerFade.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter.
+Press the <kbd>Add Event</kbd> and select a **Create** event. Run towards the teleporter and see the ray fade in.
 	
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
