@@ -93,11 +93,16 @@ Open up **obj_npc_tiger** and press the <kbd>Add Event</kbd> and select a **Crea
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Open the **obj_npc_tiger | Collision**  event and alter which message to pass.  We want to pass the entire array so we use the array name without the brackets so it sends the entire list to the function. Lets randomize the order.
+
+![call message array with randomness](images/callArrrayMessages.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+
+Now you will see that it displays all the messages in random order before the message disappears.  Notice that the icon is an arrow when there is a message that is coming up.
+
 
 ![alt_text](images/.png)
 
