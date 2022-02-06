@@ -114,25 +114,28 @@ https://user-images.githubusercontent.com/5504953/152674813-9d50c639-a97e-4d4e-8
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
+Turn off the collision layer.
 
+![turn off collision layer](images/turnOffColLayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
+Rather than erasing the animated and transparent tiles we can just delete the entire layers. Delete **Background_Transparent_Tiles** and **Background_Animated_Tiles**.
+
+![delete transparent and animated layers](images/deleteTwoTileLayers.png)
 
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-
+![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
-
-Select the Background_Collision_Tile layer in rm_desert and press the eyeball button to make the collision layer visible. Go to the Room Editor tab.  Selecdt the pink brush and make sure you have selected the pencil tool.  Make sure the entire edge has collision so player can't leave the room.
 
 ![alt_text](images/.png)
 
