@@ -177,9 +177,9 @@ https://user-images.githubusercontent.com/5504953/152679086-364898f6-bb82-45db-8
 
 ##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter. Now when you change rooms the player now lands in the teleporter and you can control them back in regular game state.
+Now
 
-![alt_text](images/.png)
+![alt_text](images/finishingTouch.png)
 
 ___
 
