@@ -131,6 +131,7 @@ Now open up **obj_player | End Step** and a a state change when we change rooms.
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you fade in when in the new room.  We now should have the ray already in and fade the ray out.  We will also have the player move out of the teleporter before switching back to `in_game` so that it doesn't trigger an endless back and forth.
 
+https://user-images.githubusercontent.com/5504953/152677827-113749fc-c28c-4212-968b-924c05d534fd.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
