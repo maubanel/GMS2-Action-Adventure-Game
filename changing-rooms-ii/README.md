@@ -55,7 +55,7 @@ https://user-images.githubusercontent.com/5504953/152676593-33cf33c1-fe87-45f0-a
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Now lets have the player fade out while the teleporter ray fades in.  Open up **obj_player | Collision** event and add a fade out over 4 seconds.
+Now lets have the player fade out while the teleporter ray fades in.  Open up **obj_player | Collision** event and add a fade out over 4 seconds. When player is faded out change rooms.
 
 ![fade player out](images/fadePlayerOut.png)
 
@@ -64,18 +64,17 @@ Now lets have the player fade out while the teleporter ray fades in.  Open up **
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Add a translucency to the player and call an alarm to change rooms:
-		<h3>obj_player: Collision | obj_teleporter Event</h3>	
+Now we have to fix two things.  We want to have one player with its stats and items going from room to room.  So remove the player from `rm_desert`.
 
-![alt_text](images/.png)
+![delete desert player](images/deleteDesertPlayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter. Now this should be good enough until we change rooms.
+Make the player in `rm_castle` persistent so they don't get deleted when changing levels.
 
-![alt_text](images/.png)
+![make obj_player persistent](images/objPlayerPersistent.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
