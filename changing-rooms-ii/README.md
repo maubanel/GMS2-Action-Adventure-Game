@@ -2,7 +2,7 @@
 
 ### Changing Rooms II
 
-<sub>[previous](../) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
+<sub>[previous](../changing-rooms/README.md#user-content-changing-rooms) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../refactor-player/README.md#user-content-refactoring-player-step-events)</sub>
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
@@ -202,5 +202,5 @@ ___
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-| [previous](../)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../)|
+| [previous](../changing-rooms/README.md#user-content-changing-rooms)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../refactor-player/README.md#user-content-refactoring-player-step-events)|
 |---|---|---|

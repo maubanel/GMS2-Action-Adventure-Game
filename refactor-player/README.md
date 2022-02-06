@@ -2,11 +2,16 @@
 
 ### Refactoring Player Step Events
 
-<sub>[previous](../) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
+<sub>[previous](../hanging-rooms-ii/README.md#user-content-changing-rooms-ii) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+Now lets clean up and make our code a little more readable in our main player.  As the game grows this object can get quite a bit more code. Lets make it clear what is happening by separating each logical chunk into a function script.  This will allow us to clearly see:
+
+* Get input
+* Process input
+* Select Animation
+* Resolve Collisions
 
 <br>
 
@@ -15,16 +20,15 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Lets put the ray in the desert room and have it fade out.  So open rm_desert and drag a obj_teleporter_ray into the room in the proper position in the teleporter.
-			<h3>rm_desert</h3>
 
-![alt_text](images/.png)
+
+![alt_text](images/createScript.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-Open the player create event and lets make the image_alpha equal to 0 when the state is TELEPORTER and 1 when the player state is TELEPORTERLEAVE.
+
 
 ![alt_text](images/.png)
 
@@ -32,7 +36,7 @@ Open the player create event and lets make the image_alpha equal to 0 when the s
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Go to the ray step event and fade in for TELEPORTER and out for TELEPORTERLEAVE states.  Alter it to match:
+
 
 ![alt_text](images/.png)
 
@@ -40,7 +44,6 @@ Go to the ray step event and fade in for TELEPORTER and out for TELEPORTERLEAVE 
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter. Now it should work pretty much the way I want it to.
 
 ![alt_text](images/.png)
 
@@ -48,7 +51,7 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Now we want to also go back to the previous room if we re-enter the teleporter in the sand level.  So in the player alarm0 event we need to check to see which room we are in, then go to the opposite room. obj_player: Alarm0 Event
+
 
 ![alt_text](images/.png)
 
@@ -56,7 +59,7 @@ Now we want to also go back to the previous room if we re-enter the teleporter i
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter. Now go back to the the castle room.  Now the only problem is that the ray does not turn back on when returning to the castle.
+
 
 ![alt_text](images/.png)
 
@@ -95,9 +98,9 @@ ___
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - ADD NEXT PAGE">
+<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Text Boxes">
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-| [previous](../)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../)|
+| [previous](../hanging-rooms-ii/README.md#user-content-changing-rooms-ii)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../)|
 |---|---|---|
