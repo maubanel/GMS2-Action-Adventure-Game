@@ -49,6 +49,14 @@ Now it plays the top left corner of the level and is only playing a portion of t
 
 ![play the game and notice it is using the viewport](images/usingViewportsInGame.png)
 
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+
+Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+
+![save commit and push to github](images/github.png)
+
 ___
 
 
