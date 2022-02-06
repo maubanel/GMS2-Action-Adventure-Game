@@ -20,17 +20,17 @@ Now lets clean up and make our code a little more readable in our main player.  
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
+Open up **obj_player | Step** event and copy all of the script inside the `if` statement.  Right click on **Scripts** and select **Create | Script**. This will create a new function.
 
-
-![alt_text](images/createScript.png)
+![coppy step event code inside of if statement](images/createScript.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
+Call this file `get_process_input`.  It will create an empty function with angle brackets. Paste the code you had copied above here.
 
-
-![alt_text](images/.png)
+![copy code to script](images/getProcessInput.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
