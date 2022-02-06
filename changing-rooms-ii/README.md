@@ -55,9 +55,10 @@ https://user-images.githubusercontent.com/5504953/152676593-33cf33c1-fe87-45f0-a
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
- Now that is the quicker way of implementing the fade but we can't guarantee how long it will take as it is totally dependant on the length of time it takes to generate the frame (it is set to 30fps).  A better way is to calculate it based on delta time in milliseconds.  We do so by changing the Create and Step</b> events like so:
+Now lets have the player fade out while the teleporter ray fades in.  Open up **obj_player | Collision** event and add a fade out over 4 seconds.
 
-![alt_text](images/.png)
+![fade player out](images/fadePlayerOut.png)
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
