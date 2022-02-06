@@ -88,17 +88,16 @@ Now we need to get the location in the desert for where we moved the teleporter.
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter. Now this should be good enough until we change rooms.
+Now we go back to **obj_player | End Step** and add the x and y location of the teleporter in the desert room right after we change rooms.
 
-![alt_text](images/.png)
+![add teleporter x and y](images/goToTeleporter.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-	I cut the fade off a bit short so I will adjust the timing.  On the next page we will deal with the desert room and getting back to a playable state.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you do change rooms but the player is invisible and it triggers another teleporter transition.  Lets fix this.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
