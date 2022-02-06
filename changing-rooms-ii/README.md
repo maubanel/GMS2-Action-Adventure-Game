@@ -1,12 +1,12 @@
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-### Add Title
+### Changing Rooms II
 
 <sub>[previous](../) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+Lets continue with getting the teleporter to work.
 
 <br>
 
@@ -15,12 +15,7 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Play the game and make sure the player switches to the appropriate idle animation.
-
-	<p>
-		Now we want to add the Teleporter Ray and  to right after the state change these two lines. (I believe the layer is Block_Player_Tiles and NOT Blocks...)
-
-![alt_text](images/.png)
+Play the game and make sure the player switches to the appropriate idle frame.
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
