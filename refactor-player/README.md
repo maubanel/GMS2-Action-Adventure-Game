@@ -96,6 +96,12 @@ Replace all of the collision script that you pasted in **obj_player | End Step**
 
 ![call resolve_collisions()](images/replaceCollScript.png)
 
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Test that the collisions still work the same as before.
+
 
 ___
 
