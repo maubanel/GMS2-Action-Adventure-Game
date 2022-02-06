@@ -107,7 +107,7 @@ https://user-images.githubusercontent.com/5504953/152674654-5916db84-cb07-4500-b
 
 Select the Collision layer in `rm_desert` and press the eyeball button to make the collision layer visible. Pick the Erase tool and start removing all collisions not on the outer edge. Fill in any gaps and just surround the room so the player cannot escape.
 
-
+https://user-images.githubusercontent.com/5504953/152674813-9d50c639-a97e-4d4e-8e38-c91c7e41fd08.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
