@@ -30,6 +30,8 @@ Lets now take a look at a level that is larger than a single screen and putting 
 <kbd></kbd> &nbsp;&nbsp; [Four Corner Collision Check](collision-check/README.md#user-content-four-corner-collision-check) <br>
 <kbd></kbd> &nbsp;&nbsp; [Resolve Collision](resolve-collision/README.md#user-content-resolve-collision) <br>
 <kbd></kbd> &nbsp;&nbsp; [Changing Rooms](changing-rooms/README.md#user-content-changing-rooms) <br>
+<kbd></kbd> &nbsp;&nbsp; [Changing Rooms II](changing-rooms-ii/README.md#user-content-changing-rooms-ii) <br>
+<kbd></kbd> &nbsp;&nbsp; [Changing Rooms III](changing-rooms-iii/README.md#user-content-changing-rooms-iii) <br>
 
 <!-- LICENSE -->
 ## License
