@@ -15,11 +15,16 @@ I have provided some code to make dialogue boxes easier to implement.  Lets just
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-![alt_text](images/.png)
+Lets import a sprite to act as an NPC.  This character will not animate, we will just talk to it.  Right click on the **Sprites** title in the **Resources** menu and select **Create | Sprite**.  Call it `spr_npc_tiger`.  Download the artwork [spr_npc_tiger.png](image/spr_npc_tiger.png). Press the <kbd>Import</kbd> button and selet the downloaded **pr_npc_tiger.png sprite**.
+
+![alt_text](images/downloadNpcTiger.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
+
+Now lets create an object from this sprite. Right click on the <tt><b>Objects</b> title in the <tt><b>Resources</b></tt> menu and select <tt><b>Create Object</b></tt>. Bind the <tt><b>spr_npc_tiger</b></tt> to this object and call it <tt><b>obj_npc_tiger</b></tt>
+
 
 ![alt_text](images/.png)
 
