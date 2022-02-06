@@ -31,7 +31,7 @@ Lets now take a look at a level that is larger than a single screen and putting 
 <kbd></kbd> &nbsp;&nbsp; [Resolve Collision](resolve-collision/README.md#user-content-resolve-collision) <br>
 <kbd></kbd> &nbsp;&nbsp; [Changing Rooms](changing-rooms/README.md#user-content-changing-rooms) <br>
 <kbd></kbd> &nbsp;&nbsp; [Changing Rooms II](changing-rooms-ii/README.md#user-content-changing-rooms-ii) <br>
-<kbd></kbd> &nbsp;&nbsp; [Changing Rooms III](changing-rooms-iii/README.md#user-content-changing-rooms-iii) <br>
+<kbd></kbd> &nbsp;&nbsp; [Refactoring Player Step Events](refactor-player/README.md#user-content-refactoring-player-step-events) <br>
 
 <!-- LICENSE -->
 ## License
