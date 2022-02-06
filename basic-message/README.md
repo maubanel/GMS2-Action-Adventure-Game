@@ -23,10 +23,10 @@ Lets import a sprite to act as an NPC.  This character will not animate, we will
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-Now lets create an object from this sprite. Right click on the <tt><b>Objects</b> title in the <tt><b>Resources</b></tt> menu and select <tt><b>Create Object</b></tt>. Bind the <tt><b>spr_npc_tiger</b></tt> to this object and call it <tt><b>obj_npc_tiger</b></tt>
+Now lets create an object from this sprite. Right click on the **Objects** title in the **Resources** menu and select **Create | Object**. Bind the `spr_npc_tiger` to this object and call it `obj_npc_tiger`.
 
 
-![alt_text](images/.png)
+![alt_text](images/obj_tiger.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
