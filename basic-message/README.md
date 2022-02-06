@@ -73,7 +73,9 @@ Lets add the typewriter effect to game.  Go back to the collision event in the n
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run into the NPC and see the dialogue message pops up.  Now the text appears slowly. You can't skip the message box until the typewriter completes.  Pressing **Enter** button fast forwards and finishes the typing skipping the effect. The next **Enter** will close the message box. 
+
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
