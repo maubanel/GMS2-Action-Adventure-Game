@@ -59,6 +59,8 @@ We will trigger the box when the player collides with the collision volume of th
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run into the NPC and see the dialogue message pops up.  There are two ways to close the message box.  Either hit the <kbd>Enter</kbd> button or walk outside of the collision volume and in both cases the message box dissapears.  There is a 3 second cool down period to where another message box will not appear.
 
+https://user-images.githubusercontent.com/5504953/152686410-dce8f458-928b-416b-9749-ecbbe72703f3.mp4
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
