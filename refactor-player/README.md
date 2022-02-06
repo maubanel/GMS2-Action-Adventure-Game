@@ -76,7 +76,7 @@ https://user-images.githubusercontent.com/5504953/152680300-de454759-27bc-4329-9
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Go back to **obj_player | End Step** event and select the collision checking code.
+Go back to **obj_player | End Step** event and select and copy the collision checking code. 
 
 ![copy script](images/selectCollision.png)
 
