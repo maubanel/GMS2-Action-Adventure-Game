@@ -80,9 +80,9 @@ Make the player in `rm_castle` persistent so they don't get deleted when changin
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now create a new event on the player and select Alarm | Alarm0 and add to the script a room change:
+Now we need to get the location in the desert for where we moved the teleporter.  I put the cursor in the center of the teleporter and record the x and y values.
 
-![alt_text](images/.png)
+![center teleporter](images/getDesertTelLoc.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
