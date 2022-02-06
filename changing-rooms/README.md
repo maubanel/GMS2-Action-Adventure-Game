@@ -163,9 +163,9 @@ Do the same thing for the **obj_player | End Step** event.
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Now it should be back to exaclty the same as it was before we added this check as the game starts with the player in this INGAME state.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now it should be back to exaclty the same as it was before we added this check as the game starts with the player in this `player_state.in_game` state.
 
-![alt_text](images/.png)
+![game unchanged](images/gameUnchanged.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
