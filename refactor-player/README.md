@@ -52,25 +52,25 @@ https://user-images.githubusercontent.com/5504953/152680300-de454759-27bc-4329-9
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
+Repeat this for animation.  Select the animation portion of **obj_player | End Step** and paste it into a new script function called `select_animations`.
 
-
-![alt_text](images/.png)
+![paste animation script in select animations](images/selectAnim.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
+Go back to **obj_player | End Step** and delete the animations.  Instead call the `select_animations()` function.
 
-
-![alt_text](images/.png)
+![alt_text](images/deleteAnims.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Go to the castle room and add obj_teleporter_ray in the teleporter.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now it should be the same as before.
 
-![alt_text](images/.png)
+https://user-images.githubusercontent.com/5504953/152680300-de454759-27bc-4329-9ea9-433ea51e9575.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
