@@ -49,7 +49,7 @@ Go back to the **obj_player | Collision** event and trigger the switch to start 
 
 Press the <kbd>Add Event</kbd> and select a **Create** event. Run towards the teleporter and see the ray fade in.
 	
-
+https://user-images.githubusercontent.com/5504953/152676593-33cf33c1-fe87-45f0-acab-cf57c6db9117.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
