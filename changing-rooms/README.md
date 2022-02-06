@@ -188,9 +188,9 @@ https://user-images.githubusercontent.com/5504953/152675870-61bdadc9-0e84-469a-a
 
 ##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
-Now lets test the game. When you collide with the teleporter the player gets stuck in its last animation state and does nothing. So our state is changing succesfully. Now we need to do a few things. Add to the collision event a change to the appropriate idle animation:
+ When you collide with the teleporter the player gets stuck in its last animation state and does nothing. So our state is changing succesfully. Now we need to do a few things. First, add a check to see if we are in teleport state in the **obj_player | End Step** and if we are idle the player.
 
-![alt_text](images/.png)
+![keep player in idle](images/sendIdlePlayer.png)
 
 ___
 
