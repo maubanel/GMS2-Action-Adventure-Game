@@ -182,6 +182,7 @@ When the player is in the teleporter we want to change the player state.  So fir
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run towards the teleporter. You will notice that the player stops but still keeps walking on the spot stuck in the last animation state.
 
+https://user-images.githubusercontent.com/5504953/152675870-61bdadc9-0e84-469a-ac7f-57d8f30fe5a4.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
