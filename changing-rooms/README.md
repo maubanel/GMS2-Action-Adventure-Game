@@ -131,19 +131,23 @@ Rather than erasing the animated and transparent tiles we can just delete the en
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Select the **Teleporter** layer and move the teleporter and ray to a different part of the room. 
+
+![move teleporter objects in desert](images/moveTeleporter.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-![alt_text](images/.png)
+Add a collision volume for both teleporters in **rm_desert** and **rm_castle**.  Move the **Collision** layer to the top layer in both rooms. Then turn off collision layer visibility.
+
+![add teleporter collisions](images/teleporterCollisions.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-Select the Block_Player_Tiles layer and move the teleporter to a different part of the room. Select the Background_Collision_Tile layer in rm_desert and press the eyeball button to make the collision layer visible. Erase the old collision volume and add new collision volumes in the new location like so:
+
 
 ![alt_text](images/.png)
 
