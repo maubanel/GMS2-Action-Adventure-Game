@@ -109,9 +109,18 @@ https://user-images.githubusercontent.com/5504953/152680891-515cf713-3093-434e-a
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Repeat this for teleport send and arrive, by moving the scripts to functions.
+Repeat this for teleport send and arrive, by moving the scripts to functions. Now test the teleporting to make sure it is the same.
 
 ![refactor teleport send and arrive](images/teleportSendArrive.png)
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+
+Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+
+![save commit and push to github](images/github.png)
+
 ___
 
 
