@@ -153,7 +153,7 @@ Open up **obj_teleporter_ray | Step** event and add a fade out when the state is
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the teleporter ray fades out as the player fades in.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the teleporter ray fades out as the player fades in. We just now need to walk the player outside the room then return to `in_game` state and give control back to the player.
 
 https://user-images.githubusercontent.com/5504953/152678524-635972c0-fdbe-4cfe-a4f0-0f800f9711b1.mp4
 
@@ -161,11 +161,9 @@ https://user-images.githubusercontent.com/5504953/152678524-635972c0-fdbe-4cfe-a
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we want the player to walk out to the right.  In the player step add a state to check to see if you are in TELEPORTERLEAVE and if so move to the right.
 
-		Call an alarm1 to then go back to GAMEPLAY state.
 
-![alt_text](images/.png)
+![alt_text](images/finalMovement.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
