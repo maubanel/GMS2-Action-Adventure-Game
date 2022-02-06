@@ -46,6 +46,7 @@ Now go back to **obj_player | Step** event and delete the script you just pasted
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now it should be the same as before.
 
+https://user-images.githubusercontent.com/5504953/152680300-de454759-27bc-4329-9ea9-433ea51e9575.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
