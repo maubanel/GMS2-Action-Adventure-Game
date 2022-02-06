@@ -45,7 +45,7 @@ We need to create a small finite state machine for the player.  We have to watch
 * If the player collides with the teleporter go to the second room
 * Change state of player to out of game.
 * Stop user control
-* When in new room start in TELEPORTER state, walk off teleporter
+* When in new room start in `teleporter` state, walk off teleporter
 * Change state back to ingame.
 
 Lets use an enumerator to store the player state.  An enumerator is a constant which makes it non-mutable (cannot be altered at run time) name that will represent the state of the player. Open the player create event and add at the top (typically we will place macros before variables):
@@ -80,15 +80,15 @@ Create a new **Game Object** and bind the `spr_teleporter_ray` sprite to it and 
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Go to **rm_castle** and add a new layer that will be on top of the player.  Call it `Block_Player_Tiles`:
+Go to **rm_castle** and add a new **instance** layer that will be on top of the player.  Call it `Teleporter`. Now drag and drop `obj_teleporter` and `obj_teleporter_ray` onto the **Teleporter** layer.
 
-![alt_text](images/.png)
+![add Teleporter layer and add both teleporter objects to room](images/addTeleporterToRoom.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now drag and drop obj_teleporter on the Block_Player_Tiles in the castle room:
+
 
 ![alt_text](images/.png)
 
@@ -114,7 +114,7 @@ Select the Background_Collision_Tile layer in rm_castle and press the eyeball bu
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Now we need a room to teleport to.  We won't get too complicated, let's create a new room and make it into a desert.  Right click on <tt><b>rm_castle</b></tt> and select <tt><b>Duplicate</b></tt>:
+Now we need a room to teleport to.  We won't get too complicated, let's create a new room and make it into a desert.  Right click on rm_castle and select Duplicate:
 
 ![alt_text](images/.png)
 
@@ -122,8 +122,8 @@ Now we need a room to teleport to.  We won't get too complicated, let's create a
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Select <tt><b>Background_Opaque_Tiles</b></tt> layer and select the sand tile.  Pick the <tt><b>Paint Bucket</b></tt> or <tt><b>Erase</b></tt> tool and start replacing all the opaque objects with sand. 
-<h3><tt><b>rm_desert</b></tt></h3>
+Select Background_Opaque_Tiles layer and select the sand tile.  Pick the Paint Bucket or Erase tool and start replacing all the opaque objects with sand. 
+<h3>rm_desert</h3>
 
 ![alt_text](images/.png)
 
@@ -131,7 +131,7 @@ Select <tt><b>Background_Opaque_Tiles</b></tt> layer and select the sand tile.  
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_desert</b></tt> and press the eyeball button to make the collision layer visible. Pick the <tt><b>Erase</b></tt> tool and start removing all collisions not on the outer edge.
+Select the Background_Collision_Tile layer in rm_desert and press the eyeball button to make the collision layer visible. Pick the Erase tool and start removing all collisions not on the outer edge.
 
 ![alt_text](images/.png)
 
@@ -139,7 +139,7 @@ Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_desert</
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_desert</b></tt> and press the eyeball button to make the collision layer visible. Go to the <tt><b>Room Editor</b></tt> tab.  Selecdt the pink brush and make sure you have selected the pencil tool.  Make sure the entire edge has collision so player can't leave the room.
+Select the Background_Collision_Tile layer in rm_desert and press the eyeball button to make the collision layer visible. Go to the Room Editor tab.  Selecdt the pink brush and make sure you have selected the pencil tool.  Make sure the entire edge has collision so player can't leave the room.
 
 ![alt_text](images/.png)
 
@@ -147,7 +147,7 @@ Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_desert</
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-Select the <tt><b>Block_Player_Tiles</b></tt> layer and move the teleporter to a different part of the room. Select the <tt><b>Background_Collision_Tile</b></tt> layer in <tt><b>rm_desert</b></tt> and press the eyeball button to make the collision layer visible. Erase the old collision volume and add new collision volumes in the new location like so:
+Select the Block_Player_Tiles layer and move the teleporter to a different part of the room. Select the Background_Collision_Tile layer in rm_desert and press the eyeball button to make the collision layer visible. Erase the old collision volume and add new collision volumes in the new location like so:
 
 ![alt_text](images/.png)
 
@@ -155,7 +155,7 @@ Select the <tt><b>Block_Player_Tiles</b></tt> layer and move the teleporter to a
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we want to restrict player movement to when the player is in the teleporter by changing the state<tt><b>INGAME</b></tt> state. So we will add a check to the <tt><b>obj_player</b></tt> Step Event:
+Now we want to restrict player movement to when the player is in the teleporter by changing the stateINGAME state. So we will add a check to the obj_player Step Event:
 
 ![alt_text](images/.png)
 
@@ -163,7 +163,7 @@ Now we want to restrict player movement to when the player is in the teleporter 
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now it should be back to exaclty the same as it was before we added this check as the game starts with the player in this INGAME state.
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Now it should be back to exaclty the same as it was before we added this check as the game starts with the player in this INGAME state.
 
 ![alt_text](images/.png)
 
@@ -171,8 +171,8 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-When the player is in the teleporter we want to change the player state.  So first we need to check for a collision with the teleporter in <tt><b>obj_player</b></tt> Collision | obj_teleporter Event:
-<h3><tt><b>obj_player: Collision | obj_teleporter Event</b></tt></h3>
+When the player is in the teleporter we want to change the player state.  So first we need to check for a collision with the teleporter in obj_player Collision | obj_teleporter Event:
+<h3>obj_player: Collision | obj_teleporter Event</h3>
 
 ![alt_text](images/.png)
 
@@ -180,7 +180,7 @@ When the player is in the teleporter we want to change the player state.  So fir
 
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt> and run towards the teleporter. You will notice that the player stops but still keeps walking stuck in the last animation state.
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter. You will notice that the player stops but still keeps walking stuck in the last animation state.
 
 ![alt_text](images/.png)
 
@@ -197,7 +197,7 @@ ___
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - ADD NEXT PAGE">
+<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Changing Rooms II>
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
