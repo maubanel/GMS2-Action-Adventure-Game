@@ -81,7 +81,13 @@ https://user-images.githubusercontent.com/5504953/152686664-215682b8-d70d-46f3-9
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Please note that it is up to you to determine if your text fits within the one box.  If your message takes more room it will run out the bottom of the box.  You have the ability to split this longer message into multiple messages in an array.  
+
+An array is a simple list.  An array allows one variable name to hold multiple instances of the same data type.  We identify an array entry from the list with square brackets and the list number inside for example `sample_array[3]` would be the fourth item in an array called `sample_array`.  Why fourth?  We always start the array with [0] so the first time in the array would be `sample_array[0]`. 
+
+Open up **obj_npc_tiger** and press the <kbd>Add Event</kbd> and select a **Create** event. Lets add an array to the npc's create event of various messages that would take more than one message box to display all of them.  They are also separate thoughts.
+
+![add array of messages](images/addCreateMessage.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
