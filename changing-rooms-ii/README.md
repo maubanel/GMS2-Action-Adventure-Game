@@ -105,29 +105,22 @@ https://user-images.githubusercontent.com/5504953/152677288-a6d5045a-c84c-4b3e-a
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-There are two problems.  When we change rooms we don't get an new gamepad input and also the player is a new player.  So the state is back to INGAME and you can control the player which is not what we want.  We want the object and its state to persist from level to level.
+Open up **obj_player | Create** event script and add a `teleport_arrive` to the `player_state`.
 
-<p>
-	Go to rm_desert and go to the Instances layer.  Delete obj_player and obj_gamepad.
-
-<p> 
-	Open obj_gamepad and obj_player and press the Persistent radio button.
-
-![alt_text](images/.png)
+![add teleport_arrive state](images/arriveState.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-	Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button and run towards the teleporter. Now when you change rooms the player should still be stuck in the TELEPORTER state.
+Open up the **obj_player | Collision** event and only allow this state change when you are `in_game`.  This will stop the triggering of endless back and forth between teleporter rays.
 
-![alt_text](images/.png)
+![check in_game state for collision in player](images/changeStateOnlyInGame.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-We need to teleport the player to the new location of the teleporter. Open rm_desert and put a cursor on where the very center of the teleporter is located and read the coordinates. In my case it was (320, 2230):
 
 ![alt_text](images/.png)
 
