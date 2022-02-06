@@ -99,7 +99,7 @@ Now we need a room to teleport to.  We won't get too complicated, let's create a
 
 Select Background_Opaque_Tiles layer and select the sand tile.  Pick the Paint Bucket or Erase tool and start replacing all the opaque objects with sand. 
 
-
+https://user-images.githubusercontent.com/5504953/152674654-5916db84-cb07-4500-b1ea-5ab543b395ab.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
