@@ -104,6 +104,14 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. T
 
 https://user-images.githubusercontent.com/5504953/152680891-515cf713-3093-434e-a6d9-dcc86f3af3c8.mp4
 
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+
+##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+
+Repeat this for teleport send and arrive, by moving the scripts to functions.
+
+![refactor teleport send and arrive](images/teleportSendArrive.png)
 ___
 
 
