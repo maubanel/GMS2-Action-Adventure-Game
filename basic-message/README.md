@@ -94,9 +94,6 @@ Open up **obj_npc_tiger** and press the <kbd>Add Event</kbd> and select a **Crea
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open the **obj_npc_tiger | Collision**  event and alter which message to pass.  We want to pass the entire array so we use the array name without the brackets so it sends the entire list to the function. Lets randomize the order.
-
-https://user-images.githubusercontent.com/5504953/152687270-868137f7-623d-4378-83e1-a682aca6e028.mp4
-
 ![call message array with randomness](images/callArrrayMessages.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
@@ -105,6 +102,7 @@ https://user-images.githubusercontent.com/5504953/152687270-868137f7-623d-4378-8
 
 Now you will see that it displays all the messages in random order before the message disappears.  Notice that the icon is an arrow when there is a message that is coming up.
 
+https://user-images.githubusercontent.com/5504953/152687270-868137f7-623d-4378-83e1-a682aca6e028.mp4
 
 ![alt_text](images/.png)
 
@@ -112,7 +110,13 @@ Now you will see that it displays all the messages in random order before the me
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+We have included a script that will return which message number is going displayed to allow the user to display a new message.  The script `scr_message_number()` returns which message number is being displayed.  Open the **obj_player | Create** event and add a message. 
+
+The open up the **obj_player | Collision**  event and string the last two messages together using `scr_message_number()`.
+
+![add salutation message to create](images/addSalutation.png)
+
+![order two messages in a row](images/firstMessageCollision.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
