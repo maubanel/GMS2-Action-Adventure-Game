@@ -104,7 +104,6 @@ Now you will see that it displays all the messages in random order before the me
 
 https://user-images.githubusercontent.com/5504953/152687270-868137f7-623d-4378-83e1-a682aca6e028.mp4
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
