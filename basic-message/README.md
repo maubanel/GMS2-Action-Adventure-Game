@@ -122,25 +122,39 @@ The open up the **obj_player | Collision**  event and string the last two messag
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
+
 https://user-images.githubusercontent.com/5504953/152710591-c3889d20-b70f-4883-a895-86337d10593e.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now we will be asking a yes/no question.  This means we need to pass the message function an array of strings with the question in slot [0], the positive answer if the player selects yes in slot [1] and the no answer if the player selects no in slot [2].  
+
+Open the **obj_npc_tiger | Create** event and add a question array with a question, a positive answer, and a negative answer.
+
+![add question and answer to npc](images/addQuestions.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Change the condition on the multiple question from `>=` to `==`.
+
+Add the method `draw_dialogue_question(x, y, text, id, player_id, space_above, typewriter_delay)()` that is the same as the above parameter minus the randomize, as this will only take one question. The text argument HAS to be an array and has to contain 3 strings.  Open up `obj_npc_tiger | Collision` and add a third question message.
+
+![add draw question to collision event](images/askQuestionCollision.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
+
+The second message is a question that you can answer with Y or N by selecting the button with the arrow keys and pressing enter. There is a problem though you still move the player.
+
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
