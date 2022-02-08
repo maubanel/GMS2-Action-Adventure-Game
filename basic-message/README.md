@@ -1,12 +1,12 @@
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-### Basic Message Dialogue Box
+### Basic Dialogue Box
 
 <sub>[previous](../refactor-player/README.md#user-content-refactoring-player-step-events) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-I have provided some code to make dialogue boxes easier to implement.  Lets just display some text in a pop up box.
+I have provided some code to make dialogue boxes easier to implement.  Lets just display some text in a pop up box. It includes a message box that can display a message, a yes/no question and allows the user to input text and save it to a variable.  I have included all the needed files you need in this project.
 
 <br>
 
