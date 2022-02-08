@@ -39,7 +39,7 @@ Lets now take a look at a level that is larger than a single screen and putting 
 <kbd></kbd> &nbsp;&nbsp; [Pathfinding Zombie II](pathfinding-ii/README.md#user-content-pathfinding-zombie-ii) <br>
 <kbd></kbd> &nbsp;&nbsp; [Pathfinding Zombie III](pathfinding-iii/README.md#user-content-pathfinding-zombie-iii) <br>
 <kbd></kbd> &nbsp;&nbsp; [Front End](front-end/README.md#user-content-front-end) <br>
-<kbd></kbd> &nbsp;&nbsp; [Audio SFX](audio/README.md#user-contentx-audio-sfx) <br>
+<kbd></kbd> &nbsp;&nbsp; [Audio SFX](audio/README.md#user-content-audio-sfx) <br>
 
 <!-- LICENSE -->
 ## License
