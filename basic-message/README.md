@@ -160,7 +160,9 @@ https://user-images.githubusercontent.com/5504953/152984957-deda275d-0e6a-49da-a
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-![alt_text](images/.png)
+We want to freeze/pause the player (don't accept input) while the player answers the question so we need to add another state. Open the **obj_player | Create** event and add a `pause` state to `player_state`. We do not need any logic for this state, as the player will be doing nothing.
+
+![add pause to player_state in obj_player](images/addPausedState.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
