@@ -39,6 +39,8 @@ Lets now take a look at a level that is larger than a single screen and putting 
 <kbd></kbd> &nbsp;&nbsp; [Pathfinding Zombie II](pathfinding-ii/README.md#user-content-message-pathfinding-zombie-ii) <br>
 <kbd></kbd> &nbsp;&nbsp; [Pathfinding Zombie III](pathfinding-iii/README.md#user-content-message-pathfinding-zombie-iii) <br>
 <kbd></kbd> &nbsp;&nbsp; [Front End](front-end/README.md#user-content-message-front-end) <br>
+<kbd></kbd> &nbsp;&nbsp; [Audio SFX](audio/README.md#user-content-message-audio-sfx) <br>
+
 <!-- LICENSE -->
 ## License
 Distributed under the MIT License. See `LICENSE` for more information: [link](LICENSE).
