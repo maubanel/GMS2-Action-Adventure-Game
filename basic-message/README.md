@@ -154,7 +154,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
 
 The third message is a question that you can answer with Y or N by selecting the button with the arrow keys and pressing enter. There is a problem though you still move the player.
 
-
+https://user-images.githubusercontent.com/5504953/152984957-deda275d-0e6a-49da-aaba-e8887d182d90.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
