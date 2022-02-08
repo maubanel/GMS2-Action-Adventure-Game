@@ -186,7 +186,7 @@ Now the three message functions return a real number with the state type the mes
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can select **Y** and **N** without moving the player.  Control resumes after the yes or no question.
 
-
+https://user-images.githubusercontent.com/5504953/152987615-5f9618bb-aab2-4209-9a47-2497701b0e2f.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
