@@ -1,13 +1,12 @@
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-### Collectables
+### Pathfinding Zombie
 
 <sub>[previous](../) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Lets add an object for the player to collect in the game.  We will use a rare gem.
-
+I have provided an enemy sprite for you. Create a new folder in the <tt><b>Sprites</b></tt> section in the <tt><b>Resources</b></tt> menu.  Call it <tt><b>Zombie</b></tt>.  Create a new sprite and call it <tt><b>spr_zombie_right</b></tt>.
 
 <br>
 
@@ -16,7 +15,7 @@ Lets add an object for the player to collect in the game.  We will use a rare ge
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-We will need both a full size sprite and a HUD sprite that is smaller. Right click on the <tt><b>Sprites</b> title in the <tt><b>Resources</b></tt> menu and select <tt><b>Create Sprite</b></tt>.  Press the <tt><b>Import</b></tt> button and navigate to <tt><b>TutorialResources | Sprites | spr_gem.png</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_gem.png">here</a>). Name the sprite <tt><b>spr_gem</b></tt>.
+Press the <tt><b>Edit Image</b></tt> button and select <tt><b>Image | Import Strip Image</b></tt>.  Navigate to <tt><b>TutorialResources | Sprites | spr_zombie_right.png</b></tt> in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_zombie_rightpng">here</a>). Set the <tt><b>Frame Width</b></tt> and <tt><b>Frame Height</b></tt> to <tt><b>32</b></tt>.  Set the <tt><b>Number of Frames</b> and <tt><b>Frames per Row</b></tt> to </tt><tt><b>3</b></tt>. Press the <tt><b>Convert</b></tt> button.  Adjust the speed accordingly. 
 
 ![alt_text](images/.png)
 
@@ -24,7 +23,8 @@ We will need both a full size sprite and a HUD sprite that is smaller. Right cli
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-Repeat the above and import <tt><b>spr_gem_hud.png</b></tt>	naming it <tt><b>spr_gem_hud</b></tt>:	
+	Name the sprite <tt><b>spr_zombie_right</b></tt>.
+<h3><tt><b>spr_zombie_right</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -32,7 +32,9 @@ Repeat the above and import <tt><b>spr_gem_hud.png</b></tt>	naming it <tt><b>spr
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we have a lot of sprites in our sprites folder, lets clean them up. Right click on the <tt><b>Sprites</b></tt> title in the <tt><b>Resources</b></tt> menu and select <tt><b>Add Group</b></tt>. Call it <tt><b>Player</b></tt>. Drag the 6 player sprites into the folder.
+Repeat this for <tt><b>spr_zombie_up</b></tt> and <tt><b>spr_zombie_down</b></tt>
+		
+		<h3><tt><b>spr_zombie_up</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -40,7 +42,7 @@ Now we have a lot of sprites in our sprites folder, lets clean them up. Right cl
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Organize the rest of the sprite folder to your liking.
+Create a new Game Object called <tt><b>obj_zombie</b></tt> and bind the <tt><b>spr_zombie_right</b></tt> sprite to it.
 
 ![alt_text](images/.png)
 
@@ -48,7 +50,8 @@ Organize the rest of the sprite folder to your liking.
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Organize your game objects into groups as well.
+ The zombie will move between patrolling and chasing the player.	The Zombie will have its own finite state machine. The first state we will create is a <tt><b>PATROL</b></tt> state. So create a new Create Event on the zombie and add:
+	<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -56,7 +59,7 @@ Organize your game objects into groups as well.
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Add a new Game Object and call it <tt><b>obj_gem</b></tt> and bind <tt><b>spr_gem</b></tt> to it and place it in a logical group:
+Now we are going to create a path for the zombie to roam.  Now I am cautioning you that in the past this mode has been VERY slow and crashed often. Save your work now before starting. We will be using paths for the Zombie to walk around the room with. This requires no logic and we just lay out a track to where the Zombie will roam. Create a new Path and call it <tt><b>path_enemy</b></tt>: 
 
 ![alt_text](images/.png)
 
@@ -64,7 +67,9 @@ Add a new Game Object and call it <tt><b>obj_gem</b></tt> and bind <tt><b>spr_ge
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Add a new Game Object and call it <tt><b>obj_gem_hud</b></tt> and bind <tt><b>spr_gem_hud</b></tt> to it and place it in a logical group:
+Now we open <tt><b>rm_castle</b></tt> and add a <tt><b>Path</b></tt> Layer and place it under the <tt><b>Instances</b></tt> Path Layer and call it <tt><b>Zombie_Path</b></tt>. 
+		<p>
+		<h3><tt><b>rm_castle</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -72,8 +77,9 @@ Add a new Game Object and call it <tt><b>obj_gem_hud</b></tt> and bind <tt><b>sp
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We want to add the full size gems into the rooms to collect.  Now lets add 5 gems in <tt><b>rm_castle</b></tt> and 5 gems in <tt><b>rm_desert</b></tt>.
-<h3><tt><b>rm_castle</b></tt></h3>
+Select the path you just created <tt><b>path_enemy</b></tt>:
+
+		<h3><tt><b>rm_castle</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -81,7 +87,8 @@ We want to add the full size gems into the rooms to collect.  Now lets add 5 gem
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now the player will be picking up these gems, so they will disapear when the player collects them. We don&rsquo; t want to have a variable saved on the gem. Lets keep track of it in a game controller. Add a new game object and call it <tt><b>obj_game_controller</b></tt>.
+Press the Smooth Curve radio button in the path so that the turns are not all 90 degrees and the zombie moves more naturally.
+		<h3><tt><b>rm_castle</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -89,8 +96,9 @@ Now the player will be picking up these gems, so they will disapear when the pla
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Add a <tt><b>Create</b></tt> event to <tt><b>obj_game_controller</b></tt> and add a variable to track how many gems we have collected.
-		<h3><tt><b>obj_game_controller: Create Event</b></tt></h3>
+Left click around the level and draw a path for the zombie.  Give the enemy a path for patrolling.
+
+		<h3><tt><b>rm_castle</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -98,7 +106,8 @@ Add a <tt><b>Create</b></tt> event to <tt><b>obj_game_controller</b></tt> and ad
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Drag and drop <tt><b>obj_game_controller</b></tt> into <tt><b>rm_castle</b></tt>
+Keep clicking until you are back close to the beginning.  Press the <tt><b>CLosed</b></tt> radio button and the loop will fill in by itself!
+
 		<h3><tt><b>rm_castle</b></tt></h3>
 
 ![alt_text](images/.png)
@@ -108,8 +117,7 @@ Drag and drop <tt><b>obj_game_controller</b></tt> into <tt><b>rm_castle</b></tt>
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Now when the gem collides with the player we want the gemScore count to go up by 1 and the gem to dissapear. Create a new collision on the gem object with the player and add a point, destroy the gem and add an effect to sell the interaction and give positive feedback to the user action:
-		<h3><tt><b>obj_gem: Collision | obj_player Event</b></tt></h3>
+	Scale the three zombie sprites to be <tt><b>64</b></tt> by <tt><b>64</b></tt> :
 
 ![alt_text](images/.png)
 
@@ -117,7 +125,8 @@ Now when the gem collides with the player we want the gemScore count to go up by
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Go and collect the gems.  They should disappear with a simple particle effect like so:
+Place zombie into <tt><b>rm_castle</b></tt> and put him close to the start of your path. 
+<h3><tt><b>rm_castle</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -125,9 +134,11 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Now we are going to draw a small version of the gem on the Heads Up Display (HUD) on the top of the screen. We will use our <tt><b>obj_game_controller</b></tt> for this and add a <tt><b>DrawGUI</b></tt> event type. First lets draw a transparent rectangle to higlight the HUD. Please add:
+Now we need to trigger the <tt><b>obj_zombie</b></tt>> to follow this path. We will be using a new function that GameMaker provides. Paths do not start running by default we need to start them in code.  This is done through the <b><a href="gms2tutorials:///ShowHelp?keyword=path_start">path_start(path, speed, endaction, absolute)</a></b> function.
+		<p>
+	To start the enemy down the path add to the bottom of the create event:
 
-		<h3><tt><b>obj_game_controller: Draw GUI Event</b></tt></h3>
+	<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -135,7 +146,7 @@ Now we are going to draw a small version of the gem on the Heads Up Display (HUD
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Look at the HUD.  It is a bit ugly and you can't see what is happening behind it:
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Follow the zombie around and see how it follows the path.
 
 ![alt_text](images/.png)
 
@@ -143,10 +154,7 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-I don&rsquo;t like fact that the blue obscures the game screen. Lets make it transluscent. 
-		
-	<p>
-		Lets look at the manual for <b><a href="gms2tutorials:///ShowHelp?keyword=draw_set_alpha">draw_set_alpha(real)</a></b>. Now the tricky thing is that if you don't reset the alpha back to 1 it will affect every other sprite that it gets to after it draws the hud. This might include game objects in the room.  The draw event carries over to all future draw events that come after it. 
+I noticed that the sprite was following the path by its origin.  I moved the origin of all three sprites to <tt><b>Middle Center</b></tt> and adjusted the path so that the zombie did not pass any solid objects.
 
 ![alt_text](images/.png)
 
@@ -154,7 +162,7 @@ I don&rsquo;t like fact that the blue obscures the game screen. Lets make it tra
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-So be careful, if you reduce the alpha always set it back to 100% which is for this built in variable <tt><b>1</b></tt>. This is only true for Gamemaker Draw events. 
+Add a new script called <tt><b>scr_set_zombie_directions</b></tt>.  The pathfniding uses the direction that the player is in so we can select the best sprite based on whether they are facing in the angle they are moving in.  Add to this new script:
 
 ![alt_text](images/.png)
 
@@ -162,8 +170,9 @@ So be careful, if you reduce the alpha always set it back to 100% which is for t
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Look at the HUD.  It is a bit ugly and you can't see what is happening behind it:
+Open up the zombie and add a regular step event to the enemy and call this new script:
 
+		<h3><tt><b>obj_zombie: Step | Step Event</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -171,7 +180,7 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now go between levels by entering the teleporter to see what happens. Notice the HUD appears only in <tt><b>rm_castle</b></tt> and then disappears. 
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Follow the zombie around and see how it follows the path and faces the direction it is walking in.  Next up we will have the zombie chase the player.
 
 ![alt_text](images/.png)
 
@@ -179,7 +188,8 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
-We need the controller to persist just like the player so it carries to all levels. Open ObjGameController and click on the persistent radio button:
+We want the zombie to chase the player when he gets a certain distance away and can see the player (and can&rsquo;t see through walls). Open the zombie create event and add another marcro state called CHASE right after the previous macro and assign it a value of 1:
+	<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
 
 ![alt_text](images/.png)
 
@@ -187,8 +197,9 @@ We need the controller to persist just like the player so it carries to all leve
 
 ##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now test the game again and voila, the HUD stays active on all rooms no matter how many times you go back and forth. 
-
+We also want to know the range that triggers the zombie to chase the player. This will be calculated in pixels.  Lets start with a small number for testing, so you almost have to touch the enemy to get it to switch to CHASE. Add to the end of the zombie create event:
+		<h3><tt><b>obj_zombie: Create Event</b></tt></h3>
+        
 ![alt_text](images/.png)
 
 ___
