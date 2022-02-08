@@ -168,19 +168,25 @@ We want to freeze/pause the player (don't accept input) while the player answers
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now the player will just keep animating in the diretion they are going if we change states.  When we are in `player_state.paused` then we need to stop the player by setting `speed` to `0` and then select the idle animation by calling the animation selection function.  We do not need to resolve collisions as nothing is moving in this level (that will collide with the player) and the player is not moving. Open up `obj_player | Step` event and add the appropriate logic.
+
+![freeze player](images/freezePlayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now the three message functions return a real number with the state type the message box is in.  State 0 is a regular message, State 1 is a yes no question and State 2 is user inputing text.  Our question goes from State 1 when asking the yes no question to State 0 with the answer.  We just need to freeze the player in State 1.  Open the collision event for the NPC and add:
+
+![check input from controller and set state](images/freezeControlInCollision.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can select **Y** and **N** without moving the player.  Control resumes after the yes or no question.
+
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
