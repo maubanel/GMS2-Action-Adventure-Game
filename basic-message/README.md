@@ -192,15 +192,36 @@ https://user-images.githubusercontent.com/5504953/152987615-5f9618bb-aab2-4209-9
 
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
-![alt_text](images/.png)
+Now lets ask the user to type in a name and we will save it.  We want to say "Hi! USERNAME, welcome to our game...".  So we will ask a question "Please enter your first name below" and split the salutation into two parts (we will insert the user created name after).
+
+![add question and split greeting](images/addNameInputandSplitGreeting.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Lets store the name in the player as it is this player's name.  It needs to be an array so we will add an array string in slot 0 called `first_name`.
+
+![add variable array to player](images/addVarToPlayer.png)
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 22.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+Update the order so that the question is first.  Add our final message type `draw_dialogue_input(x, y, question, variable, id, player_id, space_above, typewriter_delay)`. The addition is a `variable` parameter which is the **array** (it has to be an array).  The rest should be the same with the question as a string or an array of multiple strings. For the salutation we need to concatonate the `salutation_part_1` with the newly entered player name and `salutation_part_2`.
+
+![update order and ask question and adjust salutation](images/questionLogic.png)
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 23.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. This is all we have to demonstrate for message boxes. Have fun with them!
+
 
 ___
+
+
 
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
