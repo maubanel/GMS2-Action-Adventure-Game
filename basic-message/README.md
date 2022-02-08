@@ -218,6 +218,7 @@ Update the order so that the question is first.  Add our final message type `dra
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. This is all we have to demonstrate for message boxes. Have fun with them!
 
+https://user-images.githubusercontent.com/5504953/152991038-805fc776-65fa-48ce-851a-c8cef8303593.mp4
 
 ___
 
