@@ -152,7 +152,7 @@ Add the method `draw_dialogue_question(x, y, text, id, player_id, space_above, t
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
 
-The second message is a question that you can answer with Y or N by selecting the button with the arrow keys and pressing enter. There is a problem though you still move the player.
+The third message is a question that you can answer with Y or N by selecting the button with the arrow keys and pressing enter. There is a problem though you still move the player.
 
 
 
