@@ -129,7 +129,7 @@ Now we are going to draw a small version of the gem on the Heads Up Display (HUD
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Look at the HUD.  It is a bit ugly and you can't see what is happening behind it.  
+v Look at the HUD.  It is a bit ugly and you can't see what is happening behind it.  
 
 ![solid hud background in game](images/solidMenu.png)
 
@@ -138,19 +138,17 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Look at the menu on the top left.
-
-![hud background in game](images/solidMenu.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
-
 I don't like fact that the blue obscures the game screen. Lets make it transluscent. 
 		
 Lets look at the manual for [draw_set_alpha(real)](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/draw_set_alpha.html). Now the tricky thing is that if you don't *reset* the alpha back to 1` it will affect every other sprite that it gets to after it draws the hud. This might include game objects in the room.  The draw event carries over to all future draw events that come after it.  Open up **obj_game | Draw GUI** script and add the alpha. Don't forget to reset it so you don't affect the alpha of future draw events for other objects.
 
 ![draw alpha hud and reset to 1](images/drawAlpha.png)
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
