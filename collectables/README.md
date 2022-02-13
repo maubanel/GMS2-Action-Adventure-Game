@@ -88,19 +88,17 @@ Now the player will be picking up these gems, so they will disapear when the pla
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Add a <tt><b>Create</b></tt> event to <tt><b>obj_game_controller</b></tt> and add a variable to track how many gems we have collected.
-		<h3><tt><b>obj_game_controller: Create Event</b></tt></h3>
+Add a **Create** event to `obj_game` and add a variable called `gems` to track how many gems we have collected. We start with `0` gems.
 
-![alt_text](images/.png)
+![add gems variable](images/gems0.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Drag and drop <tt><b>obj_game_controller</b></tt> into <tt><b>rm_castle</b></tt>
-		<h3><tt><b>rm_castle</b></tt></h3>
+Drag and drop **obj_game** into `rm_castle` anywhere in the level on the **Instances** layer.
 
-![alt_text](images/.png)
+![add obj_game to Intances layer](images/objGameInLevel.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
