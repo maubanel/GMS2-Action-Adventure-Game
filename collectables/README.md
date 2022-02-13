@@ -74,6 +74,7 @@ Add a new Game Object and call it `obj_gem_hud` and bind `spr_gem_hud` to it and
 
 We want to add the full size gems into the rooms to collect.  First lets center both horizontally and vertically the **Origin** on `spr_gem`. Add a new **Instance Layer** called `PickUps` to both rooms and move just above **Backgrounds**. Now lets add 5 gems in `rm_castle` and 5 gems in `rm_desert` to this new layer.
 
+https://user-images.githubusercontent.com/5504953/153755297-e9a06c22-b1f4-40b2-9af9-852538eea9aa.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
