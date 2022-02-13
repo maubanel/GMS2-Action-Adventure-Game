@@ -157,7 +157,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. L
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Now lets add a visual representation of the gems you collected.  First lets change the color to white an draw a title: "Gems: ".  Then lets loop through the `obj_game` gems and draw them one next to the other.  We will us the [draw_sprite(sprite, subimg, x, y)](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/drawing%20sprites%20and%20backgrounds/draw_sprite.html) function to perform this action.
 
+![draw gem sprite in hud](images/drawGemSprite.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
