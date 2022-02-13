@@ -32,9 +32,8 @@ Repeat the above and create a new **Sprite** then import [spr_gem_hud.png](image
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we have a lot of sprites in our sprites folder, lets clean them up. Right click on the <tt><b>Sprites</b></tt> title in the <tt><b>Resources</b></tt> menu and select <tt><b>Add Group</b></tt>. Call it <tt><b>Player</b></tt>. Drag the 6 player sprites into the folder.
+Now we have a lot of sprites in our sprites folder, lets clean them up. Right click on the **Sprites** title in the **Resources** menu and select **Add Group**. Call it `Player`. Drag the 3 player sprites into the folder.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
