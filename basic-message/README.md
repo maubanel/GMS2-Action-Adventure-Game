@@ -2,7 +2,7 @@
 
 ### Basic Dialogue Box
 
-<sub>[previous](../refactor-player/README.md#user-content-refactoring-player-step-events) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
+<sub>[previous](../refactor-player/README.md#user-content-refactoring-player-step-events) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../collectables/README.md#user-content-collectables)</sub>
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
@@ -227,9 +227,9 @@ ___
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - ADD NEXT PAGE">
+<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Collectables">
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-| [previous](../refactor-player/README.md#user-content-refactoring-player-step-events)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../)|
+| [previous](../refactor-player/README.md#user-content-refactoring-player-step-events)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../collectables/README.md#user-content-collectables)|
 |---|---|---|
