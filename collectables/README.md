@@ -123,7 +123,7 @@ https://user-images.githubusercontent.com/5504953/153760303-8d051614-ec7d-4cce-b
 
 Now we are going to draw a small version of the gem on the Heads Up Display (HUD) on the top of the screen. We will use our **obj_game** for this and add a **Draw GUI** event type. First lets draw a rectangle to higlight the HUD. 
 
-![alt_text](images/add recatangle for HUD.png)
+![add solid rectanble background for hud](images/addHudBackground1.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
