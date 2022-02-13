@@ -113,9 +113,8 @@ Now when the gem collides with the player we want the `gem` count to go up by `1
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Go and collect the gems.  They should disappear with a simple particle effect like so:
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Go and collect the gems.  They should disappear with a simple particle effect like so:
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
