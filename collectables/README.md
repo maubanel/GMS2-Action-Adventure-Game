@@ -50,21 +50,23 @@ https://user-images.githubusercontent.com/5504953/153754704-716a7d58-6e16-444f-8
 
 Organize your game objects into groups as well.
 
+![create groups to hold objects](images/organizeObjs.png)
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Add a new Game Object and call it <tt><b>obj_gem</b></tt> and bind <tt><b>spr_gem</b></tt> to it and place it in a logical group:
+Add a new Game Object and call it `obj_gem` and bind `spr_gem` to it and place it in a logical group.
 
-![alt_text](images/.png)
+![add obj_gem and assign spr_gem to it](images/objGem.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Add a new Game Object and call it <tt><b>obj_gem_hud</b></tt> and bind <tt><b>spr_gem_hud</b></tt> to it and place it in a logical group:
+Add a new Game Object and call it `obj_gem_hud` and bind `spr_gem_hud` to it and place it in a logical group.
 
-![alt_text](images/.png)
+![add obj_gem_hud and assign spr_gem_hud to it](images/objGemHud.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
