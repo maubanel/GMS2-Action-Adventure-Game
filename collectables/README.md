@@ -105,10 +105,9 @@ Drag and drop **obj_game** into `rm_castle` anywhere in the level on the **Insta
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Now when the gem collides with the player we want the gemScore count to go up by 1 and the gem to dissapear. Create a new collision on the gem object with the player and add a point, destroy the gem and add an effect to sell the interaction and give positive feedback to the user action:
-		<h3><tt><b>obj_gem: Collision | obj_player Event</b></tt></h3>
+Now when the gem collides with the player we want the `gem` count to go up by `1` and the gem in the level to dissapear. Create a new collision collision on the **obj_gem** object with the player and add a point, destroy the gem and add an effect to sell the interaction and give positive feedback to the user action:
 
-![alt_text](images/.png)
+![add 1 when colliding with gem and destroy objectx with effect](images/gemCollision.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
