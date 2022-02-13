@@ -121,9 +121,7 @@ https://user-images.githubusercontent.com/5504953/153760303-8d051614-ec7d-4cce-b
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Now we are going to draw a small version of the gem on the Heads Up Display (HUD) on the top of the screen. We will use our <tt><b>obj_game_controller</b></tt> for this and add a <tt><b>DrawGUI</b></tt> event type. First lets draw a transparent rectangle to higlight the HUD. Please add:
-
-		<h3><tt><b>obj_game_controller: Draw GUI Event</b></tt></h3>
+Now we are going to draw a small version of the gem on the Heads Up Display (HUD) on the top of the screen. We will use our **obj_game** for this and add a **Draw GUI** event type. First lets draw a transparent rectangle to higlight the HUD. 
 
 ![alt_text](images/.png)
 
@@ -131,9 +129,13 @@ Now we are going to draw a small version of the gem on the Heads Up Display (HUD
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Look at the HUD.  It is a bit ugly and you can't see what is happening behind it:
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Look at the HUD.  It is a bit ugly and you can't see what is happening behind it.  
 
-![alt_text](images/.png)
+![add recatangle for HUD](images/addHudBackground1.png)
+
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Look at the menu on the top left.
+
+![hud background in game](images/solidMenu.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
