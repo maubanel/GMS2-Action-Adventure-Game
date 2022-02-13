@@ -16,7 +16,7 @@ Lets add an object for the player to collect in the game.  We will use a rare ge
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Download [spr_gem.png](images/spr_gem.png) as a collectible for the game. Right click on the **Sprites** title in the **Resources** menu and select **Create | Sprite**.  Press the **Import**< button and navigate to the sprite you just doownloaded. Name the sprite `spr_gem`.
+Download [spr_gem.png](images/spr_gem.png) as a collectible for the game. Right click on the **Sprites** title in the **Resources** menu and select **Create | Sprite**.  Press the **Import** button and navigate to the sprite you just doownloaded. Name the sprite `spr_gem`.
 
 ![download spr_gem.png and assign to sprite](images/sprGem.png)
 
