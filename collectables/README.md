@@ -180,8 +180,9 @@ We need the controller to persist just like the player so it carries to all leve
 
 ##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now test the game again and voila, the HUD stays active on all rooms no matter how many times you go back and forth. But there is a problem.  It doesn't remember which gems were collected in each room they get reset.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now test the game again and voila, the HUD stays active on all rooms no matter how many times you go back and forth. But there is a problem.  It doesn't remember which gems were collected in each room they get reset. So you can just keep collecting new ones for ever as the room's reset their state every time we change rooms.
 
+https://user-images.githubusercontent.com/5504953/153761762-a7960f32-8ddd-4288-9927-c4959cfb64ee.mp4
 
 ___
 
