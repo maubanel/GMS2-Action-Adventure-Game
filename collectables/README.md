@@ -24,9 +24,9 @@ Download [spr_gem.png](images/spr_gem.png) as a collectible for the game. Right 
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-Repeat the above and import <tt><b>spr_gem_hud.png</b></tt>	naming it <tt><b>spr_gem_hud</b></tt>:	
+Repeat the above and create a new **Sprite** then import [spr_gem_hud.png](images/spr_gem_hud.png), naming it `spr_gem_hud`.	
 
-![alt_text](images/.png)
+![download spr_gem_hud.png and assign to sprite](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
