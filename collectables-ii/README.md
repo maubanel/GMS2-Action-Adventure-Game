@@ -6,7 +6,7 @@
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+Let's finish up collecting gems.
 
 <br>
 
@@ -15,23 +15,28 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-Now back to drawing the HUD again. Lets make a Font for the HUD. Create a new Font and pick one you like with a size of 10 points, set it to a thicker type and call it <tt><b>fnt_hud</b></tt>:
+ Not only can objects persist but rooms can as well.  If we want rooms to *keep* their state and not get purged we can make them persistent as well. Go to the game and open `rm_castle` and `rm_desert` and click the radio button called `Persistent`.
 
-![alt_text](images/.png)
+![make rm_caslte and rm_desert persistent](images/rmPersistence.png)
+
+
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-Lets draw the title <tt><b>"Gems: "</b></tt> on the HUD. Open DrawGUI Event in <tt><b>obj_game_controller</b></tt> and add to the end of the script:
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now when you go room to room the status of the gems are the same, they do not reset.
 
-	<h3><tt><b>obj_game_controller: Draw GUI Event</b></tt></h3>
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+Now back to drawing the HUD again. Lets make a Font for the HUD. Create a new Font and pick one you like with a size of 10 points, set it to a thicker type and call it <tt><b>fnt_hud</b></tt>:
+
+
+Lets draw the title <tt><b>"Gems: "</b></tt> on the HUD. Open DrawGUI Event in <tt><b>obj_game_controller</b></tt> and add to the end of the script:
 
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now the HUD has a text title on it.
 
