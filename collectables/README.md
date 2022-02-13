@@ -148,16 +148,16 @@ Lets look at the manual for [draw_set_alpha(real)](https://docs.yoyogames.com/so
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Look at the HUD.  It is a bit ugly and you can't see what is happening behind it:
 
+
+![hud with alpha in game](images/alphaHud.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Look at the HUD.  It is a bit ugly and you can't see what is happening behind it:
 
-
-![hud with alpha in game](images/alphaHud.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
