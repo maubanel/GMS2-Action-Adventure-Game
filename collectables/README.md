@@ -166,7 +166,7 @@ Now lets add a visual representation of the gems you collected.  First lets chan
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now go between levels by entering the teleporter to see what happens. Notice the HUD appears only in **rm_castle** and then disappears in the next room. In fact we get a crash with an error message when we collect a gem in the sand level. 
 
-
+https://user-images.githubusercontent.com/5504953/153761422-6cdbc248-04fd-43f8-bf5f-3c42cacf7a0b.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
