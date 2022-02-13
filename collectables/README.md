@@ -72,7 +72,7 @@ Add a new Game Object and call it `obj_gem_hud` and bind `spr_gem_hud` to it and
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We want to add the full size gems into the rooms to collect.  Now lets add 5 gems in `rm_castle` and 5 gems in `rm_desert`.
+We want to add the full size gems into the rooms to collect.  First lets center both horizontally and vertically the **Origin** on `spr_gem`. Add a new **Instance Layer** called `PickUps` to both rooms and move just above **Backgrounds**. Now lets add 5 gems in `rm_castle` and 5 gems in `rm_desert` to this new layer.
 
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
