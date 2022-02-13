@@ -26,7 +26,7 @@ Download [spr_gem.png](images/spr_gem.png) as a collectible for the game. Right 
 
 Repeat the above and create a new **Sprite** then import [spr_gem_hud.png](images/spr_gem_hud.png), naming it `spr_gem_hud`.	
 
-![download spr_gem_hud.png and assign to sprite](images/.png)
+![download spr_gem_hud.png and assign to sprite](images/sprGemHud.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
