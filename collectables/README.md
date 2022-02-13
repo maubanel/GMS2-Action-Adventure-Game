@@ -18,7 +18,7 @@ Lets add an object for the player to collect in the game.  We will use a rare ge
 
 Download [spr_gem.png](images/spr_gem.png) as a collectible for the game. Right click on the **Sprites** title in the **Resources** menu and select **Create | Sprite**.  Press the **Import**< button and navigate to the sprite you just doownloaded. Name the sprite `spr_gem`.
 
-![download spr_gem.png and assign to sprite](images/.png)
+![download spr_gem.png and assign to sprite](images/sprGem.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
