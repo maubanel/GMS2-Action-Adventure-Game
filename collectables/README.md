@@ -79,9 +79,9 @@ We want to add the full size gems into the rooms to collect.  First lets center 
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now the player will be picking up these gems, so they will disapear when the player collects them. We don&rsquo; t want to have a variable saved on the gem. Lets keep track of it in a game controller. Add a new game object and call it <tt><b>obj_game_controller</b></tt>.
+Now the player will be picking up these gems, so they will disapear when the player collects them. We don't want to have a variable saved on the gem object itself. Lets keep track of it in a game controller. Add a new game object and call it `obj_game`. Create a **Group** called `Logic` to put it in.  Do NOT assign a sprite to it.
 
-![alt_text](images/.png)
+![add obj_game to Logic group](images/obj_game.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
