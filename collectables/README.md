@@ -115,6 +115,7 @@ Now when the gem collides with the player we want the `gem` count to go up by `1
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Go and collect the gems.  They should disappear with a simple particle effect like so:
 
+https://user-images.githubusercontent.com/5504953/153760303-8d051614-ec7d-4cce-b7a6-a6560890a7d5.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
