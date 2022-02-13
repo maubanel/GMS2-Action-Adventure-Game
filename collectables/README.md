@@ -42,6 +42,7 @@ https://user-images.githubusercontent.com/5504953/153754499-c3fb6628-cf69-4596-b
 
 Organize the rest of the sprite folder to your liking.
 
+https://user-images.githubusercontent.com/5504953/153754704-716a7d58-6e16-444f-8736-b315b2d4cc27.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
