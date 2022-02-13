@@ -133,37 +133,33 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ![add recatangle for HUD](images/addHudBackground1.png)
 
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Look at the menu on the top left.
 
 ![hud background in game](images/solidMenu.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
-
-I don&rsquo;t like fact that the blue obscures the game screen. Lets make it transluscent. 
-		
-	<p>
-		Lets look at the manual for <b><a href="gms2tutorials:///ShowHelp?keyword=draw_set_alpha">draw_set_alpha(real)</a></b>. Now the tricky thing is that if you don't reset the alpha back to 1 it will affect every other sprite that it gets to after it draws the hud. This might include game objects in the room.  The draw event carries over to all future draw events that come after it. 
-
-![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-So be careful, if you reduce the alpha always set it back to 100% which is for this built in variable <tt><b>1</b></tt>. This is only true for Gamemaker Draw events. 
+I don't like fact that the blue obscures the game screen. Lets make it transluscent. 
+		
+Lets look at the manual for [draw_set_alpha(real)](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/colour%20and%20blending/draw_set_alpha.html). Now the tricky thing is that if you don't *reset* the alpha back to 1` it will affect every other sprite that it gets to after it draws the hud. This might include game objects in the room.  The draw event carries over to all future draw events that come after it.  Open up **obj_game | Draw GUI** script and add the alpha. Don't forget to reset it so you don't affect the alpha of future draw events for other objects.
 
-![alt_text](images/.png)
+![draw alpha hud and reset to 1](images/drawAlpha.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Look at the HUD.  It is a bit ugly and you can't see what is happening behind it:
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Look at the HUD.  It is a bit ugly and you can't see what is happening behind it:
 
 
-![alt_text](images/.png)
+![hud with alpha in game](images/alphaHud.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
