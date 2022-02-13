@@ -164,9 +164,9 @@ Now lets add a visual representation of the gems you collected.  First lets chan
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now go between levels by entering the teleporter to see what happens. Notice the HUD appears only in <tt><b>rm_castle</b></tt> and then disappears. 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now go between levels by entering the teleporter to see what happens. Notice the HUD appears only in **rm_castle** and then disappears in the next room. In fact we get a crash with an error message. 
 
-![alt_text](images/.png)
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
