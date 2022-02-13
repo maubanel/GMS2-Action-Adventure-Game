@@ -41,15 +41,12 @@ Now we have a lot of sprites in our sprites folder, lets clean them up. Right cl
 
 Organize the rest of the sprite folder to your liking.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
 Organize your game objects into groups as well.
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
