@@ -34,9 +34,7 @@ Repeat this for [spr_zombie_up.png](images/spr_zombie_up.png) and [spr_zombie_do
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-
-		
-		spr_zombie_up
+*Add* a `Zombie` group to the **Objects** section. *Create* a new **Game Object** called `obj_zombie` and bind the `spr_zombie_right` sprite to it.
 
 ![alt_text](images/.png)
 
@@ -44,9 +42,7 @@ Repeat this for [spr_zombie_up.png](images/spr_zombie_up.png) and [spr_zombie_do
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Create a new Game Object called obj_zombie and bind the spr_zombie_right sprite to it.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
