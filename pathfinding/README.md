@@ -100,7 +100,7 @@ Add a new **Instance Layer** to `rm_castle` called `Zombie`. Place it at the top
 
 Scale the three zombie sprites to be `64` by `64` to match the player size.
 
-
+https://user-images.githubusercontent.com/5504953/153904021-234bed24-eaab-47a1-8bfd-c8a4ac790573.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
@@ -108,6 +108,9 @@ Scale the three zombie sprites to be `64` by `64` to match the player size.
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 	
+Now we need to trigger the **obj_zombie** to follow this path. We will be using a function that **GameMaker** provides. Paths do not start running by default we need to start them in code.  This is done through the [path_start(path, speed, endaction, absolute]() function.
+		
+To start the enemy down the path add to the bottom of the create event:
 
 ![alt_text](images/.png)
 
@@ -115,8 +118,7 @@ Scale the three zombie sprites to be `64` by `64` to match the player size.
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-
-rm_castle
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Follow the zombie around and see how it follows the path. Make any adjustments so that the zombie does not pass through any solid objects.
 
 ![alt_text](images/.png)
 
@@ -124,19 +126,12 @@ rm_castle
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Now we need to trigger the obj_zombie> to follow this path. We will be using a new function that GameMaker provides. Paths do not start running by default we need to start them in code.  This is done through the <a href="gms2tutorials:///ShowHelp?keyword=path_start">path_start(path, speed, endaction, absolute)</a> function.
-		
-	To start the enemy down the path add to the bottom of the create event:
-
-	obj_zombie: Create Event
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Follow the zombie around and see how it follows the path.
+
 
 ![alt_text](images/.png)
 
