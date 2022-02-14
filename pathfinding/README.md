@@ -19,7 +19,7 @@ I have provided an enemy sprite for you. Download [spr_zombie_right.png](images/
 
 Press the <kbd>Edit Image</kbd> button and select **Image | Import Strip Image**.  Set the **Frame Width** and **Frame Height** to `32`.  Set the **Number of Frames** and **Frames per Row** to `3`. Press the <kbd>Convert</kbd> button.  Adjust the speed accordingly. Set the **Origin** to `Middle Center`.
 
-![alt_text](images/.png)
+https://user-images.githubusercontent.com/5504953/153884259-e371971d-f29e-4cba-82af-8a46eaa34615.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
