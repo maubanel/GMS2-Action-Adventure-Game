@@ -15,18 +15,18 @@ How do we get NPC's to chase the player?  We need to program logic so that the c
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-I have provided an enemy sprite for you. Download [spr_zombie_right.png](images/spr_zombie_right.png). Create a new folder in the Sprites section in the **Resources** called `Zombie`.  Create a new sprite and call it spr_zombie_right.
+I have provided an enemy sprite for you. Download [spr_zombie_right.png](images/spr_zombie_right.png). Create a new folder in the Sprites section in the **Resources** called `Zombie`.  Create a new sprite and call it `spr_zombie_right`.
 
 Press the <kbd>Edit Image</kbd> button and select **Image | Import Strip Image**.  Set the **Frame Width** and **Frame Height** to `32`.  Set the **Number of Frames** and **Frames per Row** to `3`. Press the <kbd>Convert</kbd> button.  Adjust the speed accordingly. Set the **Origin** to `Middle Center`.
 
 https://user-images.githubusercontent.com/5504953/153884259-e371971d-f29e-4cba-82af-8a46eaa34615.mp4
 
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-	Name the sprite spr_zombie_right.
-spr_zombie_right
+Repeat this for [spr_zombie_up.png](images/spr_zombie_up.png) and [spr_zombie_down.png](images/spr_zombie_down.png)
 
 ![alt_text](images/.png)
 
@@ -34,7 +34,7 @@ spr_zombie_right
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Repeat this for spr_zombie_up and spr_zombie_down
+
 		
 		spr_zombie_up
 
