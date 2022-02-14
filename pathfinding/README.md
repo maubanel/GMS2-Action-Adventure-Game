@@ -98,18 +98,16 @@ Add a new **Instance Layer** to `rm_castle` called `Zombie`. Place it at the top
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
+Scale the three zombie sprites to be `64` by `64` to match the player size.
 
 
-		rm_castle
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-	Scale the three zombie sprites to be 64 by 64 :
+	
 
 ![alt_text](images/.png)
 
