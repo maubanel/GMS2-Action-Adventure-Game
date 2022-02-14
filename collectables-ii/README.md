@@ -65,6 +65,8 @@ Open up **obj_game | Draw GUI** event and add the font to display.
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now we should have completed everything we need to deal with collectible items.
 
+https://user-images.githubusercontent.com/5504953/153881267-24e8eee8-9fd8-4374-8ace-29d094a78cbb.mp4
+
 ___
 
 
