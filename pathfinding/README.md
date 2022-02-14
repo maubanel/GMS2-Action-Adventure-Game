@@ -36,7 +36,7 @@ Repeat this for [spr_zombie_up.png](images/spr_zombie_up.png) and [spr_zombie_do
 
 *Add* a `Zombie` group to the **Objects** section. *Create* a new **Game Object** called `obj_zombie` and bind the `spr_zombie_right` sprite to it.
 
-![alt_text](images/.png)
+![add obj_zombie and assign zombie sprite](images/objZombie.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
