@@ -66,27 +66,23 @@ Now we open **rm_castle** and add a **Path Layer** and place it under the **Inst
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we open rm_castle and add a Path Layer and place it under the Instances Path Layer and call it Zombie_Path. 
-		
-		rm_castle
+Select the path you just created path_enemy:
 
-
+![add zombie path](images/zombiePath.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Select the path you just created path_enemy:
+Press the **Smooth Curve** radio button in the path so that the turns are not all 90 degrees and the zombie moves more naturally along a curved path.
 
-		rm_castle
-
-![alt_text](images/.png)
+![select Smooth Curve on path](images/smotthCurve.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Press the Smooth Curve radio button in the path so that the turns are not all 90 degrees and the zombie moves more naturally.
+
 		rm_castle
 
 ![alt_text](images/.png)
