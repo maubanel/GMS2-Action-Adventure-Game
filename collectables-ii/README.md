@@ -47,7 +47,9 @@ https://user-images.githubusercontent.com/5504953/153876892-ca4542a5-1f61-40a7-9
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Now back to drawing the HUD again. Lets make a Font for the HUD. Create a new Font and pick one you like with a size of 10 points, set it to a thicker type and call it <tt><b>fnt_hud</b></tt>:
+Now back to drawing the HUD again. Lets make a Font for the HUD. We are using the default font which has an unkown type and size and might be different on different operating systems. *Create* a new **Font** and pick one you like with a size of roughly 14 points, set it to a **Bold** type and call it `fnt_hud`.
+
+![create 14 point bold fnt_hud with cochita font](images/cochinFont.png)
 
 
 Lets draw the title <tt><b>"Gems: "</b></tt> on the HUD. Open DrawGUI Event in <tt><b>obj_game_controller</b></tt> and add to the end of the script:
@@ -58,7 +60,7 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 Now lets add the actual icon of the gem that we want to show on the screen how many you have collected. Add to the end of the Draw GUI event on the game controller:
 		<h3><tt><b>obj_game_controller: Draw GUI Event</b></tt></h3>
 
-![alt_text](images/.png)
+
 
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Run around collect Gems. Do you see gems adding up in the menu?  Also go from room to room.  Do you see a problem arise?
 
