@@ -38,6 +38,20 @@ Before the **Create** event ran on **obj_teleporter_ray** which resetn `obj_tele
 
 ![alt_text](images/teleportSend.png)
 
+
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now we should have fixed all issues with screen transitions!
+
+
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+
 Now back to drawing the HUD again. Lets make a Font for the HUD. Create a new Font and pick one you like with a size of 10 points, set it to a thicker type and call it <tt><b>fnt_hud</b></tt>:
 
 
@@ -46,19 +60,10 @@ Lets draw the title <tt><b>"Gems: "</b></tt> on the HUD. Open DrawGUI Event in <
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Now the HUD has a text title on it.
 
 
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
 Now lets add the actual icon of the gem that we want to show on the screen how many you have collected. Add to the end of the Draw GUI event on the game controller:
 		<h3><tt><b>obj_game_controller: Draw GUI Event</b></tt></h3>
 
 ![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Run around collect Gems. Do you see gems adding up in the menu?  Also go from room to room.  Do you see a problem arise?
 
