@@ -90,11 +90,9 @@ https://user-images.githubusercontent.com/5504953/153901584-e7aa95e0-ec03-4653-a
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
+Add a new **Instance Layer** to `rm_castle` called `Zombie`. Place it at the top of the hierarchy.  *Add* an instance of **obj_zombie** into this new layer close to the start of the path. 
 
-
-		rm_castle
-
-![alt_text](images/.png)
+![add zombie path](images/pathZombie.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
@@ -119,7 +117,7 @@ https://user-images.githubusercontent.com/5504953/153901584-e7aa95e0-ec03-4653-a
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Place zombie into rm_castle and put him close to the start of your path. 
+
 rm_castle
 
 ![alt_text](images/.png)
