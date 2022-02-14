@@ -34,7 +34,7 @@ https://user-images.githubusercontent.com/5504953/153779092-5257a953-d60d-48b3-b
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Before the **Create** event ran on **obj_teleporter_ray** which resetn `obj_teleporter_ray.fade` to `false`.  Now since we made the room **Persistent** the **Create** event does not run, so the fade stays `true`.  This means that it both adds and subtracts from the ray `image_alpha` which makes it stay at `1`.  We need to open up `teleport_send` and switch off `fade` before the room changes and it is no longer accessible.
+Before the **Create** event ran on **obj_teleporter_ray** which resetn `obj_teleporter_ray.fade` to `false`.  Now since we made the room **Persistent** the **Create** event does not run, so the fade stays `true`.  This means that it both adds and subtracts from the ray `image_alpha` which makes it stay at `1`.  We need to open up **teleport_send** and switch off `fade` before the room changes and it is no longer accessible.
 
 ![alt_text](images/teleportSend.png)
 
