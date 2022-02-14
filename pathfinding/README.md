@@ -82,16 +82,14 @@ Press the **Smooth Curve** radio button in the path so that the turns are not al
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Left click around the level and draw a path for the zombie.  I started in the graveyard as I imagine this is where he will start his patrol of the level.  I need to make sure there is room for the zombie to get around collisions so I avoid going too close. Give the enemy a path for patrolling. Keep clicking until you cover the entire level and are back close to the beginning.  Press the **Closed** *radio button* and the loop will fill in by itself!
 
-		rm_castle
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Left click around the level and draw a path for the zombie.  Give the enemy a path for patrolling.
+
 
 		rm_castle
 
@@ -101,7 +99,7 @@ Left click around the level and draw a path for the zombie.  Give the enemy a pa
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Keep clicking until you are back close to the beginning.  Press the CLosed radio button and the loop will fill in by itself!
+
 
 		rm_castle
 
