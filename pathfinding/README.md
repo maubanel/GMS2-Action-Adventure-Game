@@ -58,7 +58,9 @@ Now we are going to create a path for the zombie to roam.  Now I am cautioning y
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-
+Now we open **rm_castle** and add a **Path Layer** and place it under the **Instances** layer and call it `Zombie_Path`. 
+		
+![add zombie path](images/zombiePath.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
@@ -68,7 +70,7 @@ Now we open rm_castle and add a Path Layer and place it under the Instances Path
 		
 		rm_castle
 
-![alt_text](images/.png)
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
