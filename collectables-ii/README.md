@@ -26,13 +26,15 @@ Let's finish up collecting gems.
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now when you go room to room the status of the gems are the same, they do not reset.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now when you go room to room the status of the gems are the same, they do not reset. But there is a remaining issue now that the rooms are persistent the ray doesn't fade after coming back to the first room.
 
 https://user-images.githubusercontent.com/5504953/153779092-5257a953-d60d-48b3-bd46-3a9f3de532d4.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+
 
 Now back to drawing the HUD again. Lets make a Font for the HUD. Create a new Font and pick one you like with a size of 10 points, set it to a thicker type and call it <tt><b>fnt_hud</b></tt>:
 
