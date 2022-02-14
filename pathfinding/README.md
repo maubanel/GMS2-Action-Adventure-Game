@@ -84,6 +84,7 @@ Press the **Smooth Curve** radio button in the path so that the turns are not al
 
 Left click around the level and draw a path for the zombie.  I started in the graveyard as I imagine this is where he will start his patrol of the level.  I need to make sure there is room for the zombie to get around collisions so I avoid going too close. Give the enemy a path for patrolling. Keep clicking until you cover the entire level and are back close to the beginning.  Press the **Closed** *radio button* and the loop will fill in by itself!
 
+https://user-images.githubusercontent.com/5504953/153901584-e7aa95e0-ec03-4653-a2c9-a2da3a1259eb.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
