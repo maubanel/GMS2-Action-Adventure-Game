@@ -50,15 +50,15 @@ Repeat this for [spr_zombie_up.png](images/spr_zombie_up.png) and [spr_zombie_do
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
+Now we are going to create a path for the zombie to roam.  Now I am cautioning you that in the past this mode has been VERY slow and crashed often. Save your work now before starting. We will be using paths for the zombie to walk around the room with. This requires no logic and we just lay out a track to where the Zombie will roam. *Create* a new **Path** and call it `pth_zombie`: 
 
+![create a new Path called pth_zombie](images/pthZombie.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Now we are going to create a path for the zombie to roam.  Now I am cautioning you that in the past this mode has been VERY slow and crashed often. Save your work now before starting. We will be using paths for the Zombie to walk around the room with. This requires no logic and we just lay out a track to where the Zombie will roam. Create a new Path and call it path_enemy: 
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
