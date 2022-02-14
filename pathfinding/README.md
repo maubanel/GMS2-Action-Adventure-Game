@@ -26,7 +26,7 @@ https://user-images.githubusercontent.com/5504953/153884259-e371971d-f29e-4cba-8
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-Repeat this for [spr_zombie_up.png](images/spr_zombie_up.png) and [spr_zombie_down.png](images/spr_zombie_down.png)
+Repeat this for [spr_zombie_up.png](images/spr_zombie_up.png) and [spr_zombie_down.png](images/spr_zombie_down.png). To keep the settings you can **Duplicate** `obj_zombie_right` twice.
 
 ![repeat for zombie_up and zombie_down](images/zombieUpDown.png)
 
