@@ -19,9 +19,6 @@ Let's finish up collecting gems.
 
 ![make rm_caslte and rm_desert persistent](images/rmPersistence.png)
 
-
-
-
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
@@ -38,15 +35,13 @@ Before the **Create** event ran on **obj_teleporter_ray** which resetn `obj_tele
 
 ![alt_text](images/teleportSend.png)
 
-
-
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now we should have fixed all issues with screen transitions!
 
-
+https://user-images.githubusercontent.com/5504953/153876892-ca4542a5-1f61-40a7-9fdb-f95abac8f0a5.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
