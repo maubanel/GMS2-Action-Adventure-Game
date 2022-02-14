@@ -15,9 +15,9 @@ How do we get NPC's to chase the player?  We need to program logic so that the c
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-I have provided an enemy sprite for you. Download [spr_zombie_right.png](images/spr_zombie_right.png). Create a new folder in the Sprites section in the Resources menu.  Call it Zombie.  Create a new sprite and call it spr_zombie_right.
+I have provided an enemy sprite for you. Download [spr_zombie_right.png](images/spr_zombie_right.png). Create a new folder in the Sprites section in the **Resources** menu.  Call it `spr_zombie_right`.
 
-Press the <kbd>Edit Image</kbd> button and select **Image | Import Strip Image**.  Set the **Frame Width** and **Frame Height** to `32`.  Set the **Number of Frames** and **Frames per Row** to `3`. Press the <kbd>Convert</kbd> button.  Adjust the speed accordingly. 
+Press the <kbd>Edit Image</kbd> button and select **Image | Import Strip Image**.  Set the **Frame Width** and **Frame Height** to `32`.  Set the **Number of Frames** and **Frames per Row** to `3`. Press the <kbd>Convert</kbd> button.  Adjust the speed accordingly. Set the **Origin** to `Middle Center`.
 
 ![alt_text](images/.png)
 
