@@ -130,13 +130,10 @@ Since we have not run this script yet we did not notice that there is a run time
 
 ![fixed run time error](images/fixZombieState.png)
 
-
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Follow the zombie around and see how it follows the path. Make any adjustments so that the zombie does not pass through any solid objects.
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Follow the zombie around and see how it follows the path. Make any adjustments so that the zombie does not pass through any solid objects.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
