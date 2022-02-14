@@ -17,7 +17,7 @@ How do we get NPC's to chase the player?  We need to program logic so that the c
 
 I have provided an enemy sprite for you. Download [spr_zombie_rightpng](images/spr_zombie_rightpng). Create a new folder in the Sprites section in the Resources menu.  Call it Zombie.  Create a new sprite and call it spr_zombie_right.
 
-Press the Edit Image button and select Image | Import Strip Image.  Navigate to TutorialResources | Sprites | spr_zombie_right.png in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Sprites/spr_zombie_rightpng">here</a>). Set the Frame Width and Frame Height to 32.  Set the Number of Frames and Frames per Row to 3. Press the Convert button.  Adjust the speed accordingly. 
+Press the <kbd>Edit Image</kbd> button and select **Image | Import Strip Image**.  Set the **Frame Width** and **Frame Height** to `32`.  Set the **Number of Frames** and **Frames per Row** to `3`. Press the <kbd>Convert</kbd> button.  Adjust the speed accordingly. 
 
 ![alt_text](images/.png)
 
