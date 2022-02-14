@@ -42,16 +42,15 @@ Repeat this for [spr_zombie_up.png](images/spr_zombie_up.png) and [spr_zombie_do
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+ The zombie will move between patrolling, chasing the player and returning ot patrol. The Zombie will have its own finite state machine. The first state we will create is a `patrol` state. We will again use an **enumerator** to store this global constant. So add a new **Create Event** on the `obj_zombie` and add:
 
+![add patrol state to obj_zombie](images/zombieCreate.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
- The zombie will move between patrolling and chasing the player.	The Zombie will have its own finite state machine. The first state we will create is a PATROL state. So create a new Create Event on the zombie and add:
-	obj_zombie: Create Event
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
