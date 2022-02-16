@@ -134,6 +134,7 @@ Since we have not run this script yet we did not notice that there is a run time
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Follow the zombie around and see how it follows the path. Make any adjustments so that the zombie does not pass through any solid objects.
 
+https://user-images.githubusercontent.com/5504953/153908779-c2fc767d-09ee-4942-9d9b-791a248ea926.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
