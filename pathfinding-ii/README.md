@@ -137,10 +137,9 @@ https://user-images.githubusercontent.com/5504953/154688152-45af0a10-9b02-4f38-8
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-The zombie updates every frame so he mirrors your every move. This is annoying and we want to avoid mimicking the players moves step by step.  When moving we don't change our minds 30 times a second. We want to only update the movement ai every 20 frames. Now add to zombie create event at the end:
-		obj_zombie: Create Event
+The zombie updates every frame so he mirrors your every move. This is annoying and we want to avoid mimicking the players moves step by step.  When moving we don't change our minds 30 times a second. We want to only update the movement ai every `20` frames. Now add to the **obj_zombie: Create** event a timer (similar to restricting bullets) for delaying re-pathing.
 
-![alt_text](images/.png)
+![Add timer to zombie pathing](images/addTimer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
