@@ -162,6 +162,8 @@ Open up the **obj_zombie** and add a **Step | End Step** event to the enemy and 
 
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Follow the zombie around and see how it follows the path and faces the direction it is walking in.  Next up we will have the zombie chase the player.
 
+https://user-images.githubusercontent.com/5504953/154675184-e768a44b-530e-459c-92af-cf087b59f8f9.mp4
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
