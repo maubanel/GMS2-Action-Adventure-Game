@@ -179,9 +179,13 @@ Open the `scr_enemy_chase` scriptand add to the end of the script a check to see
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run up to the zombie then run away from it. The zombie will give up and freeze (run on spot) when you get far enough away.
 
+https://user-images.githubusercontent.com/5504953/154713727-c00a543d-e218-4ca2-89a8-9c762adc47c2.mp4
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
+
+
 
 
 
