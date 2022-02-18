@@ -161,17 +161,14 @@ https://user-images.githubusercontent.com/5504953/154709487-78d141c0-631a-43f6-9
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
+When the player gets far enough away from the zombie this creature will need to find its way back to its patrol path and go back to patrolling.  So we need to switch back to `patrol` state when the player gets too far away. We need to get the enemy back to the starting point of his patrol. We will need a new state called `return_to_patrol`. Open the **obj_zombie | Create** create event and add to the **enumerator**.
 
-
-![alt_text](images/.png)
+![add return_to_patrol state to obj_zombie](images/return_to_patrol.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-When the player gets far enough away from the zombie this creature will need to find its way back to its patrol path and go back to patrolling.  So we need to switch back to PATROL mode when the player gets too far away. We need to get the enemy back to the starting point of his patrol. We will need a new state called RETURN. Open the enemy create event and add to the macros:
-
-		obj_npc_tiger: Create Event
 
 ![alt_text](images/.png)
 
