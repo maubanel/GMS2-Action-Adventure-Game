@@ -195,8 +195,8 @@ First lets make sure that the zombie can go to `chase` state from either `patrol
 
 ##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the zombie will still freeze but will go back to chasing if you get too close when they are returning to patrol.
 
-![alt_text](images/.png)
 ___
 
 
