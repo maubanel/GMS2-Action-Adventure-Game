@@ -99,10 +99,9 @@ Now that we are done with the **Draw** event on **obj_zombie** right click on it
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-
 We can also create paths using this grid information.  So we need to change the path from the one for patrol to one between the zombie and the player but avoiding the forbiden tiles. First we have to create a new path for the zombie to follow that leads to the player's location.  We cannot lose the patrol path as the zombie will need this again when the player escapes and the zombie needs to go back to patrolling. 
 
-We will be using path_add() and set a chase speed in the zombie create. Open up **obj_zombie: Create** event and add antoher path.
+We will be using `path_add()`and set a chase speed in the zombie create. Open up **obj_zombie: Create** event and add antoher path.
 
 ![add chase path to zombie create](images/addChasePath.png)
 
