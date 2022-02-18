@@ -35,7 +35,7 @@ Now how do we have the zombie chase the player without running over water, a wal
 	
 We need to get access to the collision layer id (just like the player does).  To do this we call the `layer_get_id(layer)`function. Open up the **obj_zombie: Create** event.
 
-![alt_text](images/.png)
+![get collision layer in zombie create](images/getLayer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
