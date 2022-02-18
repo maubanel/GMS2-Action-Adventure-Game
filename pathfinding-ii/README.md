@@ -23,16 +23,17 @@ https://user-images.githubusercontent.com/5504953/154679300-1d24dade-3540-46a3-a
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
+OK, that worked! Since this is in a step event every frame we will be stopping the pathfinding and changing states.  We only need to do this once.  We can use the state as a switch and only make a change if the zombie is in `patrol` state. Reopen **obj_zombie: End Step** event.
 
-![alt_text](images/.png)
+![only switch to chase when in state patrol](images/onlySwitchOnPatrol.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Since this is in a step event every frame we will be stopping the pathfinding and changing states.  We only need to do this once.  We can use the state as a switch and only make a change if the zombie is in PATROL state.
-
-	obj_zombie: Step Event
+Now how do we have the zombie chase the player without running over water, a wall or any other part you don't want the enemy to walk on (typically the same areas the player can't walk on). We will now use GameMaker's pathfinding to create a path to chase the player. This pathfinding goes along a path that is full of free cells.  
+	
+We need to get access to the collision layer id (just like the player does).  To do this we call the `layer_get_id(layer)`function. Open up the **obj_zombie: Create** event.
 
 ![alt_text](images/.png)
 
@@ -40,13 +41,7 @@ Since this is in a step event every frame we will be stopping the pathfinding an
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now how do we have the zombie chase the player without running over water, a wall or any other part you don't want the enemy to walk on (typically the same areas the player can't walk on). We will now use GameMaker&rsquo;s pathfinding to create a path to chase the player. This pathfinding goes along a path that is full of free cells.  
 
-	
-		We need to get access to this layer id.  To do this we call the <a href="gms2tutorials:///ShowHelp?keyword=layer_get_id">layer_get_id(layer)</a> function.
-		obj_zombie: Create Event
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
