@@ -168,26 +168,27 @@ https://user-images.githubusercontent.com/5504953/154675184-e768a44b-530e-459c-9
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We want the zombie to chase the player when he gets a certain distance away and can see the player (and can&rsquo;t see through walls). Open the zombie create event and add another marcro state called CHASE right after the previous macro and assign it a value of 1:
-	obj_zombie: Create Event
+We want the zombie to chase the player when he gets a certain distance away and can see the player (and can't see through walls). Open the **obj_zombie | Create** event and add another zombie state called `chase` right after the previous enum.
 
-![alt_text](images/.png)
+
+![add chase enum to obj_zombie create event](images/chaseEnum.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
-We also want to know the range that triggers the zombie to chase the player. This will be calculated in pixels.  Lets start with a small number for testing, so you almost have to touch the enemy to get it to switch to CHASE. Add to the end of the zombie create event:
-		obj_zombie: Create Event
+We also want to know the range that triggers the zombie to chase the player. This will be calculated in pixels.  Lets start with `200` pixels away from the player. 
         
-![alt_text](images/.png)
+![set enemy_range variable to 200](images/enemyRangeVar.png)
 
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
+So we will add to the zombie step event script and check to see that the distance between the enemy and the player is less than the enemy_range variable then switch to the `chase` state. We also terminate the path movement as the zombie is no longer following the path and will chase the player. Open up **obj_zombie: End Step** event and stop the zombie and change states.
 
+![stop zombie and change state to chase when close to player](images/StartChase.png)
 ___
 
 
