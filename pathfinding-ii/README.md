@@ -83,13 +83,14 @@ How do we test to know if we have done it correctly? We can't just start using i
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you see that green is where the zombie can travel and red it blocked.  This looks correct to me.
 
+![grid draws red where zombie will not enter](images/mpCollisionVisualizedInGame.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Now you see that green is where the zombie can travel and red it blocked.  This looks correct to me.
 
 ![alt_text](images/.png)
 
