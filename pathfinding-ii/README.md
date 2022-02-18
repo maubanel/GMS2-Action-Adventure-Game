@@ -153,7 +153,7 @@ Open `scr_enemy_chase` and only adjust path every 20 frames.
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  The zombie should have a slight delay when you change directions and it should feel a little bit more natural. On the next page we will look at returning to patrol if the player gets away from the zombie.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  The zombie should have a slight delay when you change directions and it should feel a little bit more natural. I found `20` a third of a second too short and changed the delay to `60` (I should have used `room_speed`). 
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
