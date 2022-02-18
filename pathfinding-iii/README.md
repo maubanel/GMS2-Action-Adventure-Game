@@ -33,7 +33,7 @@ We need to end the path of the zombie chasing.  We change the state to `return_t
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can escape from the chasing player and they will return to the nearest point on their path.  They will get stuck there as we need to switch back to patrol.
 
-
+https://user-images.githubusercontent.com/5504953/154773631-adc64040-e78f-4dc8-ab3e-049f498a7f29.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
