@@ -57,6 +57,15 @@ Drag and drop **obj_player** into rm_fe. Make sure you place the player right in
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now try moving the player but nothing happens.  As we have no scripts for the player being in the **FE** state.
+
+
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+
+
 Open up the obj_player Step event and add a call to scr_player_movement_fe() so that the player can only move on the x axis and is restrained between the two buttons.
 		obj_player: Step Event
 
@@ -64,10 +73,6 @@ Open up the rm_castle and press the Creation Code button and make sure we get th
 		rm_castle
 
 ![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Create a new room called rm_credits and add obj_credits_controller to the instance layer.
 		rm_credits
