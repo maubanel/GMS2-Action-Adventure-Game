@@ -2,11 +2,11 @@
 
 ### Front End
 
-<sub>[previous](../) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
+<sub>[previous](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../audio/README.md#user-content-audio-sfx)</sub>
 
 <img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
 
-Chapter introduction here.
+We have completed a front end for you.  To activate it requires a few steps. It uses our main character to start the game.  I am a big fan of bringing game elements into the user experience and UI.  I like the idea of starting the game before you start the game!
 
 <br>
 
@@ -15,17 +15,17 @@ Chapter introduction here.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-We have completed a front end for you.  To activate it requires a few steps.  First lets add another state for the player called FE.  Open the player object and add another <tt><b>macro</b></tt> called <tt><b>FE</b></tt>.
-		<h3><tt><b>obj_player: Create Event</b></tt></h3>
+  First lets add another state for the player called FE.  Open the **obj_player: Create** event and add another **enumerator** called `FE`.
+		
 
-![alt_text](images/.png)
+![add FE to player state](images/feCreate.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-We are also going to change the starting state of the player to <tt><b>FE</b></tt>.
-		<h3><tt><b>obj_player: Create Event</b></tt></h3>
+We are also going to change the starting state of the player to FE.
+		obj_player: Create Event
 
 
 ![alt_text](images/.png)
@@ -34,8 +34,8 @@ We are also going to change the starting state of the player to <tt><b>FE</b></t
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Remove the player from <tt><b>rm_castle</b></tt>.
-		<h3><tt><b>rm_castle</b></tt></h3>
+Remove the player from rm_castle.
+		rm_castle
 
 ![alt_text](images/.png)
 
@@ -43,9 +43,9 @@ Remove the player from <tt><b>rm_castle</b></tt>.
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Move <tt><b>rm_fe</b></tt> from the <tt><b>FE</b></tt> folder to the top of the room list.  Drag and drop <tt><b>obj_gamepad</b></tt> into the room as well as <tt><b>obj_player</b></tt>
+Move rm_fe from the FE folder to the top of the room list.  Drag and drop obj_gamepad into the room as well as obj_player
 
-		<h3><tt><b>rm_fe</b></tt></h3>
+		rm_fe
 
 ![alt_text](images/.png)
 
@@ -53,8 +53,8 @@ Move <tt><b>rm_fe</b></tt> from the <tt><b>FE</b></tt> folder to the top of the 
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Open up the <tt><b>obj_player Step</b></tt> event and add a call to <tt><b>scr_player_movement_fe()</b></tt> so that the player can only move on the x axis and is restrained between the two buttons.
-		<h3><tt><b>obj_player: Step Event</b></tt></h3>
+Open up the obj_player Step event and add a call to scr_player_movement_fe() so that the player can only move on the x axis and is restrained between the two buttons.
+		obj_player: Step Event
 
 ![alt_text](images/.png)
 
@@ -62,8 +62,8 @@ Open up the <tt><b>obj_player Step</b></tt> event and add a call to <tt><b>scr_p
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-Open up the <tt><b>rm_castle</b></tt> and press the <tt><b>Creation Code</b></tt> button and make sure we get the collision volumes when we first enter this room:
-		<h3><tt><b>rm_castle</b></tt></h3>
+Open up the rm_castle and press the Creation Code button and make sure we get the collision volumes when we first enter this room:
+		rm_castle
 
 ![alt_text](images/.png)
 
@@ -71,8 +71,8 @@ Open up the <tt><b>rm_castle</b></tt> and press the <tt><b>Creation Code</b></tt
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Create a new room called <tt><b>rm_credits</b></tt> and add <tt><b>obj_credits_controller</b></tt> to the instance layer.
-		<h3><tt><b>rm_credits</b></tt></h3>
+Create a new room called rm_credits and add obj_credits_controller to the instance layer.
+		rm_credits
 
 ![alt_text](images/.png)
 
@@ -80,7 +80,7 @@ Create a new room called <tt><b>rm_credits</b></tt> and add <tt><b>obj_credits_c
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Go to the credits screen by noving the player and when on top of the credits button, pressing the enter button.  Also try going start the game by doing the same thing with the game button.  You can leave the credits screen by letting it play or by pressing enter again.
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Go to the credits screen by noving the player and when on top of the credits button, pressing the enter button.  Also try going start the game by doing the same thing with the game button.  You can leave the credits screen by letting it play or by pressing enter again.
 
 ![alt_text](images/.png)
 
@@ -88,9 +88,9 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now you should be able to escape out of the front end room and credit room to quit the game but NOT from the game back to the FE.  Add a <tt><b>Step | Step</b></tt> event to <tt><b>obj_game_controller</b></tt> and restart game if escape is pressed:
+Now you should be able to escape out of the front end room and credit room to quit the game but NOT from the game back to the FE.  Add a Step | Step event to obj_game_controller and restart game if escape is pressed:
 
-		<h3><tt><b>obj_game_controller: Step Event</b></tt></h3>
+		obj_game_controller: Step Event
         
 ![alt_text](images/.png)
 
@@ -98,7 +98,7 @@ Now you should be able to escape out of the front end room and credit room to qu
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> <tt><b>Play Button</b></tt>. Press escape in all rooms and it should work properly!
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Press escape in all rooms and it should work properly!
 
 ![alt_text](images/.png)
 
@@ -107,9 +107,9 @@ ___
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - ADD NEXT PAGE">
+<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Audio SFX">
 
 <img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
 
-| [previous](../)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../)|
+| [previous](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../audio/README.md#user-content-audio-sfx)|
 |---|---|---|
