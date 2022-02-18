@@ -24,11 +24,10 @@ We have completed a front end for you.  To activate it requires a few steps. It 
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-We are also going to change the starting state of the player to FE.
-		obj_player: Create Event
+We are also going to change the starting state of the player to FE in the **obj_player: Create** event.
 
 
-![alt_text](images/.png)
+![starting state of the player is FE](images/playerStateFE.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
