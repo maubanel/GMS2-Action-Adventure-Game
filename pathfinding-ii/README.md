@@ -131,6 +131,7 @@ Open up **obj_zombie** and create a new **Step** event. Check to see if we are i
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run up to the zombie then run away from it. Notice that it now follows you and doesn't run into collision areas.
 
+https://user-images.githubusercontent.com/5504953/154688152-45af0a10-9b02-4f38-8d7d-d64857e9e16a.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
