@@ -61,30 +61,29 @@ Open up the **obj_zombie: Create** event and create a new grid. We will go from 
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-We will be 
-	With this function you can create an mp_grid for the motion planning functions. It returns an index that must be used in all other mp_grid function calls. The x and y coordinates indicate the position of the top-left corner of the grid, hcells and vcells indicate the number of horizontal and vertical cells to be created within the grid, and cell width and cell height indicate the size of the cells in pixels. You can create and maintain multiple grid structures at the same moment if you need them for different things, but be aware that these are complex functions and the more you use and the higher the cell resolution then the slower your game could be. - Gamemaker Manual
-	</blockquote>
-	obj_zombie: Create Event
+We need to add cells to the collision volume in this grid.  To do this we use the tilemap_get_at_pixel(tilemap_element_id, x, y). This was the same function call we used for the player to determine if the place they were standing in was correct.
 
-![alt_text](images/.png)
+We also need to add to the grid a forbidden area when we are in a collisoin area.  For this we will use `mp_grid_add_cell(id, h, v)`.
+
+> With this function we can mark individual cells within the given MP grid as being "forbidden" meaning that the path finding functions will not ever cross them. Now, normally you work in x/y room coordinates, and not in MP grid cell coordinates. - GameMaker Manual
+
+ Open up the **obj_zombie: Create** event and go through every 32 pixels and add collision areas to the map.
+
+![add collisions to mp_grid](images/objZombieAddCollisions.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We need to add cells to the collision volume in this grid.  To do this we use the <a href="gms2tutorials:///ShowHelp?keyword=tilemap_get_at_pixel">tilemap_get_at_pixel(tilemap_element_id, x, y)</a> and <a href="gms2tutorials:///ShowHelp?keyword=mp_grid_add_cell">mp_grid_add_cell(id, h, v)</a> 
-		obj_zombie: Create Event
+How do we test to know if we have done it correctly? We can't just start using it as we don't know if this is working correctly. What we want to do is overlay this grid to see if the red parts match where our collision volumes lie. We can create a temporary script and use the funnction `mp_grid_draw(grid)`. It is pretty self explanatory. Add a new **obj_zombie: Draw** event add visualize the grid with an alpha on top of the level.
 
-![alt_text](images/.png)
+![draw mp_grid](images/drawMPGrid.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-How do we test to know if we have done it correctly? We can&rsquo;t just start using it as we don&rsquo;t know if this has no bugs. What we want to do is overlay this grid to see if the red parts match where our collision volumes lie. We can create a temporary script and use the function <a href="gms2tutorials:///ShowHelp?keyword=mp_grid_draw">mp_grid_draw(grid)</a> and is pretty self explanatory. Add a new draw event to the zombie and add the following:
-	obj_zombie: Draw Event
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
