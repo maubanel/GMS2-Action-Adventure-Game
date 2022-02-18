@@ -17,6 +17,7 @@ Lets get the zombie to chase the player while avoiding collisions.
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Approach the zombie and it should stop the path then get stuck in the **chase** state when you get too close. It will do nothing for now but they should stop patrolling and just stop.
 
+https://user-images.githubusercontent.com/5504953/154679300-1d24dade-3540-46a3-a256-1ada77e68bf2.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
