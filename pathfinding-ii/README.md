@@ -197,6 +197,8 @@ First lets make sure that the zombie can go to `chase` state from either `patrol
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the zombie will still freeze but will go back to chasing if you get too close when they are returning to patrol.
 
+https://user-images.githubusercontent.com/5504953/154734839-4208406d-a1bc-4ce2-8ece-3ff1bf76f217.mp4
+
 ___
 
 
