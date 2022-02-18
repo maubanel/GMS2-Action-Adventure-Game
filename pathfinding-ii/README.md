@@ -101,7 +101,7 @@ Now that we are done with the **Draw** event on **obj_zombie** right click on it
 
 We can also create paths using this grid information.  So we need to change the path from the one for patrol to one between the zombie and the player but avoiding the forbiden tiles. First we have to create a new path for the zombie to follow that leads to the player's location.  We cannot lose the patrol path as the zombie will need this again when the player escapes and the zombie needs to go back to patrolling. 
 
-We will be using `path_add()`and set a chase speed in the zombie create. Open up **obj_zombie: Create** event and add antoher path.
+We will be using `path_add()`and set a chase speed of `2.5` in the zombie create. Open up **obj_zombie: Create** event and add antoher path.
 
 ![add chase path to zombie create](images/addChasePath.png)
 
@@ -110,7 +110,9 @@ We will be using `path_add()`and set a chase speed in the zombie create. Open up
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Now we need to create a new script called `enemy_chase`.  In this script we will create a new path for the zombie between them and the player.  It will then start the script.
+Now we set up this grid because gamemaker provides a function that dynamically creates a path based on this collision grid so the enemy won't run into a grid section. We can create a path dynamically in script using: `mp_grid_path(d, path, xstart, ystart, xgoal, ygoal, allowdiag).
+
+Now we need to create a new script called `enemy_chase`.  In this script we will create a new path for the zombie between them and the player.  It will then start the zombie to follow this new path.
 
 ![enemy_chase script](images/enemyChase.png)
 
@@ -129,7 +131,7 @@ Open up **obj_zombie** and create a new **Step** event. Check to see if we are i
 
 
 
-Now we set up this grid because gamemaker provides a function that dynamically creates a path based on this collision grid so the enemy won&#39;t run into a grid section. We can create a path dynamically in script using: <a href="gms2tutorials:///ShowHelp?keyword=mp_grid_path">mp_grid_path(d, path, xstart, ystart, xgoal, ygoal, allowdiag)</a>. Create a new script called scr_enemy_chase and add:
+
 
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Run up to the zombie then run away from it. Notice that it now follows you!
 
