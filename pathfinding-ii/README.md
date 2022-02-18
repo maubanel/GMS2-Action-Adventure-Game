@@ -139,32 +139,27 @@ https://user-images.githubusercontent.com/5504953/154688152-45af0a10-9b02-4f38-8
 
 The zombie updates every frame so he mirrors your every move. This is annoying and we want to avoid mimicking the players moves step by step.  When moving we don't change our minds 30 times a second. We want to only update the movement ai every `20` frames. Now add to the **obj_zombie: Create** event a timer (similar to restricting bullets) for delaying re-pathing.
 
-![Add timer to zombie pathing](images/addTimer.png)
+![Add timer to zombie pathing in zombie create](images/addTimerCreate.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Now lets adjust the distance the zombie is from player to trigger the state change:
+Open `scr_enemy_chase` and only adjust path every 20 frames.
 
-	obj_zombie: Create Event
-
-![alt_text](images/.png)
+![Add timer to zombie pathing](images/addTimer.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-Open scr_enemy_chase and only adjust path every 20 frames:
-		scr_enemy_chase
-
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  The zombie should have a slight delay when you change directions and it should feel a little bit more natural. On the next page we will look at returning to patrol if the player gets away from the zombie.
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Play the game and test your work.  The zombie should have a slight delay when you change directions and it should feel a little bit more natural. On the next page we will look at returning to patrol if the player gets away from the zombie.
+
 
 ![alt_text](images/.png)
 
