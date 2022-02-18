@@ -49,6 +49,7 @@ Then we need to open up the zombie step event and add at the bottom a check to s
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run up to the zombie then run away from it. The zombie will give up and return to the closest patrol spot then go back to patrolling. That is it for pathfinding a lot of work, but rewarding!
 
+https://user-images.githubusercontent.com/5504953/154774361-12f01fe8-e0df-4fcf-8317-4cb2a93ed4c1.mp4
 
 ___
 
