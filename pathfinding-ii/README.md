@@ -15,13 +15,13 @@ Lets get the zombie to chase the player while avoiding collisions.
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Approach the zombie and it should stop the path then get stuck in the **chase** state when you get too close. It will do nothing for now but they should stop patrolling and just stop.
 
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Approach the zombie and it should stop the path then get stuck in the CHASE state when you get too close:
 
 ![alt_text](images/.png)
 
