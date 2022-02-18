@@ -139,7 +139,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. F
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-I noticed that the sprite was following the path by its origin.  I moved the origin of all three sprites to Middle Center and adjusted the path so that the zombie did not pass any solid objects.
+Once you are happy with the zombie path and you have made edits to the original, lets make the zombie face the direction they are running in. Add a new script called `set_zombie_directions`.  The pathfniding uses the direction that the player is in so we can select the best sprite based on whether they are facing in the angle they are moving in.  Add to this new script:
 
 ![alt_text](images/.png)
 
@@ -147,9 +147,7 @@ I noticed that the sprite was following the path by its origin.  I moved the ori
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Add a new script called scr_set_zombie_directions.  The pathfniding uses the direction that the player is in so we can select the best sprite based on whether they are facing in the angle they are moving in.  Add to this new script:
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
