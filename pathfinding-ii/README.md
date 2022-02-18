@@ -41,21 +41,27 @@ We need to get access to the collision layer id (just like the player does).  To
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+We need to get access to this to the tilemap this layer is using.  To do this we call the `layer_tilemap_get_id(layer id)` function. Reopen **obj_zombie: Create** event
 
+![get access to tilemap in collisoin level](images/getTilemap.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-We need to get access to this to the tilemap holding this layer.  To do this we call the <a href="gms2tutorials:///ShowHelp?keyword=layer_tilemap_get_id">layer_tilemap_get_id(layer id)</a> function.
-		obj_zombie: Create Event
+We now need to create a grid of which tiles the enemy is allowed to enter and which they can't.  In **GameMaker** this ia an `mp_grid` (motion planning grid).  We will create a new **mp_grid** using `mp_grid_create(left, top, hcells, vcells, cellwidth, cellheight)`.
 
-![alt_text](images/.png)
+> With this function you can create an **mp_grid** for the motion planning functions. It returns an index that must be used in all other **mp_grid** function calls. The x and y coordinates indicate the position of the top-left corner of the grid, hcells and vcells indicate the number of horizontal and vertical cells to be created within the grid, and cell width and cell height indicate the size of the cells in pixels. You can create and maintain multiple grid structures at the same moment if you need them for different things, but be aware that these are complex functions and the more you use and the higher the cell resolution then the slower your game could be. - Gamemaker Manual
+
+Open up the **obj_zombie: Create** event and create a new grid. We will go from the top left to the bottom right of the level.  Our grid will be the same size as our collision layer volumes at `32` pixels on cell height and cell width.
+
+![create mp_grid](images/createGrid.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
+We will be 
 	With this function you can create an mp_grid for the motion planning functions. It returns an index that must be used in all other mp_grid function calls. The x and y coordinates indicate the position of the top-left corner of the grid, hcells and vcells indicate the number of horizontal and vertical cells to be created within the grid, and cell width and cell height indicate the size of the cells in pixels. You can create and maintain multiple grid structures at the same moment if you need them for different things, but be aware that these are complex functions and the more you use and the higher the cell resolution then the slower your game could be. - Gamemaker Manual
 	</blockquote>
 	obj_zombie: Create Event
