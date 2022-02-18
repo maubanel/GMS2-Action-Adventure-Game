@@ -186,7 +186,7 @@ https://user-images.githubusercontent.com/5504953/154713727-c00a543d-e218-4ca2-8
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
 
-First lets make sure that the zombie can go to `chase` state from either `patrol` or `return_to_patrol` state.  Open up the **obj_zombie | End Step** event and add the condition.
+First lets make sure that the zombie can go to `chase` state from either `patrol` **or** (||) `return_to_patrol` state.  Open up the **obj_zombie | End Step** event and add the condition.
         
 ![add condition for return_to_patrol](images/andReturnToPatrol.png)
 
