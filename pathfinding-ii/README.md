@@ -91,41 +91,46 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Now that we are done with the **Draw** event on **obj_zombie** right click on it and select **Delete**.
 
-![alt_text](images/.png)
+![delete draw event for zombie](images/deleteDrawEvent.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-First we have to create a new path for the zombie to follow that leads to the player's location.  We will be using <a href="gms2tutorials:///ShowHelp?keyword=path_add">path_add()</a> and set a chase speed in the zombie create.
 
-	obj_zombie: Create Event
+We can also create paths using this grid information.  So we need to change the path from the one for patrol to one between the zombie and the player but avoiding the forbiden tiles. First we have to create a new path for the zombie to follow that leads to the player's location.  We cannot lose the patrol path as the zombie will need this again when the player escapes and the zombie needs to go back to patrolling. 
 
-![alt_text](images/.png)
+We will be using path_add() and set a chase speed in the zombie create. Open up **obj_zombie: Create** event and add antoher path.
+
+![add chase path to zombie create](images/addChasePath.png)
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Check to see if we are in the chase state and then call a new script that will chase the player.
+Now we need to create a new script called `enemy_chase`.  In this script we will create a new path for the zombie between them and the player.  It will then start the script.
 
-	obj_zombie: Step Event
-
-![alt_text](images/.png)
+![enemy_chase script](images/enemyChase.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Now we set up this grid because gamemaker provides a function that dynamically creates a path based on this collision grid so the enemy won&#39;t run into a grid section. We can create a path dynamically in script using: <a href="gms2tutorials:///ShowHelp?keyword=mp_grid_path">mp_grid_path(d, path, xstart, ystart, xgoal, ygoal, allowdiag)</a>. Create a new script called scr_enemy_chase and add:
+Open up **obj_zombie** and create a new **Step** event. Check to see if we are in the chase state and then call a the above script that will chase the player.
 
-![alt_text](images/.png)
+![call enemy_chase script from zombie step event](images/callEnemyChase.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+
+
+
+Now we set up this grid because gamemaker provides a function that dynamically creates a path based on this collision grid so the enemy won&#39;t run into a grid section. We can create a path dynamically in script using: <a href="gms2tutorials:///ShowHelp?keyword=mp_grid_path">mp_grid_path(d, path, xstart, ystart, xgoal, ygoal, allowdiag)</a>. Create a new script called scr_enemy_chase and add:
 
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Run up to the zombie then run away from it. Notice that it now follows you!
 
