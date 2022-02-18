@@ -33,33 +33,32 @@ We are also going to change the starting state of the player to FE in the **obj_
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Remove the player from rm_castle.
-		rm_castle
+Remove the player from `rm_castle`.
 
-![alt_text](images/.png)
+![remove obj_player from rm_castle](images/removePlayerFromLevel.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Move rm_fe from the FE folder to the top of the room list.  Drag and drop obj_gamepad into the room as well as obj_player
+Move `rm_fe` from the top of the **Room Order** list.  
 
-		rm_fe
-
-![alt_text](images/.png)
+![move rm_fe to top of room order](images/moveRoomFE.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Open up the obj_player Step event and add a call to scr_player_movement_fe() so that the player can only move on the x axis and is restrained between the two buttons.
-		obj_player: Step Event
+Drag and drop **obj_player** into rm_fe. Make sure you place the player right in the middle of the **Credits** and **Start** buttons.
 
-![alt_text](images/.png)
+![place player in room](images/placePlayerInRoom.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+
+Open up the obj_player Step event and add a call to scr_player_movement_fe() so that the player can only move on the x axis and is restrained between the two buttons.
+		obj_player: Step Event
 
 Open up the rm_castle and press the Creation Code button and make sure we get the collision volumes when we first enter this room:
 		rm_castle
