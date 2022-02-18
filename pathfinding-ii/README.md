@@ -177,7 +177,7 @@ Open the `scr_enemy_chase` scriptand add to the end of the script a check to see
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run up to the zombie then run away from it. The zombie will give up and freeze (run on spot) when you get far enough away.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run up to the zombie then run away from it. The zombie will give up and freeze (run on spot) when you get far enough away. But notice the zombie does not go back to chase while in return?
 
 https://user-images.githubusercontent.com/5504953/154713727-c00a543d-e218-4ca2-89a8-9c762adc47c2.mp4
 
@@ -186,20 +186,17 @@ https://user-images.githubusercontent.com/5504953/154713727-c00a543d-e218-4ca2-8
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
 
+First lets make sure that the zombie can go to `chase` state from either `patrol` or `return_to_patrol` state.  Open up the **obj_zombie | End Step** event and add the condition.
+        
+![add condition for return_to_patrol](images/andReturnToPatrol.png)
 
-
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
-First lets make sure that the zombie can go to CHASE state from either PATROL or RETURN state.  Open up the zombie step event and add this condition:
-		obj_npc_tiger: Step Event
-        
-![alt_text](images/.png)
 
+![alt_text](images/.png)
 ___
 
 
