@@ -140,25 +140,27 @@ https://user-images.githubusercontent.com/5504953/153908779-c2fc767d-09ee-4942-9
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-Once you are happy with the zombie path and you have made edits to the original, lets make the zombie face the direction they are running in. Add a new script called `set_zombie_directions`.  The pathfniding uses the direction that the player is in so we can select the best sprite based on whether they are facing in the angle they are moving in.  Add to this new script:
+Once you are happy with the zombie path and you have made edits to the original, lets make the zombie face the direction they are running in. Add a new script called `set_zombie_direction`.  The pathfniding uses the direction that the player is in so we can select the best sprite based on whether they are facing in the angle they are moving in.  
 
-![alt_text](images/.png)
+What we can divide **Direction** by `90` and if we round the result, get a sense of which of the 4 zones they are in .  This division returns a result of 1 to 4 with one condition returning 0 (0 / 90).  We use **default** to handle the case for 0 degrees which we would want to move right.  Default catches any number that doesn't match the supplied cases.
+
+Add to this new script turning in four directions with 1 (90/90) being up, 2 (180 / 90) being left, 3 (270/90) being down, and 4 (360/90) and 0 (0/90) being right. 
+
+![divide direction by 90 to get direction zombie is moving in](images/setZombieDirection.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Open up the **obj_zombie** and add a **Step | End Step** event to the enemy and call the above script.
 
+![call set_zombie_direction in end step in zombie object](images/callSetZombie.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open up the zombie and add a regular step event to the enemy and call this new script:
 
-		obj_zombie: Step | Step Event
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
