@@ -169,23 +169,21 @@ When the player gets far enough away from the zombie this creature will need to 
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Open the `scr_enemy_chase` scriptand add to the end of the script a check to see if it should chase else go back to `patrol`. We end the path of the enemy chase and switch to the `return_to_patrol` state when the player has gone twice the trigger distance away from the enemy.
 
-![alt_text](images/.png)
+![return to patrol when enemy is twice as far away](images/returnToPatrolScript.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open the scr_enemy_chase scriptand add to the end of the script a check to see if it should chase else go back to PATROL. We end the path of the enemy chase and switch to the RETURN state when the player has gone twice the trigger distance away from the enemy.
-		scr_enemy_chase
-
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run up to the zombie then run away from it. The zombie will give up and freeze (run on spot) when you get far enough away.
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Run up to the zombie then run away from it. The zombie will give up and freeze (run on spot) when you get far enough away.
+
 
 ![alt_text](images/.png)
 
