@@ -31,7 +31,7 @@ We need to end the path of the zombie chasing.  We change the state to `return_t
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can escape from the chasing player and they will return to the nearest point on their path.  They will get stuck there as we need to switch back to patrol.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can escape from the chasing player and they will return to the nearest point on their path.  The zombie will get stuck there as we need to switch back to patrol.
 
 https://user-images.githubusercontent.com/5504953/154773631-adc64040-e78f-4dc8-ab3e-049f498a7f29.mp4
 
@@ -39,14 +39,16 @@ https://user-images.githubusercontent.com/5504953/154773631-adc64040-e78f-4dc8-a
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Then we need to open up the zombie step event and add at the bottom a check to see if we are close enough to the path to return to PATROL state.  If we are we end the previous path, start the original patrol path, update the position to the closest point that the player is at then change the state back to CONTROL.
-			<h3>obj_zombie: Step Event</h3>
+Then we need to open up the zombie step event and add at the bottom a check to see if we are close enough to the path to return to `patrol` state.  If we are we end the previous path, start the original patrol path, update the position to the closest point that the player is at.  Open up **obj_zombie: End Step** event and make the addition.
 
-![alt_text](images/.png)
+![return to path in zombie end step](images/returnToPathEndStep.png)
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Run up to the zombie then run away from it. The zombie will give up and return to the closest patrol spot then go back to patrolling.
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-![alt_text](images/.png)
+##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run up to the zombie then run away from it. The zombie will give up and return to the closest patrol spot then go back to patrolling. That is it for pathfinding a lot of work, but rewarding!
+
 
 ___
 
