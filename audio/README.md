@@ -33,24 +33,23 @@ Repeat and add another sound for [snd_button_pressed.wav](images/snd_button_pres
 
 Repeat and add another sound for [snd_button_release.wav](images/snd_button_release.wav)
 
-![alt_text](images/.png)
+![add snd_button_release to the game](images/sndButtonRelease.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-	Now lets call the sound effects, put them as a second priority and set them to non-looping.  Open scr_fe_text and add a sound for each image change state of the buttons in the FE.
-Helper | scr_fe_text
+Now lets call the sound effects, put them as a second priority and set them to non-looping.  Open `scr_fe_text` and add a sound for each image change state of the buttons in the FE.
 
-![alt_text](images/.png)
+
+![add sound to three button states in scr_fe_text](images/buttonSnd.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Walk around and press the buttons in the FE screen and listen to the three audio states.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Walk around and press the buttons in the FE screen and listen to the three audio states.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
