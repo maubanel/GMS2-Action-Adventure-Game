@@ -15,9 +15,9 @@ Now I am generally happy with what we have done to date so lets add audio.  Even
 
 ##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
 
-OK, lets import three button sounds.  One for stepping on the button and holding it, one for selecting it and one for walking off of it.  Lets start by finding the location of TutorialResources | Audio | snd_button_hold.wav in the browser (or click <a href="gms2tutorials:///ShowFiles?path=../TutorialResources/Audio/snd_button_hold.wav">here</a>). Right click on Sounds and select Create Sound.  Press the three dots and select the above file. Call it snd_button_hold.
+Download [snd_button_hold.wav](images/snd_button_hold.wav) and save it to your computer. Right click on **Sounds** and select **Create | Sound**.  Press the three dots and select the above file. Call it `snd_button_hold`.
 
-![alt_text](images/.png)
+![download and assign snd_button_hold](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
