@@ -100,7 +100,7 @@ https://user-images.githubusercontent.com/5504953/154804573-2c4fda98-745c-48a7-9
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now try going to the game.  Woops, we get into the game level and we are stuck and start in the wrong spot.
 
-
+https://user-images.githubusercontent.com/5504953/154804991-49b895bc-c5f6-44c4-9688-0b496d10e82a.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
