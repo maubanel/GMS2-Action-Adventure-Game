@@ -115,7 +115,9 @@ Open up `rm_castle` and place the cursor where you want to start.  I have picked
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+
+
+![alt_text](images/alarm0Place.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
