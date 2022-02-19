@@ -157,6 +157,7 @@ Now you should be able to escape out of the front end room and credit room to qu
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press escape in the game and it should go back to the Front End.  Press escape in the Front End and it should quit the game!
 
+https://user-images.githubusercontent.com/5504953/154806975-80789afa-cefe-476b-915c-6f3cb48f9d39.mp4
 
 ___
 
