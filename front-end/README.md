@@ -92,13 +92,12 @@ Create a new room called `rm_credits`.  Drag and drop `obj_credits_controller` i
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now go to the **Credits** button and press the <kbd>Return/Enter</kbd> key.  You will go to the credits.  You can wait until the end of the credit roll or press the <kbd>Esc</bkd> key to exit back to the main menu.  You can open up `obj_credits_controller | Create` event and alter the credits.
+
+
 Open up the rm_castle and press the Creation Code button and make sure we get the collision volumes when we first enter this room:
 		rm_castle
 
-![alt_text](images/.png)
-
-Create a new room called rm_credits and add obj_credits_controller to the instance layer.
-		rm_credits
 
 ![alt_text](images/.png)
 
