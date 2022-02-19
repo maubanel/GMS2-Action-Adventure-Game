@@ -147,26 +147,16 @@ https://user-images.githubusercontent.com/5504953/154805619-79ab07b0-c6b0-4d27-8
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now you should be able to escape out of the front end room and credit room to quit the game but NOT from the game back to the FE.  Add a **Step | Step** event to **obj_game** and restart game if escape is pressed:
 
+![add escape to game](images/QuitGame.png)
 
-		rm_castle
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
+##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press escape in the game and it should go back to the Front End.  Press escape in the Front End and it should quit the game!
 
-
-![alt_text](images/.png)
-
-Now you should be able to escape out of the front end room and credit room to quit the game but NOT from the game back to the FE.  Add a Step | Step event to obj_game_controller and restart game if escape is pressed:
-
-		obj_game_controller: Step Event
-        
-![alt_text](images/.png)
-
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Press escape in all rooms and it should work properly!
-
-![alt_text](images/.png)
 
 ___
 
