@@ -65,17 +65,23 @@ https://user-images.githubusercontent.com/5504953/154776237-24b85500-d647-47dc-8
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The player can now turn and will idle but does not move. Our collisions need to be loaded as the collision detection is expecting this information.
+Open up the **obj_player Step** event and add a call to `scr_player_movement_fe()` so that the player can only move on the x axis and is restrained between the two buttons.
 
-https://user-images.githubusercontent.com/5504953/154776909-c7d80f8c-aafa-4aea-98ba-9748776d763c.mp4
+![add call to scr_player_movement_fe() in obj_player](images/playerMovementFE.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open up the **obj_player Step** event and add a call to `scr_player_movement_fe()` so that the player can only move on the x axis and is restrained between the two buttons.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The player can now turn and will idle but does not move. Our collisions need to be loaded as the collision detection is expecting this information.
 
-![add call to scr_player_movement_fe() in obj_player](images/playerMovementFE.png)
+https://user-images.githubusercontent.com/5504953/154776909-c7d80f8c-aafa-4aea-98ba-9748776d763c.mp4
+
+
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open up the rm_castle and press the Creation Code button and make sure we get the collision volumes when we first enter this room:
 		rm_castle
@@ -90,10 +96,6 @@ Create a new room called rm_credits and add obj_credits_controller to the instan
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Go to the credits screen by noving the player and when on top of the credits button, pressing the enter button.  Also try going start the game by doing the same thing with the game button.  You can leave the credits screen by letting it play or by pressing enter again.
 
 ![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now you should be able to escape out of the front end room and credit room to quit the game but NOT from the game back to the FE.  Add a Step | Step event to obj_game_controller and restart game if escape is pressed:
 
