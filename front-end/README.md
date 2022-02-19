@@ -92,7 +92,7 @@ Create a new room called `rm_credits`.  Drag and drop `obj_credits_controller` i
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now go to the **Credits** button and press the <kbd>Return/Enter</kbd> key.  You will go to the credits.  You can wait until the end of the credit roll or press the <kbd>Esc</bkd> key to exit back to the main menu.  You can open up `obj_credits_controller | Create` event and alter the credits.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now go to the **Credits** button and press the <kbd>Return/Enter</kbd> key.  You will go to the credits.  You can wait until the end of the credit roll or press the <kbd>Esc</kbd> key to exit back to the main menu.  You can open up `obj_credits_controller | Create` event and alter the credits.
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
