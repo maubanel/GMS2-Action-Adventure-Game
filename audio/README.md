@@ -48,7 +48,7 @@ Now lets call the sound effects, put them as a second priority and set them to n
 
 ##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Walk around and press the buttons in the FE screen and listen to the three audio states.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Walk around and press the buttons in the FE screen and listen to the three audio states. You might have to turn the audio on in this and following videos to hear them.
 
 https://user-images.githubusercontent.com/5504953/154821724-68ed41be-7c6a-48e3-85f9-75fbac96f7ae.mp4
 
@@ -56,11 +56,9 @@ https://user-images.githubusercontent.com/5504953/154821724-68ed41be-7c6a-48e3-8
 
 ##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
 
-	Lets add a sound when leaving the credits screen.  Open obj_credits_conroller and add:
+Lets add a sound when leaving the credits screen.  Open `obj_credits_conroller` and add another pressing sound.
 
-		obj_credits_controller
-
-![alt_text](images/.png)
+![audio credits controller](images/audioCreditsController.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
