@@ -98,7 +98,9 @@ https://user-images.githubusercontent.com/5504953/154804573-2c4fda98-745c-48a7-9
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now try going to the game.  Woops, we get into the game level and we are stuck and start in the wrong spot.
+
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
@@ -143,7 +145,6 @@ Open up the rm_castle and press the Creation Code button and make sure we get th
 
 ![alt_text](images/.png)
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Go to the credits screen by noving the player and when on top of the credits button, pressing the enter button.  Also try going start the game by doing the same thing with the game button.  You can leave the credits screen by letting it play or by pressing enter again.
 
 ![alt_text](images/.png)
 
