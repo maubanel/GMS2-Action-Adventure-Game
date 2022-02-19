@@ -107,7 +107,7 @@ https://user-images.githubusercontent.com/5504953/154804991-49b895bc-c5f6-44c4-9
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Open up `rm_castle` and plade hte cursor where you want to start.  I have picked the middle of the carpet.  Right down the **x** and **y** value in the bottom left corner.  We will use these to position the player in this part of the room.
+Open up `rm_castle` and place the cursor where you want to start.  I have picked the middle of the carpet.  Right down the **x** and **y** value in the bottom left corner.  We will use these to position the player in this part of the room.
 
 ![pick starting point](images/startMiddleOfCarpet.png)
 
