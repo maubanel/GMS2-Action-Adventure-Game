@@ -83,6 +83,15 @@ https://user-images.githubusercontent.com/5504953/154776909-c7d80f8c-aafa-4aea-9
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Create a new room called `rm_credits`.  Drag and drop `obj_credits_controller` into the **Instances** layer of the new room.
+
+![add rm_credits and drag obj_credits_controller to room](images/creditController.png)
+
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+
 Open up the rm_castle and press the Creation Code button and make sure we get the collision volumes when we first enter this room:
 		rm_castle
 
@@ -102,10 +111,6 @@ Now you should be able to escape out of the front end room and credit room to qu
 		obj_game_controller: Step Event
         
 ![alt_text](images/.png)
-
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
-
-##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
 Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Press escape in all rooms and it should work properly!
 
