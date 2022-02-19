@@ -141,6 +141,8 @@ Open up the **rm_castle** and press the **Creation Code** button and make sure w
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now when you go to the game the collisions work again!
 
+https://user-images.githubusercontent.com/5504953/154805619-79ab07b0-c6b0-4d27-8255-2a2f69138463.mp4
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
