@@ -123,19 +123,23 @@ The player is teleported in **obj_fe_start | Alarm0** event.  After the switchin
 
 ##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now try going to the game. Go to the **Start** button and press enter and you will enter the screen at the correct part.  But the collisions are all messed up.  We need to load the collision tiles so the collision detection works!
+
+![press start player in right place but stuck](images/playerPosition.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-![alt_text](images/.png)
+Open up the **rm_castle** and press the **Creation Code** button and make sure we get the collision volumes every time we enter this room.
+
+![add collision volume to room start of tm_castle](images/collisionCastleRoomStart.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now when you go to the game the collisions work again!
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
@@ -143,7 +147,7 @@ The player is teleported in **obj_fe_start | Alarm0** event.  After the switchin
 
 ![alt_text](images/.png)
 
-Open up the rm_castle and press the Creation Code button and make sure we get the collision volumes when we first enter this room:
+
 		rm_castle
 
 
