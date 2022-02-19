@@ -25,13 +25,13 @@ Download [snd_button_hold.wav](images/snd_button_hold.wav) and save it to your c
 
 Repeat and add another sound for [snd_button_pressed.wav](images/snd_button_pressed.wav).
 
-![alt_text](images/.png)
+![add sund_button_pressed as an audio file to the game](images/sndButtonPressed.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Repeat and add another sound for snd_button_release
+Repeat and add another sound for [snd_button_release.wav](images/snd_button_release.wav)
 
 ![alt_text](images/.png)
 
