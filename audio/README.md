@@ -17,13 +17,13 @@ Now I am generally happy with what we have done to date so lets add audio.  Even
 
 Download [snd_button_hold.wav](images/snd_button_hold.wav) and save it to your computer. Right click on **Sounds** and select **Create | Sound**.  Press the three dots and select the above file. Call it `snd_button_hold`.
 
-![download and assign snd_button_hold](images/.png)
+![download and assign snd_button_hold](images/sndButtonHold.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
 
-	Repeat and add another sound for snd_button_pressed
+Repeat and add another sound for [snd_button_pressed.wav](images/snd_button_pressed.wav).
 
 ![alt_text](images/.png)
 
