@@ -66,8 +66,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 
-Open up the obj_player Step event and add a call to scr_player_movement_fe() so that the player can only move on the x axis and is restrained between the two buttons.
-		obj_player: Step Event
+Open up the **obj_player Step** event and add a call to `scr_player_movement_fe()` so that the player can only move on the x axis and is restrained between the two buttons.
+
+![add call to scr_player_movement_fe() in obj_player](images/playerMovementFE.png)
 
 Open up the rm_castle and press the Creation Code button and make sure we get the collision volumes when we first enter this room:
 		rm_castle
