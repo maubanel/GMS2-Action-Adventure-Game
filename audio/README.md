@@ -136,9 +136,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. G
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Lets import the two final sounds in the game one called snd_music and the other called snd_enemy_chase.
+Lets import the two final sounds in the game one called [snd_music.wav](images/snd_music.wav) and the other called [snd_enemy_chase.wav](images/snd_enemy_chase.wav). Create and name the two **Sound** files.
 
-![alt_text](images/.png)
+![import snd_music and snd_enemy_chase](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
