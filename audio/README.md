@@ -137,7 +137,7 @@ https://user-images.githubusercontent.com/5504953/154844346-95c342f0-ae0c-4c74-b
 
 ##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
 
-Lets import the two final sounds in the game one called [snd_music.wav](images/snd_music.wav) and the other called [snd_enemy_chase.wav](images/snd_enemy_chase.wav). Create and name the two **Sound** files.
+Lets import the two final sounds in the game one called [snd_music.mp3](images/snd_music.mp3) and the other called [snd_enemy_chase.mp3](images/snd_enemy_chase.mp3). Create and name the two **Sound** files.
 
 ![import snd_music and snd_enemy_chase](images/.png)
 
