@@ -163,6 +163,8 @@ Open the **enemy_chase** script.  Turn off the music and start enemy chase sound
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Make sure the chase sound and music works.  That is it for this tutorial, thanks for getting this far!
 
+https://user-images.githubusercontent.com/5504953/154845088-ed5631c6-0c39-4e95-9aa6-096005ff5065.mp4
+
 ___
 
 
