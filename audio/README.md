@@ -119,7 +119,6 @@ https://user-images.githubusercontent.com/5504953/154844035-fdfd4aa8-fa6f-418a-b
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-
 Now lets have a final sound effect for walking through the teleporter and download [snd_transporter.wav](images/snd_transporter.wav). Create a new **Sound** file and load file **snd_transporter**.wav and call it `snd_transporter`.
 
 Now lets open up **obj_player | Collision obj_transporter** event and play the transporter sound.  Also, lets stop the footstep sound from playing:
