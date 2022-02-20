@@ -139,34 +139,29 @@ https://user-images.githubusercontent.com/5504953/154844346-95c342f0-ae0c-4c74-b
 
 Lets import the two final sounds in the game one called [snd_music.mp3](images/snd_music.mp3) and the other called [snd_enemy_chase.mp3](images/snd_enemy_chase.mp3). Create and name the two **Sound** files.
 
-![import snd_music and snd_enemy_chase](images/.png)
+![import snd_music and snd_enemy_chase](images/musicChase.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-Open obj_fe_start and check to see if music is playing.  If not play the music.  This looping will carry over room changes so we can just let it go.
-		obj_fe_start: Create
+Open **obj_fe_start | Create** event and check to see if music is playing.  If not play the music.  This looping will carry over room changes so we can just let it go.
 
-![alt_text](images/.png)
+![add script to play music in FE](images/sndMusicScript.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open the zombie step event and when in chase turn off music and start chase sound.  When returning turn off chase sound and play music again.  
+Open the **enemy_chase** script.  Turn off the music and start enemy chase sound.  When returning to path turn off the chase sound and play the regular music again.  
 
-obj_zombie: Step Event
-
-![alt_text](images/.png)
+![turn on and off chase sounds](images/enemyChaseMusicScript.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Make sure the chase sound and music works.  That is it for this tutorial, thanks for getting this far!
-
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Make sure the chase sound and music works.  That is it for this tutorial, thanks for getting this far!
 
 ___
 
