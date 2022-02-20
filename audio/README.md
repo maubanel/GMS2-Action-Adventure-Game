@@ -66,6 +66,7 @@ Lets add a sound when leaving the credits screen.  Open `obj_credits_conroller` 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now press the <kbd>Escape</kbd> key in the credits menu and you should hear the sound.
 
+https://user-images.githubusercontent.com/5504953/154842929-75c5f8ba-508b-443f-95a1-767dff8f4adc.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
