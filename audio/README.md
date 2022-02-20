@@ -118,12 +118,9 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 
-Now lets have a final sound effect for walking through the teleporter. Create a new Sound file and load file snd_transporter.wav and call it snd_transporter.
+Now lets have a final sound effect for walking through the teleporter and download [snd_transporter.wav](images/snd_transporter.wav). Create a new **Sound** file and load file **snd_transporter**.wav and call it `snd_transporter`.
 
-![alt_text](images/.png)
-
-Now lets open up obj_player collision event with the transporter and play the transporter sound.  Also, lets stop the footstep sound from playing:
-		obj_player: Collision | obj_teleporter
+Now lets open up **obj_player | Collision obj_transporter** event and play the transporter sound.  Also, lets stop the footstep sound from playing:
 
 ![alt_text](images/.png)
 
