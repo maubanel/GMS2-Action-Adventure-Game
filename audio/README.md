@@ -72,35 +72,34 @@ https://user-images.githubusercontent.com/5504953/154842929-75c5f8ba-508b-443f-9
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Download [snd_footsteps.wav](images/snd_footsteps.wav). Lets make a footstep sound in the game. Create a new sound and press the three dots icon to load  and call it snd_footsteps. 
+Download [snd_footsteps.wav](images/snd_footsteps.wav). Lets make a footstep sound in the game. Create a new sound and press the three dots icon to load the above sound file and call it `snd_footsteps`. 
 
-![alt_text](images/.png)
+![download snd_footsteps and create a sound file](images/sndFootstep.png)
 
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open scr_player_movement and add a footstep sound to the game.  Make sure you don't launch the sound multiple times by checkint to see if it is already playing and stop playign footsteps when the player stops:
+Open `get_process_input` and add a footstep sound to the game.  Make sure you don't launch the sound multiple times by checking to see if it is already playing and stop playing footsteps when the player stops.
 
-![alt_text](images/.png)
+![add footep sound to game](images/footstepScript.png)
 
-
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Make sure that footsteps work in the front end and game:
-
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Now lets have a sound for picking up the game. Create a new Sound file and load file snd_gem.wav and call it snd_gem.
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Make sure that footsteps work in the front end and game.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+
+Now lets have a sound for picking up the gem. Create a new Sound file and load file snd_gem.wav and call it snd_gem.
+
+![alt_text](images/.png)
 
 Then open the gem object and add to the collision event script and play the gem sound:
 	obj_gem: Collision | obj_player
