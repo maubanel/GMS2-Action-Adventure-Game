@@ -64,23 +64,28 @@ Lets add a sound when leaving the credits screen.  Open `obj_credits_conroller` 
 
 ##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Lets make a footstep sound in the game. Create a new sound and press the three dots icon to load snd_footsteps.wav and call it snd_footsteps. 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now press the <kbd>Escape</kbd> key in the credits menu and you should hear the sound.
 
-![alt_text](images/.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open scr_player_movement and add a footstep sound to the game.  Make sure you don't launch the sound multiple times by checkint to see if it is already playing and stop playign footsteps when the player stops:
+Download [snd_footsteps.wav](images/nd_footsteps.wav). Lets make a footstep sound in the game. Create a new sound and press the three dots icon to load  and call it snd_footsteps. 
 
 ![alt_text](images/.png)
+
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Confirm that quitting the credits screen makes a sound and also make sure that footsteps work in the front end and game:
+Open scr_player_movement and add a footstep sound to the game.  Make sure you don't launch the sound multiple times by checkint to see if it is already playing and stop playign footsteps when the player stops:
+
+![alt_text](images/.png)
+
+
+Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Make sure that footsteps work in the front end and game:
 
 ![alt_text](images/.png)
 
