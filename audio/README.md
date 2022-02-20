@@ -72,7 +72,7 @@ https://user-images.githubusercontent.com/5504953/154842929-75c5f8ba-508b-443f-9
 
 ##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Download [snd_footsteps.wav](images/nd_footsteps.wav). Lets make a footstep sound in the game. Create a new sound and press the three dots icon to load  and call it snd_footsteps. 
+Download [snd_footsteps.wav](images/snd_footsteps.wav). Lets make a footstep sound in the game. Create a new sound and press the three dots icon to load  and call it snd_footsteps. 
 
 ![alt_text](images/.png)
 
