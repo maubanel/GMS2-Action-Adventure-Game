@@ -100,25 +100,27 @@ https://user-images.githubusercontent.com/5504953/154843571-9c226a18-8100-4b29-9
 
 Now lets have a sound for picking up the gem, download [snd_gem.wav](images/snd_gem.wav). Create a new **Sound** file and load the above file and call it `snd_gem`.
 
-![load snd_gem.wav file in game](images/.png)
+![load snd_gem.wav file in game](images/sndGem.png)
 
-Then open the gem object and add to the collision event script and play the gem sound:
-	obj_gem: Collision | obj_player
+Then open the **obj_gem: Collision | obj_player** event and add to the collision event script and play the gem sound.
 
-![alt_text](images/.png)
+![add gem sound to gem player collision](images/gemSoundScript.png)
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 
 ##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Now lets have a final sound effect for walking through the teleporter. Create a new Sound file and load file snd_transporter.wav and call it snd_transporter.
-
-![alt_text](images/.png)
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now run into the gem and hear the cool sound!
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+
+
+Now lets have a final sound effect for walking through the teleporter. Create a new Sound file and load file snd_transporter.wav and call it snd_transporter.
+
+![alt_text](images/.png)
 
 Now lets open up obj_player collision event with the transporter and play the transporter sound.  Also, lets stop the footstep sound from playing:
 		obj_player: Collision | obj_teleporter
