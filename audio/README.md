@@ -97,9 +97,9 @@ Run the game by pressing the <img style="vertical-align:middle" src="http://marc
 
 ##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
 
-Now lets have a sound for picking up the gem. Create a new Sound file and load file snd_gem.wav and call it snd_gem.
+Now lets have a sound for picking up the gem, download [snd_gem.wav](images/snd_gem.wav). Create a new **Sound** file and load the above file and call it `snd_gem`.
 
-![alt_text](images/.png)
+![load snd_gem.wav file in game](images/.png)
 
 Then open the gem object and add to the collision event script and play the gem sound:
 	obj_gem: Collision | obj_player
