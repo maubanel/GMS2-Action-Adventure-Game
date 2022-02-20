@@ -90,7 +90,7 @@ Open `get_process_input` and add a footstep sound to the game.  Make sure you do
 
 ##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
 
-Run the game by pressing the <img style="vertical-align:middle" src="http://marcaubanel.com/gamemaker/GMS2-Images/Shared/Icon_RunProject.png" alt="play button icon"> Play Button. Make sure that footsteps work in the front end and game.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Make sure that footsteps work in the game.
 
 https://user-images.githubusercontent.com/5504953/154843571-9c226a18-8100-4b29-9eee-e1c361ac17e8.mp4
 
