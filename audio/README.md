@@ -131,6 +131,7 @@ Now lets open up **obj_player | Collision obj_teleporter** event and play the tr
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Go into the teleporter and see if a sound plays.
 
+https://user-images.githubusercontent.com/5504953/154844346-95c342f0-ae0c-4c74-b8ca-11fbeaf5d677.mp4
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
