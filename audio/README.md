@@ -113,6 +113,8 @@ Then open the **obj_gem: Collision | obj_player** event and add to the collision
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now run into the gem and hear the cool sound!
 
+https://user-images.githubusercontent.com/5504953/154844035-fdfd4aa8-fa6f-418a-bf4f-6e53479f6732.mp4
+
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 ##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
