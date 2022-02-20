@@ -51,6 +51,13 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. R
 
 https://user-images.githubusercontent.com/5504953/154774361-12f01fe8-e0df-4fcf-8317-4cb2a93ed4c1.mp4
 
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+
+Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+
+![save commit and push to github](images/github.png)
 ___
 
 

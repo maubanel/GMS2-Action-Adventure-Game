@@ -218,7 +218,19 @@ Update the order so that the question is first.  Add our final message type `dra
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. This is all we have to demonstrate for message boxes. Have fun with them!
 
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 24.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
 https://user-images.githubusercontent.com/5504953/152991038-805fc776-65fa-48ce-851a-c8cef8303593.mp4
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 25.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_orange_diamond:
+
+Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+
+![save commit and push to github](images/github.png)
 
 ___
 

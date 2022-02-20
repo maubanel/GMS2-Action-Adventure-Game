@@ -189,6 +189,15 @@ We also want to know the range that triggers the zombie to chase the player. Thi
 So we will add to the zombie step event script and check to see that the distance between the enemy and the player is less than the enemy_range variable then switch to the `chase` state. We also terminate the path movement as the zombie is no longer following the path and will chase the player. Open up **obj_zombie: End Step** event and stop the zombie and change states.
 
 ![stop zombie and change state to chase when close to player](images/StartChase.png)
+
+<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+
+##### `Step 22.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+
+![save commit and push to github](images/github.png)
+
 ___
 
 
