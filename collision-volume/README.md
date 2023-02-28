@@ -107,8 +107,6 @@ Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
 ![submit changelist to p4v](images/submit.png)
 
-___
-
 ![](../images/line.png)
 
 <!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Collision Check"> -->
