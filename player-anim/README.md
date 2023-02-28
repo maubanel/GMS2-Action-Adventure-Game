@@ -135,11 +135,17 @@ Add a **Step Event** TO **Obj_Player** and type:
 
 ![set vertical and horizontal movement](images/pStepMovement.png)
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now press in four directions and your player should move accordingly.  The only issue is if we are pressing left and right then press up and down while still holding left and right.  It doesn't respond.  Where if we select up or down and while still holding select left or right it will switch.  Lets make this consistent.
-
 ![](../images/line2.png)
 
 ##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now press in four directions and your player should move accordingly.  The only issue is if we are pressing left and right then press up and down while still holding left and right.  It doesn't respond.  Where if we select up or down and while still holding select left or right it will switch.  Lets make this consistent.
+
+
+
+![](../images/line2.png)
+
+##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now to make this constant we need to add some logic. In the horizontal axis:
 
@@ -148,10 +154,6 @@ Now to make this constant we need to add some logic. In the horizontal axis:
 3.  If either of the above are true then move horizontally else move vertically.
 
 ![add last key pressed logic](images/CheckForLastKey.png)
-
-![](../images/line2.png)
-
-##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you should be able to turn while still holding the another button down consistently on both axis.
 
