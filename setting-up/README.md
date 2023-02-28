@@ -47,31 +47,27 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. A
 
 ##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
 
+We have provided sprites, objects, scripts and tilesets that we covered in previous walk throughs that will make completing this one go faster.
+
+![starter files provided](images/premadeFiles.png)
+
 ![](../images/line2.png)
 
 ##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
+
+Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session. Press the <kbd>OK</kbd> button.
+
+![add new and changed files to p4v](images/add.png)
 
 ![](../images/line2.png)
 
 ##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
-![](../images/line2.png)
-
-##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-
-
-![](../images/line2.png)
-
-##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-
-
-![](../images/line2.png)
+![submit changelist to p4v](images/submit.png)
 
 ___
-
 
 ![](../images/line.png)
 
