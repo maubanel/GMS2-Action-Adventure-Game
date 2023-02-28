@@ -24,7 +24,7 @@ Open up the project you are working on in **GameMaker**.
 
 ##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
 
-Go back to `rm_castle` and turn off  `Background_Transparent_Tiles`, `Background_Opaque_Tiles` and  `Background_Animated_Tiles`.  Turn them back on, we see we have animated water, solid opaque ground and building and a graveyard and bridge made mostly with transparent tiles.  Remember than layers on top of each other affets the render order. So the transparent are on top of the opaque which is on top of the animated tiles. Only half the level is completed.  You will complete the rest later.
+Go back to `rm_castle` and turn on and off  `Background_Transparent_Tiles`, `Background_Opaque_Tiles` and  `Background_Animated_Tiles`.  We see we have animated water, solid opaque ground and building and a graveyard and bridge made mostly with transparent tiles.  Remember than layers on top of each other affets the render order. So the transparent are on top of the opaque which is on top of the animated tiles. Only half the level is completed.  You will complete the rest later.
 
 https://user-images.githubusercontent.com/5504953/152532272-599f88cb-17b7-4b28-909f-216bbfe0a42d.mp4
 
