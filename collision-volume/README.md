@@ -55,15 +55,15 @@ Click on Tileset Properties button and set the Tile Width and Tile Height to 32:
 
 ![change tileset width and height ot 32](images/resizeTileset.png)
 
-Since we will not be rendering this layer in the game we want it on the to player (that is why we made it partially translucent.  This way we can see each 32 by 32 section that has collision on it.  
-
 ![](../images/line2.png)
 
 ##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
+Since we will not be rendering this layer in the game we want it on the to player (that is why we made it partially translucent.  This way we can see each 32 by 32 section that has collision on it.  
+
 Open the room **rm_castle**. *Create* a new **Tile Layer** on the very top and call it `Collision`.
 
-![alt_text](add tile layer named collision/collisionLayer.png)
+![add tile layer named collision](images//collisionLayer.png)
 
 ![](../images/line2.png)
 
