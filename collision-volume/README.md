@@ -59,11 +59,11 @@ Click on Tileset Properties button and set the Tile Width and Tile Height to 32:
 
 ##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
-Since we will not be rendering this layer in the game we want it on the to player (that is why we made it partially translucent.  This way we can see each 32 by 32 section that has collision on it.  
+Since we will not be rendering this layer in the game we want it on the to player (that is why we made it partially translucent.  This way we can see each 32 by 32 section that has collision on it.  Assign **TLS_Collision** to this layer.
 
 Open the room **rm_castle**. *Create* a new **Tile Layer** on the very top and call it `Collision`.
 
-![add tile layer named collision](images//collisionLayer.png)
+![add tile layer named collision](images/collisionLayer.png)
 
 ![](../images/line2.png)
 
@@ -87,9 +87,9 @@ https://user-images.githubusercontent.com/5504953/152644222-5acfcf8e-cd8d-4f85-8
 
 ##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
-![save commit and push to github](images/github.png)
+![save then quit gamemaker](images/saveQuit.png)
 
 
 ___
