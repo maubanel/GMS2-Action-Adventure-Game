@@ -32,7 +32,7 @@ Let's import a player to use. You can replace it but for the math to work you wi
 
 ##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-*Right click* on **Sprites** and select **New | Sprite** and name it `spr_player_right`.
+*Right click* on **Sprites** and select **Create | Sprite** and name it `spr_player_right`.
 
 ![add spr_player_right sprite](images/sprPR.png)
 
@@ -40,7 +40,7 @@ Let's import a player to use. You can replace it but for the math to work you wi
 
 ##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Double click on `spr_player_right` and select <kbd>Image | Import Strip Image</kbd>. Select `MondayAnim.png` and press the <kbd>Open</kbd> button.
+Double click on `spr_player_right` and select <kbd>Edit Image</kbd>, then go to the top menu and pick <kbd>Image | Import Strip Image</kbd>. Select `MondayAnim.png` and press the <kbd>Open</kbd> button.
 
 ![import player right animation strip](images/importStripImage.png)
 
