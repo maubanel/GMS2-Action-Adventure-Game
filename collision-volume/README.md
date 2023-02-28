@@ -16,13 +16,20 @@ Now we don't know what tiles in our layer we should collide with. We are going t
 
 ##### `Step 1.`\|`TDAAG`|:small_blue_diamond:
 
-Lets start by creating a new sprite and call it `spr_collision`. Change the size to `32` by `32`. Click the <kbd>Edit Image</kbd> button. We will create a 32 by 32 block with a solid color. Use the bucket tool to fill in with a pink color (or any other color that is not being used in your level currently). Double click on the layer and change the **Opacity** to `35`%.
+Open up **P4v**.  Select the top folder of the **GameMaker** project. Press the <kbd>Checkout</kbd> button.  Checkout out all files in P4V so that they are all writable (otherwise they will be read only and none of the changes will be saved). Select a **New** changelist and add a message describing the unit of work you will be performing. Press the <kbd>OK</kbd> button.
 
-![35% transparent pink collision sprite called spr_collision](images/sprCollision.png)
+Open up the project you are working on in **GameMaker**. 
+
+![checkout files and create new changelist](images/checkoutFiles.png)
+
 
 ![](../images/line2.png)
 
 ##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
+
+Lets start by creating a new sprite and call it `spr_collision`. Change the size to `32` by `32`. Click the <kbd>Edit Image</kbd> button. We will create a 32 by 32 block with a solid color. Use the bucket tool to fill in with a pink color (or any other color that is not being used in your level currently). Double click on the layer and change the **Opacity** to `35`%.
+
+![35% transparent pink collision sprite called spr_collision](images/sprCollision.png)
 
 This needs to be part of a tileset. The one rule about a **Tile Set** in **GameMaker** is that the first tile **has** to be empty. Go to the **Resize Sprite** and click on the **Resize Canvas** selection and set the ***Width*** to `64`. Also, click on the <kbd>-></kbd> next to it so the blank space is on the left hand side and the pink square on the right hand side (right justifying the sprite we have created). Press the <kbd>Apply</kbd> button to accept the changes.
 
