@@ -2,7 +2,7 @@
 
 
 <!-- OVERVIEW -->
-This tutorial is intended for those wanting an introduction to <i>GameMaker Studio 2</i> using their scrpting language <i>GML</i>. This assumes no prior knowledge of the software or scripting. 
+This tutorial is intended for those wanting an introduction to <i>GameMaker Studio 2</i> using the scripting language <i>GML</i>. This assumes no prior knowledge of the software or scripting. 
 
 Lets now take a look at a level that is larger than a single screen and putting some tiles and aninmations to good use.
 
@@ -13,9 +13,7 @@ Lets now take a look at a level that is larger than a single screen and putting 
 
 
 ## Software Needed 
-* Tested on GameMake Studio2.3.7.606
-* [GitHub Account](https://github.com) (free)
-* [GitHub Desktop](https://desktop.github.com)
+* Tested on GameMake Studio 2022.11.1.75
 
 <br>
 
