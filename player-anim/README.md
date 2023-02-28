@@ -147,7 +147,7 @@ https://user-images.githubusercontent.com/5504953/221909573-b29c2106-46ac-492d-9
 
 ##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now to make this constant we need to add some logic. In the horizontal axis:
+Now to make a second key press work is to add some logic. In the horizontal axis:
 
 1. Check to see if a horizontal button is pressed and vertical button is not.
 2. Or check to see if a horizontal button is pressed and it is the last button pressed (so pressed more recently than a vertical button)
@@ -155,13 +155,17 @@ Now to make this constant we need to add some logic. In the horizontal axis:
 
 ![add last key pressed logic](images/CheckForLastKey.png)
 
+![](../images/line2.png)
+
+##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you should be able to turn while still holding the another button down consistently on both axis.
 
 https://user-images.githubusercontent.com/5504953/152624841-a485a792-b9e1-4464-9ca9-09d62a52db56.mp4
 
 ![](../images/line2.png)
 
-##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now for animations we need to wait until after the player has moved.  Press the <kbd>Add Event</kbd> and select a **Step | End Step** event. We will then add some logic to pick the sprite facing the correct direction.  Again, since the right walk cycle is symmetrical horizontally we can just mirror it to get the left direction.
 
@@ -169,7 +173,7 @@ Now for animations we need to wait until after the player has moved.  Press the 
 
 ![](../images/line2.png)
 
-##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the player faces the right direction, but keeps walking when stopped.
 
@@ -177,7 +181,8 @@ https://user-images.githubusercontent.com/5504953/152625525-620becea-0eea-433b-8
 
 ![](../images/line2.png)
 
-##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
+
+##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
 Open up all three animations and look for the frame where the two feet are next to each other on the ground.  The third frame (frame #2 because we start counting at 0) is the right frame in all animations.  So all we need to do for idle is to stay on frame 2 when the player is not moving.  Reopen **obj_player | End Step**.
 
@@ -185,8 +190,7 @@ Open up all three animations and look for the frame where the two feet are next 
 
 ![](../images/line2.png)
 
-
-##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
+##### `Step 22.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now stop in all four directions and make sure the idle frame is correct.
 
@@ -194,7 +198,7 @@ https://user-images.githubusercontent.com/5504953/152625805-c7b90fd5-5029-4555-9
 
 ![](../images/line2.png)
 
-##### `Step 22.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 23.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
@@ -202,7 +206,7 @@ Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker
 
 ![](../images/line2.png)
 
-##### `Step 23.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 24.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session. Make sure the message accurately represents what you have done. Press the <kbd>OK</kbd> button.
 
@@ -210,7 +214,7 @@ Open up **P4V**.  Select the top folder and press the **Add** button.  We want t
 
 ![](../images/line2.png)
 
-##### `Step 24.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 25.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:  :small_orange_diamond: 
 
 Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
