@@ -62,21 +62,13 @@ Now it plays the top left corner of the level and is only playing a portion of t
 
 ##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
-
-![save commit and push to github](images/github.png)
-
-![](../images/line2.png)
-
-##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
-
 Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session. Make sure the message accurately represents what you have done. Press the <kbd>OK</kbd> button.
 
 ![add new and changed files to p4v](images/add.png)
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
