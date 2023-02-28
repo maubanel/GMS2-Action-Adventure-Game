@@ -31,13 +31,17 @@ Lets start by creating a new sprite and call it `spr_collision`. Change the size
 
 ![35% transparent pink collision sprite called spr_collision](images/sprCollision.png)
 
+![](../images/line2.png)
+
+##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
 This needs to be part of a tileset. The one rule about a **Tile Set** in **GameMaker** is that the first tile **has** to be empty. Go to the **Resize Sprite** and click on the **Resize Canvas** selection and set the ***Width*** to `64`. Also, click on the <kbd>-></kbd> next to it so the blank space is on the left hand side and the pink square on the right hand side (right justifying the sprite we have created). Press the <kbd>Apply</kbd> button to accept the changes.
 
 https://user-images.githubusercontent.com/5504953/152643207-ff6b49af-8d03-4f4b-89dd-61684c192b28.mp4
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Create a new **Tileset** and call it `tls_collision`. Assign the `spr_collision` sprite we just prepared to the tileset.
 
@@ -45,17 +49,17 @@ Create a new **Tileset** and call it `tls_collision`. Assign the `spr_collision`
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
 
 Click on Tileset Properties button and set the Tile Width and Tile Height to 32:
 
 ![change tileset width and height ot 32](images/resizeTileset.png)
 
+Since we will not be rendering this layer in the game we want it on the to player (that is why we made it partially translucent.  This way we can see each 32 by 32 section that has collision on it.  
+
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
-
-Since we will not be rendering this layer in the game we want it on the to player (that is why we made it partially translucent.  This way we can see each 32 by 32 section that has collision on it.  
+##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
 Open the room **rm_castle**. *Create* a new **Tile Layer** on the very top and call it `Collision`.
 
@@ -63,7 +67,7 @@ Open the room **rm_castle**. *Create* a new **Tile Layer** on the very top and c
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Select the Collision layer and the newly created tileset and paint every tile that you want the player to not be able to walk on. Make sure that you block the outside of the entire level and all areas you don’t want the player to walk on. Because of the perspective when we are moving up we will move the collision tile one tile above the meeting between ground and walls so the player can go in front of objects and give the illusions of 3 dimensions. 
 
@@ -73,7 +77,7 @@ https://user-images.githubusercontent.com/5504953/152644052-99bc71a4-cc71-478e-b
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 You can double check your work by turning layer visibity on and off on all but the collision layer to make sure that you block out all unwanted areas to walk on and that you can't escape the room.
 
@@ -81,13 +85,13 @@ https://user-images.githubusercontent.com/5504953/152644222-5acfcf8e-cd8d-4f85-8
 
 ![](../images/line2.png)
 
-![](../images/line2.png)
-
-##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 
 ![save commit and push to github](images/github.png)
+
+
 ___
 
 
