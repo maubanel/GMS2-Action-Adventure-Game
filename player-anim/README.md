@@ -24,7 +24,7 @@ Open up the project you are working on in **GameMaker**.
 
 ##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
 
-Let's import a player to use. You can replace it but for the math to work you will need to use the same size sprite.  Downloadn [MonkeyAnim.png](images/MonkeyAnim.png).
+Let's import a player to use. You can replace it but for the math to work you will need to use the same size sprite.  Download [MonkeyAnim.png](images/MonkeyAnim.png).
 
 ![download MonkeyAnim.png](images/MonkeyAnim.png)
 
