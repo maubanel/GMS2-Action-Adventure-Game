@@ -121,17 +121,18 @@ Open up **rm_castle** and make sure you are on the **Instances** layer.  Drag a 
 
 ##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Press the <kbd>Add Event</kbd> and select a **Create** event. Create a new variable called `player_speed` and set it to `3`.
+With **Obj_Player)**, press the <kbd>Add Event</kbd> and select a **Create** event. Create a new variable called `player_speed` and set it to `3`.
 
 ![set player speed to 3 in new create event](images/createPlayerSpeed.png)
+
+![](../images/line2.png)
+
+##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
 
 First we get a vertical and horizontal scalar (-1, 0 or 1).  We subtract left key from right key to get horizontal and up key from down key press to get the vertical.  We then set either the `hspeed` to a multiplied scalar and set the other axis to `0`.  Our player can only move in four directions so if there is a `vspeed` then `hspeed` has to be `0` or vice versa. For more details you can check out the [GMS2 Move in 4 Directions Tutorial](https://github.com/maubanel/GMS2-4-Directions). You can adopt one of its more advanced physics and controller models if you like!
 
 ![set vertical and horizontal movement](images/pStepMovement.png)
 
-![](../images/line2.png)
-
-##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now press in four directions and your player should move accordingly.  The only issue is if we are pressing left and right then press up and down while still holding left and right.  It doesn't respond.  Where if we select up or down and while still holding select left or right it will switch.  Lets make this consistent.
 
 ![](../images/line2.png)
