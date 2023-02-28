@@ -141,7 +141,7 @@ Add a **Step Event** TO **Obj_Player** and type:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now press in four directions and your player should move accordingly.  The only issue is if we are pressing left and right then press up and down while still holding left and right.  It doesn't respond.  Where if we select up or down and while still holding select left or right it will switch.  Lets make this consistent.
 
-
+https://user-images.githubusercontent.com/5504953/221909573-b29c2106-46ac-492d-9e81-b00512fc56dd.mp4
 
 ![](../images/line2.png)
 
