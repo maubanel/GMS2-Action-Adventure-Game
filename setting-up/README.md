@@ -15,9 +15,9 @@
 
 ##### `Step 1.`\|`TDAAG`|:small_blue_diamond:
 
-The first thing you need to do is clone the project.  Got to [Github Classrom GMS2-Action-Adventure-Game-Starter](https://classroom.github.com/a/jbdkir0E) and accept the assignment.
+You will have a new folder called 
 
-![accept github classroom invitation](images/AcceptGitHubClassroom.png)
+![accept github classroom invitation](images/starterFiles.png)
 
 ![](../images/line2.png)
 
