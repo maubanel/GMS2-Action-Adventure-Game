@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Front End
 
 <sub>[previous](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../audio/README.md#user-content-audio-sfx)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 We have completed a front end for you.  To activate it requires a few steps. It uses our main character to start the game.  I am a big fan of bringing game elements into the user experience and UI.  I like the idea of starting the game before you start the game!
 
@@ -13,65 +13,65 @@ We have completed a front end for you.  To activate it requires a few steps. It 
 ---
 
 
-##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
+##### `Step 1.`\|`TDAAG`|:small_blue_diamond:
 
   First lets add another state for the player called FE.  Open the **obj_player: Create** event and add another **enumerator** called `FE`.
 		
 
 ![add FE to player state](images/feCreate.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
 
 We are also going to change the starting state of the player to FE in the **obj_player: Create** event.
 
 
 ![starting state of the player is FE](images/playerStateFE.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Remove the player from `rm_castle`.
 
 ![remove obj_player from rm_castle](images/removePlayerFromLevel.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Move `rm_fe` from the top of the **Room Order** list.  
 
 ![move rm_fe to top of room order](images/moveRoomFE.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
 
 Drag and drop **obj_player** into rm_fe. Make sure you place the player right in the middle of the **Credits** and **Start** buttons.
 
 ![place player in room](images/placePlayerInRoom.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now try moving the player but nothing happens.  As we have no scripts for the player being in the **FE** state.
 
 https://user-images.githubusercontent.com/5504953/154776237-24b85500-d647-47dc-8d9e-7c7afa899536.mp4
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open up the **obj_player Step** event and add a call to `scr_player_movement_fe()` so that the player can only move on the x axis and is restrained between the two buttons.
 
 ![add call to scr_player_movement_fe() in obj_player](images/playerMovementFE.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The player can now turn and will idle but does not move. Our collisions need to be loaded as the collision detection is expecting this information.
 
@@ -79,89 +79,89 @@ https://user-images.githubusercontent.com/5504953/154776909-c7d80f8c-aafa-4aea-9
 
 
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Create a new room called `rm_credits`.  Drag and drop `obj_credits_controller` into the **Instances** layer of the new room.
 
 ![add rm_credits and drag obj_credits_controller to room](images/creditController.png)
 
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now go to the **Credits** button and press the <kbd>Return/Enter</kbd> key.  You will go to the credits.  You can wait until the end of the credit roll or press the <kbd>Esc</kbd> key to exit back to the main menu.  You can open up `obj_credits_controller | Create` event and alter the credits.
 
 https://user-images.githubusercontent.com/5504953/154804573-2c4fda98-745c-48a7-9e11-7b6e69b0e22e.mp4
 
-##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 11.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now try going to the game.  Woops, we get into the game level and we are stuck and start in the wrong spot.
 
 https://user-images.githubusercontent.com/5504953/154804991-49b895bc-c5f6-44c4-9688-0b496d10e82a.mp4
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
 
-##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Open up `rm_castle` and place the cursor where you want to start.  I have picked the middle of the carpet.  Right down the **x** and **y** value in the bottom left corner.  We will use these to position the player in this part of the room.
 
 ![pick starting point](images/startMiddleOfCarpet.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 The player is teleported in **obj_fe_start | Alarm0** event.  After the switching of rooms move the `obj_player`'s **x** and **y** position to match the starting position in the room.
 
 ![change player starting position in obj_fe_start alarm0 event](images/alarm0Place.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now try going to the game. Go to the **Start** button and press enter and you will enter the screen at the correct part.  But the collisions are all messed up.  We need to load the collision tiles so the collision detection works!
 
 ![press start player in right place but stuck](images/playerPosition.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
 
 Open up the **rm_castle** and press the **Creation Code** button and make sure we get the collision volumes every time we enter this room.
 
 ![add collision volume to room start of tm_castle](images/collisionCastleRoomStart.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now when you go to the game the collisions work again!
 
 https://user-images.githubusercontent.com/5504953/154805619-79ab07b0-c6b0-4d27-8255-2a2f69138463.mp4
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now you should be able to escape out of the front end room and credit room to quit the game but NOT from the game back to the FE.  Add a **Step | Step** event to **obj_game** and restart game if escape is pressed:
 
 ![add escape to game](images/QuitGame.png)
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Press escape in the game and it should go back to the Front End.  Press escape in the Front End and it should quit the game!
 
 https://user-images.githubusercontent.com/5504953/154806975-80789afa-cefe-476b-915c-6f3cb48f9d39.mp4
 
-<img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
+![](../images/line2.png)
 
-##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 
@@ -169,11 +169,13 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Audio SFX">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Audio SFX"> -->
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![next web page of walkthrough](images/banner.png)
+
+![](../images/line.png)
 
 | [previous](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../audio/README.md#user-content-audio-sfx)|
 |---|---|---|

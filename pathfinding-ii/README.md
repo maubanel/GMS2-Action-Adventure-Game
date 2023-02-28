@@ -1,10 +1,10 @@
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 ### Pathfinding Zombie II
 
 <sub>[previous](../pathfinding/README.md#user-content-pathfinding-zombie) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii)</sub>
 
-<img src="https://via.placeholder.com/1000x4/45D7CA/45D7CA" alt="drawing" height="4px"/>
+![](../images/line3.png)
 
 Lets get the zombie to chase the player while avoiding collisions.
 
@@ -13,7 +13,7 @@ Lets get the zombie to chase the player while avoiding collisions.
 ---
 
 
-##### `Step 1.`\|`SPCRK`|:small_blue_diamond:
+##### `Step 1.`\|`TDAAG`|:small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Approach the zombie and it should stop the path then get stuck in the **chase** state when you get too close. It will do nothing for now but they should stop patrolling and just stop.
 
@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/5504953/154679300-1d24dade-3540-46a3-a
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 2.`\|`FHIU`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
 
 OK, that worked! Since this is in a step event every frame we will be stopping the pathfinding and changing states.  We only need to do this once.  We can use the state as a switch and only make a change if the zombie is in `patrol` state. Reopen **obj_zombie: End Step** event.
 
@@ -29,7 +29,7 @@ OK, that worked! Since this is in a step event every frame we will be stopping t
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 3.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now how do we have the zombie chase the player without running over water, a wall or any other part you don't want the enemy to walk on (typically the same areas the player can't walk on). We will now use GameMaker's pathfinding to create a path to chase the player. This pathfinding goes along a path that is full of free cells.  
 	
@@ -39,7 +39,7 @@ We need to get access to the collision layer id (just like the player does).  To
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 4.`\|`SPCRK`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 We need to get access to this to the tilemap this layer is using.  To do this we call the `layer_tilemap_get_id(layer id)` function. Reopen **obj_zombie: Create** event
 
@@ -47,7 +47,7 @@ We need to get access to this to the tilemap this layer is using.  To do this we
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 5.`\|`SPCRK`| :small_orange_diamond:
+##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
 
 We now need to create a grid of which tiles the enemy is allowed to enter and which they can't.  In **GameMaker** this ia an `mp_grid` (motion planning grid).  We will create a new **mp_grid** using `mp_grid_create(left, top, hcells, vcells, cellwidth, cellheight)`.
 
@@ -59,7 +59,7 @@ Open up the **obj_zombie: Create** event and create a new grid. We will go from 
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 6.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
 We need to add cells to the collision volume in this grid.  To do this we use the tilemap_get_at_pixel(tilemap_element_id, x, y). This was the same function call we used for the player to determine if the place they were standing in was correct.
 
@@ -73,7 +73,7 @@ We also need to add to the grid a forbidden area when we are in a collisoin area
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 7.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 How do we test to know if we have done it correctly? We can't just start using it as we don't know if this is working correctly. What we want to do is overlay this grid to see if the red parts match where our collision volumes lie. We can create a temporary script and use the funnction `mp_grid_draw(grid)`. It is pretty self explanatory. Add a new **obj_zombie: Draw** event add visualize the grid with an alpha on top of the level.
 
@@ -81,7 +81,7 @@ How do we test to know if we have done it correctly? We can't just start using i
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 8.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you see that green is where the zombie can travel and red it blocked.  This looks correct to me.
 
@@ -89,7 +89,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 9.`\|`SPCRK`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now that we are done with the **Draw** event on **obj_zombie** right click on it and select **Delete**.
 
@@ -97,7 +97,7 @@ Now that we are done with the **Draw** event on **obj_zombie** right click on it
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 10.`\|`SPCRK`| :large_blue_diamond:
+##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
 
 We can also create paths using this grid information.  So we need to change the path from the one for patrol to one between the zombie and the player but avoiding the forbiden tiles. First we have to create a new path for the zombie to follow that leads to the player's location.  We cannot lose the patrol path as the zombie will need this again when the player escapes and the zombie needs to go back to patrolling. 
 
@@ -108,7 +108,7 @@ We will be using `path_add()`and set a chase speed of `2.5` in the zombie create
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 11.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 11.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: 
 
 Now we set up this grid because gamemaker provides a function that dynamically creates a path based on this collision grid so the enemy won't run into a grid section. We can create a path dynamically in script using: `mp_grid_path(d, path, xstart, ystart, xgoal, ygoal, allowdiag).
 
@@ -119,7 +119,7 @@ Now we need to create a new script called `enemy_chase`.  In this script we will
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
 
-##### `Step 12.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Open up **obj_zombie** and create a new **Step** event. Check to see if we are in the chase state and then call a the above script that will chase the player.
 
@@ -127,7 +127,7 @@ Open up **obj_zombie** and create a new **Step** event. Check to see if we are i
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 13.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run up to the zombie then run away from it. Notice that it now follows you and doesn't run into collision areas.
 
@@ -135,7 +135,7 @@ https://user-images.githubusercontent.com/5504953/154688152-45af0a10-9b02-4f38-8
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 14.`\|`SPCRK`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 The zombie updates every frame so he mirrors your every move. This is annoying and we want to avoid mimicking the players moves step by step.  When moving we don't change our minds 30 times a second. We want to only update the movement ai every `20` frames. Now add to the **obj_zombie: Create** event a timer (similar to restricting bullets) for delaying re-pathing.
 
@@ -143,7 +143,7 @@ The zombie updates every frame so he mirrors your every move. This is annoying a
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 15.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
 
 Open `scr_enemy_chase` and only adjust path every 20 frames.
 
@@ -151,7 +151,7 @@ Open `scr_enemy_chase` and only adjust path every 20 frames.
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 16.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  The zombie should have a slight delay when you change directions and it should feel a little bit more natural. I found `20` a third of a second too short and changed the delay to `60` (I should have used `room_speed`). 
 
@@ -159,7 +159,7 @@ https://user-images.githubusercontent.com/5504953/154709487-78d141c0-631a-43f6-9
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 17.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 When the player gets far enough away from the zombie this creature will need to find its way back to its patrol path and go back to patrolling.  So we need to switch back to `patrol` state when the player gets too far away. We need to get the enemy back to the starting point of his patrol. We will need a new state called `return_to_patrol`. Open the **obj_zombie | Create** create event and add to the **enumerator**.
 
@@ -167,7 +167,7 @@ When the player gets far enough away from the zombie this creature will need to 
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 18.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open the `scr_enemy_chase` scriptand add to the end of the script a check to see if it should chase else go back to `patrol`. We end the path of the enemy chase and switch to the `return_to_patrol` state when the player has gone twice the trigger distance away from the enemy.
 
@@ -175,7 +175,7 @@ Open the `scr_enemy_chase` scriptand add to the end of the script a check to see
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 19.`\|`SPCRK`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run up to the zombie then run away from it. The zombie will give up and freeze (run on spot) when you get far enough away. But notice the zombie does not go back to chase while in return?
 
@@ -183,7 +183,7 @@ https://user-images.githubusercontent.com/5504953/154713727-c00a543d-e218-4ca2-8
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 20.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond:
+##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
 
 
 First lets make sure that the zombie can go to `chase` state from either `patrol` **or** (`||`) `return_to_patrol` state.  Open up the **obj_zombie | End Step** event and add the condition.
@@ -193,7 +193,7 @@ First lets make sure that the zombie can go to `chase` state from either `patrol
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 21.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
+##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the zombie will still freeze but will go back to chasing if you get too close when they are returning to patrol.
 
@@ -201,7 +201,7 @@ https://user-images.githubusercontent.com/5504953/154734839-4208406d-a1bc-4ce2-8
 
 <img src="https://via.placeholder.com/500x2/45D7CA/45D7CA" alt="drawing" height="2px" alt = ""/>
 
-##### `Step 22.`\|`SPCRK`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 22.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
 
@@ -209,11 +209,13 @@ Select the **File | Save Project** then press **File | Quit** to make sure every
 ___
 
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![](../images/line.png)
 
-<img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Pathfinding Zombie III">
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Pathfinding Zombie III"> -->
 
-<img src="https://via.placeholder.com/1000x4/dba81a/dba81a" alt="drawing" height="4px" alt = ""/>
+![next web page of walkthrough](images/banner.png)
+
+![](../images/line.png)
 
 | [previous](../pathfinding/README.md#user-content-pathfinding-zombie)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii)|
 |---|---|---|
