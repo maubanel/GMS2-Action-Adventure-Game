@@ -31,7 +31,7 @@ You have a **README.txt** file that you can add your name to.  As you are comple
 
 ##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-The game project opens up and you will see the **GameMaker** IDE.
+`Double click` the **GMS2-Action-Adventure-Game.yyp** up and you will see the **GameMaker** IDE.
 
 ![gamemaker project ide](images/gameProject.png)
 
@@ -39,7 +39,9 @@ The game project opens up and you will see the **GameMaker** IDE.
 
 ##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. A level appears, we are now ready to start.
 
+![entire level appears](images/gameAppears.png)
 
 ![](../images/line2.png)
 
@@ -64,9 +66,7 @@ The game project opens up and you will see the **GameMaker** IDE.
 
 ##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. A level appears, we are now ready to start.
 
-![entire level appears](images/gameAppears.png)
 
 ![](../images/line2.png)
 
