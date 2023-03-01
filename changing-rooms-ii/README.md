@@ -15,6 +15,8 @@ Lets continue with getting the teleporter to work.
 
 ##### `Step 1.`\|`TDAAG`|:small_blue_diamond:
 
+Make sure all your files are still checked out of perforce.
+
 Play the game and make sure the player switches to the appropriate idle frame.
 
 https://user-images.githubusercontent.com/5504953/152676113-302e6a80-0091-4476-b5a7-7d768e85042c.mp4
@@ -157,15 +159,11 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 https://user-images.githubusercontent.com/5504953/152677827-113749fc-c28c-4212-968b-924c05d534fd.mp4
 
-Now open up **obj_teleporter_ray | Create** event. Check to see if the player exists.  Only set the `image_alpha` to `0` if the state is `in_game`. Set it to `1` if the state is `teleporter arrive`.
-
-![set ray to 0 or 1 depending on state](images/teleporterRay.png)
-
 ![](../images/line2.png)
 
 ##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Open up **obj_teleporter_ray | Step** event and add a fade out when the state is `teleporter_arrive`.
+Now open up **obj_teleporter_ray | Create** event. Check to see if the player exists.  Only set the `image_alpha` to `0` if the state is `in_game`. Set it to `1` if the state is `teleporter arrive`.
 
 ![fade out in teleport arrive](images/triggerFadeOut.png)
 
@@ -173,43 +171,9 @@ Open up **obj_teleporter_ray | Step** event and add a fade out when the state is
 
 ##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the teleporter ray fades out as the player fades in. We just now need to walk the player outside the room then return to `in_game` state and give control back to the player.
+![set ray to 0 or 1 depending on state](images/teleporterRay.png)
 
-https://user-images.githubusercontent.com/5504953/152678524-635972c0-fdbe-4cfe-a4f0-0f800f9711b1.mp4
-
-![](../images/line2.png)
-
-##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
-
-Open up **obj_player | End Step** event and when we change rooms we set the direction and image angle to `0` (moving right) and half the speed of the aninmation and player.  We then in `teleport_arrive` state add a check for when the `image_alpha` is greater than `1` we put the alpha back to `1`, set the `speed` to `0` and change the state to `player_state.in_game`.  We also need to read the new tilemaps.
-
-![clean up teleporting](images/finalMovement.png)
-
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the transition is complete but we cannot go back to the castle through the teleporter.
-
-https://user-images.githubusercontent.com/5504953/152679086-364898f6-bb82-45db-857d-8f19452f53b1.mp4
-
-Now we go back to **obj_player | End Step** and remove the common elements outsid eof the room if statements.  In both rooms we will chnage states to `teleport_arrive`, and go right at half speed.  We will also add a room change from `rm_desert` to `rm_castle`.  I went into `rm_castle` and found that for my room `484` on the **x** `958` on the **y** brough the player back to the correct position.
-
-![teleport back to castle](images/finishingTouch.png)
-
-![](../images/line2.png)
-
-##### `Step 22.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can can go back and forth.  That is it for changing rooms!
-
-https://user-images.githubusercontent.com/5504953/152679692-18c296aa-2786-437a-9a2f-fa646edf43fd.mp4
-
-
-![](../images/line2.png)
-
-##### `Step 23.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
-
-![save commit and push to github](images/github.png)
-___
+Open up **obj_teleporter_ray | Step** event and add a fade out when the state is `teleporter_arrive`.
 
 ![](../images/line.png)
 
