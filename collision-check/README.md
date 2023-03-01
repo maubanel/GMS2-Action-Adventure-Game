@@ -40,7 +40,7 @@ We will be using `layer_tilemap_get_id(layer_id)` to get access to the tilemap s
 
 Open up **obj_player | Create Event**.
 
-![alt_text](images/gettilemap.png)
+![get tilemap id](images/gettilemap.png)
 
 
 ![](../images/line2.png)
