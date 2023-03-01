@@ -68,24 +68,28 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. N
 
 https://user-images.githubusercontent.com/5504953/222153173-72e35343-1108-4057-9399-582eb0da8d85.mp4
 
+
+![](../images/line2.png)
+
+##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+
 ![fade player out](images/fadePlayerOut.png)
+
+![](../images/line2.png)
+
+##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 
 Now we have to fix two things.  We want to have one player with its stats and items going from room to room.  So remove the player from `rm_desert`.
 
 ![delete desert player](images/deleteDesertPlayer.png)
 
-![](../images/line2.png)
-
-##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Make the player in `rm_castle` persistent so they don't get deleted when changing levels.
 
 ![make obj_player persistent](images/objPlayerPersistent.png)
 
-![](../images/line2.png)
-
-##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now we need to get the location in the desert for where we moved the teleporter.  I put the cursor in the center of the teleporter and record the x and y values.
 
