@@ -59,7 +59,7 @@ We need to create a small finite state machine for the player.  We have to watch
 * When in new room start in `teleporter` state, walk off teleporter
 * Change state back to ingame.
 
-Lets use an enumerator to store the player state.  An enumerator is a constant which makes it non-mutable (cannot be altered at run time) name that will represent the state of the player. Open the player create event and add at the top (typically we will place macros before variables):
+Lets use an enumerator to store the player state.  An enumerator is a constant which makes it non-mutable (cannot be altered at run time) name that will represent the state of the player. Open the player create event and add at the top (typically we will place macros before variables).  Open up **obj_player | Create** event.
 
 ![create player_state enumerator](images/createEnum.png)
 
