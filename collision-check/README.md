@@ -14,6 +14,16 @@ We need to get access to the **TileSheet** and check on each corner of the playe
 
 ##### `Step 1.`\|`TDAAG`|:small_blue_diamond:
 
+Open up **P4v**.  Select the top folder of the **GameMaker** project. Press the <kbd>Checkout</kbd> button.  Checkout out all files in P4V so that they are all writable (otherwise they will be read only and none of the changes will be saved). Select a **New** changelist and add a message describing the unit of work you will be performing. Press the <kbd>OK</kbd> button.
+
+Open up the project you are working on in **GameMaker**. 
+
+![checkout files and create new changelist](images/checkoutFiles.png)
+
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
+
 We will be using a function called `layer_get_id(layer_name) `to get access to the layer. Remember `layer_name` is a string so it is the name of the layer surrounded by quotation marks, for example: "the_name_of_the_layer".
 
 Now *double click* on `obj_player` and edit the **Create Event** and add get a variable to hold the reference to the id of the **Collision** layer we created in the room:
@@ -22,7 +32,7 @@ Now *double click* on `obj_player` and edit the **Create Event** and add get a v
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now that we have the  **ID** for the layer, we need a variable to store the reference to the tilemap that is used by that layer. Since a layer can be of different types (game objects, backgrounds etc..) we need access to the **Tilemap**.
 
@@ -30,13 +40,13 @@ We will be using `layer_tilemap_get_id(layer_id)` to get access to the tilemap s
 
 Open up **obj_player | Create Event**.
 
-![alt_text](images/getLayer.png)
+![alt_text](images/gettilemap.png)
+
+We also need to know how far the edge of the collision volume from the **Origin** of the sprite for each direction.  We will be using `sprite_get_bbox_left` to get the left hand pixel of the collision mox.
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-We also need to know how far the edge of the collision volume from the **Origin** of the sprite for each direction.  We will be using `sprite_get_bbox_left` to get the left hand pixel of the collision mox.
+##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 What will be the return  if we subtract `sprite_get_xoffset(sprite_index)`from `sprite_get_bbox_left(sprite_index)`?  We get the distance from the origin to the edge of the collision volume.  This will be how much we need to displace the character by relative to the edge of the collision in game.  Lets look at a diagram:
 
@@ -44,9 +54,17 @@ What will be the return  if we subtract `sprite_get_xoffset(sprite_index)`from `
 
 ![diagram of sprite_get_xoffset(sprite_index)](images/spr_xyoffset.png)
 
+![](../images/line2.png)
+
+##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
+
 `sprite_get_bbox_left(sprite_index)` gives us the distance from **Origin** to the left side of the bounding box. 
 
 ![diagram of sprite_get_bbox_left(sprite_index)](images/spr_bbox.png)
+
+![](../images/line2.png)
+
+##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
 So lets get the offset for all four sides and save it in the **obj_player | Create** event.
 
@@ -54,7 +72,7 @@ So lets get the offset for all four sides and save it in the **obj_player | Crea
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 To make the collision as simple as possible we want the collision volume to be identical in all sprites regardless of the direction.  We don't want the size of the collision changing when the player changes animation. For collisions to work properly all animations HAVE to have the same collision volume. Lets tighten the volume a bit on the horizontal axis and top as we want the player to get close to the walls with as little a gap as possible.
 
@@ -64,17 +82,15 @@ Open all of the player sprites and change the **Collision Mask Mode** from **Aut
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
+##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 So lets visualize what the value we are trying to aquire?
 
 ![diagram of offsets](images/offsets.png)
 
-
-
 ![](../images/line2.png)
 
-##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Lets add some print statements to the player's create event and print some debug to confirm our above assumptions.  Do we get the value we expect?
 
@@ -82,7 +98,7 @@ Lets add some print statements to the player's create event and print some debug
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  Look at the Output window and confirm that these variables are doing what we think they should be.  This should match what we calculated above.  If it doesn't look for errors in the code.
 
@@ -90,7 +106,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.  
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 11.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: 
 
 Lets go back to the player and comment out the debug printing as we no longer need this information.
 
@@ -98,13 +114,27 @@ Lets go back to the player and comment out the debug printing as we no longer ne
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
-![save commit and push to github](images/github.png)
+![save then quit gamemaker](images/saveQuit.png)
 
-___
+![](../images/line2.png)
+
+##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+
+Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session. Make sure the message accurately represents what you have done. Press the <kbd>OK</kbd> button.
+
+![add new and changed files to p4v](images/add.png)
+
+![](../images/line2.png)
+
+##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+
+Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
+
+![submit changelist to p4v](images/submit.png)
 
 
 ![](../images/line.png)
