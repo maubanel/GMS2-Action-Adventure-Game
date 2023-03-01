@@ -81,7 +81,7 @@ Now open up **obj_player | Collision** and change rooms when image_alpha is 0.
 
 ##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we have to fix two things.  We want to have one player with its stats and items going from room to room.  So remove the player from `rm_desert`.
+Now we have to fix two things.  We want to have one player with its stats and items going from room to room.  So remove the player from `rm_desert`. 
 
 ![delete desert player](images/deleteDesertPlayer.png)
 
@@ -89,8 +89,7 @@ Now we have to fix two things.  We want to have one player with its stats and it
 
 ##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
 
-
-Make the **obj_player** persistent so they don't get deleted when changing levels.
+Make the **obj_player** persistent so they don't get removed from the game when changing levels. Also, variables like health and any collectibles will persist the level changes.
 
 ![make obj_player persistent](images/objPlayerPersistent.png)
 
@@ -106,7 +105,7 @@ Now we need to get the location in the desert for where we moved the teleporter.
 
 ##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
-Now we go back to **obj_player | End Step** and add the x and y location of the teleporter in the desert room right after we change rooms.
+Now we go back to **obj_player | End Step** and add the x and y location of the teleporter in the desert room right after we change rooms. You can highlight the game object and look at the bottom left of the room and it will give the location of the cursor.
 
 ![add teleporter x and y](images/goToTeleporter.png)
 
@@ -138,7 +137,7 @@ Open up the **obj_player | Collision** event and only allow this state change wh
 
 ##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-Now open up **obj_player | End Step** and a a state change when we change rooms.  Go from `teleporter` to `teleport_arrive`.  Then when in the `teleport_arrive` state fade in the player.
+Now open up **obj_player | Collision** and a a state change when we change rooms.  Also, we do not want to do this in the new rooms so add a check to make sure we are in the **Teleporter** state. Change states from `teleporter` to `teleport_arrive`.  
 
 ![fade in player for teleport arrive](images/teleportArrive.png)
 
@@ -146,13 +145,17 @@ Now open up **obj_player | End Step** and a a state change when we change rooms.
 
 ##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you fade in when in the new room.  We now should have the ray already in and fade the ray out.  We will also have the player move out of the teleporter before switching back to `in_game` so that it doesn't trigger an endless back and forth.
+In the **obj_player | End Step** event add a check at the bottom to fade player back in. Player will be walking out of the collision volume so we can't trust on the collision event firing for the entire 4 second player fade in. 
 
-https://user-images.githubusercontent.com/5504953/152677827-113749fc-c28c-4212-968b-924c05d534fd.mp4
+![fade in player for teleport arrive](images/teleportArrive2.png)
 
 ![](../images/line2.png)
 
 ##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you fade in when in the new room.  We now should have the ray already in and fade the ray out.  We will also have the player move out of the teleporter before switching back to `in_game` so that it doesn't trigger an endless back and forth.
+
+https://user-images.githubusercontent.com/5504953/152677827-113749fc-c28c-4212-968b-924c05d534fd.mp4
 
 Now open up **obj_teleporter_ray | Create** event. Check to see if the player exists.  Only set the `image_alpha` to `0` if the state is `in_game`. Set it to `1` if the state is `teleporter arrive`.
 
