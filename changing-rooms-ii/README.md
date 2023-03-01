@@ -57,12 +57,15 @@ https://user-images.githubusercontent.com/5504953/152676593-33cf33c1-fe87-45f0-a
 
 Now lets have the player fade out while the teleporter ray fades in.  Open up **obj_player | Collision** event and add a fade out over 4 seconds. When player is faded out change rooms.
 
-![fade player out](images/fadePlayerOut.png)
+![fade player out](images/fadePlayerOut1.png)
 
 
 ![](../images/line2.png)
 
 ##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+
+![fade player out](images/fadePlayerOut.png)
+
 
 Now we have to fix two things.  We want to have one player with its stats and items going from room to room.  So remove the player from `rm_desert`.
 

@@ -67,7 +67,7 @@ Lets use an enumerator to store the player state.  An enumerator is a constant w
 
 ##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
-Now lets create variable that stores the macro containing the player state. The player starts the game in `player_state.in_game` so we will default to this state.  Open the **obj_player | Create** event and add to the bottom:
+Now lets create variable that stores the macro containing the player state. The player starts the game in `player_state.in_game` so we will default to this state.  Open the **obj_player | End Step** event and add to the bottom:
 
 ![store state variable](images/storeState.png)
 
