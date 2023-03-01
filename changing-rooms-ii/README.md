@@ -165,15 +165,15 @@ https://user-images.githubusercontent.com/5504953/152677827-113749fc-c28c-4212-9
 
 Now open up **obj_teleporter_ray | Create** event. Check to see if the player exists.  Only set the `image_alpha` to `0` if the state is `in_game`. Set it to `1` if the state is `teleporter arrive`.
 
-![fade out in teleport arrive](images/triggerFadeOut.png)
+![set ray to 0 or 1 depending on state](images/teleporterRay.png)
 
 ![](../images/line2.png)
 
 ##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
 
-![set ray to 0 or 1 depending on state](images/teleporterRay.png)
-
 Open up **obj_teleporter_ray | Step** event and add a fade out when the state is `teleporter_arrive`.
+
+![fade out in teleport arrive](images/triggerFadeOut.png)
 
 ![](../images/line.png)
 
