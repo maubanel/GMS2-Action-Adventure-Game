@@ -2,7 +2,7 @@
 
 ### Changing Rooms III
 
-<sub>[previous](../changing-rooms/README.md#user-content-changing-rooms-ii) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../refactor-player/README.md#user-content-refactoring-player-step-events)</sub>
+<sub>[previous](../changing-rooms-ii/README.md#user-content-changing-rooms-ii) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../refactor-player/README.md#user-content-refactoring-player-step-events)</sub>
 
 ![](../images/line3.png)
 
@@ -148,5 +148,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../changing-rooms/README.md#user-content-changing-rooms-ii)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../refactor-player/README.md#user-content-refactoring-player-step-events)|
+| [previous](../changing-rooms-ii/README.md#user-content-changing-rooms-ii)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../refactor-player/README.md#user-content-refactoring-player-step-events)|
 |---|---|---|
