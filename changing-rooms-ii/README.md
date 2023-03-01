@@ -66,7 +66,7 @@ Now lets have the player fade out while the teleporter ray fades in.  Open up **
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the player fades out when colliding with the teleporter.
 
-
+https://user-images.githubusercontent.com/5504953/222153173-72e35343-1108-4057-9399-582eb0da8d85.mp4
 
 ![fade player out](images/fadePlayerOut.png)
 
