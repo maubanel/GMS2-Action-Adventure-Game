@@ -90,7 +90,7 @@ Now we have to fix two things.  We want to have one player with its stats and it
 ##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
 
 
-Make the player in `rm_castle` persistent so they don't get deleted when changing levels.
+Make the **obj_player** persistent so they don't get deleted when changing levels.
 
 ![make obj_player persistent](images/objPlayerPersistent.png)
 
