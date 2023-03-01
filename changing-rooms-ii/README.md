@@ -64,6 +64,10 @@ Now lets have the player fade out while the teleporter ray fades in.  Open up **
 
 ##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the player fades out when colliding with the teleporter.
+
+
+
 ![fade player out](images/fadePlayerOut.png)
 
 
