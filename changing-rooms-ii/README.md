@@ -85,11 +85,18 @@ Now we have to fix two things.  We want to have one player with its stats and it
 
 ![delete desert player](images/deleteDesertPlayer.png)
 
+![](../images/line2.png)
+
+##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
+
 
 Make the player in `rm_castle` persistent so they don't get deleted when changing levels.
 
 ![make obj_player persistent](images/objPlayerPersistent.png)
 
+![](../images/line2.png)
+
+##### `Step 11.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: 
 
 Now we need to get the location in the desert for where we moved the teleporter.  I put the cursor in the center of the teleporter and record the x and y values.
 
@@ -97,7 +104,7 @@ Now we need to get the location in the desert for where we moved the teleporter.
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
+##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Now we go back to **obj_player | End Step** and add the x and y location of the teleporter in the desert room right after we change rooms.
 
@@ -105,7 +112,7 @@ Now we go back to **obj_player | End Step** and add the x and y location of the 
 
 ![](../images/line2.png)
 
-##### `Step 11.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you do change rooms but the player is invisible and it triggers another teleporter transition.  Lets fix this.
 
@@ -113,8 +120,7 @@ https://user-images.githubusercontent.com/5504953/152677288-a6d5045a-c84c-4b3e-a
 
 ![](../images/line2.png)
 
-
-##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Open up **obj_player | Create** event script and add a `teleport_arrive` to the `player_state`.
 
@@ -122,7 +128,7 @@ Open up **obj_player | Create** event script and add a `teleport_arrive` to the 
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
 
 Open up the **obj_player | Collision** event and only allow this state change when you are `in_game`.  This will stop the triggering of endless back and forth between teleporter rays.
 
@@ -130,7 +136,7 @@ Open up the **obj_player | Collision** event and only allow this state change wh
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
 Now open up **obj_player | End Step** and a a state change when we change rooms.  Go from `teleporter` to `teleport_arrive`.  Then when in the `teleport_arrive` state fade in the player.
 
@@ -138,7 +144,7 @@ Now open up **obj_player | End Step** and a a state change when we change rooms.
 
 ![](../images/line2.png)
 
-##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you fade in when in the new room.  We now should have the ray already in and fade the ray out.  We will also have the player move out of the teleporter before switching back to `in_game` so that it doesn't trigger an endless back and forth.
 
@@ -146,7 +152,7 @@ https://user-images.githubusercontent.com/5504953/152677827-113749fc-c28c-4212-9
 
 ![](../images/line2.png)
 
-##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now open up **obj_teleporter_ray | Create** event. Check to see if the player exists.  Only set the `image_alpha` to `0` if the state is `in_game`. Set it to `1` if the state is `teleporter arrive`.
 
@@ -154,7 +160,7 @@ Now open up **obj_teleporter_ray | Create** event. Check to see if the player ex
 
 ![](../images/line2.png)
 
-##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open up **obj_teleporter_ray | Step** event and add a fade out when the state is `teleporter_arrive`.
 
@@ -162,7 +168,7 @@ Open up **obj_teleporter_ray | Step** event and add a fade out when the state is
 
 ![](../images/line2.png)
 
-##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the teleporter ray fades out as the player fades in. We just now need to walk the player outside the room then return to `in_game` state and give control back to the player.
 
@@ -170,23 +176,15 @@ https://user-images.githubusercontent.com/5504953/152678524-635972c0-fdbe-4cfe-a
 
 ![](../images/line2.png)
 
-##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
 Open up **obj_player | End Step** event and when we change rooms we set the direction and image angle to `0` (moving right) and half the speed of the aninmation and player.  We then in `teleport_arrive` state add a check for when the `image_alpha` is greater than `1` we put the alpha back to `1`, set the `speed` to `0` and change the state to `player_state.in_game`.  We also need to read the new tilemaps.
 
 ![clean up teleporting](images/finalMovement.png)
 
-![](../images/line2.png)
-
-##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
-
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now the transition is complete but we cannot go back to the castle through the teleporter.
 
 https://user-images.githubusercontent.com/5504953/152679086-364898f6-bb82-45db-857d-8f19452f53b1.mp4
-
-![](../images/line2.png)
-
-##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
 Now we go back to **obj_player | End Step** and remove the common elements outsid eof the room if statements.  In both rooms we will chnage states to `teleport_arrive`, and go right at half speed.  We will also add a room change from `rm_desert` to `rm_castle`.  I went into `rm_castle` and found that for my room `484` on the **x** `958` on the **y** brough the player back to the correct position.
 
@@ -212,7 +210,7 @@ ___
 
 ![](../images/line.png)
 
-<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Refactoring Player Steps"/> -->
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Changing Room III"/> -->
 
 ![next web page of walkthrough](images/banner.png)
 
