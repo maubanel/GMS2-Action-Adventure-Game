@@ -73,13 +73,13 @@ https://user-images.githubusercontent.com/5504953/222153173-72e35343-1108-4057-9
 
 ##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
+Now open up **obj_player | Collision** and change rooms when image_alpha is 0.
 
 ![fade player out](images/fadePlayerOut.png)
 
 ![](../images/line2.png)
 
 ##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
 
 Now we have to fix two things.  We want to have one player with its stats and items going from room to room.  So remove the player from `rm_desert`.
 
