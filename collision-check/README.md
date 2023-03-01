@@ -34,7 +34,7 @@ Now *double click* on `obj_player` and edit the **Create Event** and add get a v
 
 ##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now that we have the  **ID** for the layer, we need a variable to store the reference to the tilemap that is used by that layer. Since a layer can be of different types (game objects, backgrounds etc..) we need access to the **Tilemap**.
+Now that we have the  **ID** for the layer, we need a variable to store the reference to the tilemap that is used by that layer.  
 
 We will be using `layer_tilemap_get_id(layer_id)` to get access to the tilemap so we can check whether there is a collision on a specific point in the room. This function can be used to retrieve the **unique ID** value of the tilemap element on a layer.
 
