@@ -119,7 +119,7 @@ https://user-images.githubusercontent.com/5504953/152680891-515cf713-3093-434e-a
 
 ##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Repeat this for teleport send and arrive, by moving the scripts to functions. Now test the teleporting to make sure it is the same.
+Repeat this for teleport arrive, by moving the script to a newfunction. Now test the teleporting to make sure it is the same.
 
 ![refactor teleport send and arrive](images/teleportSendArrive.png)
 
