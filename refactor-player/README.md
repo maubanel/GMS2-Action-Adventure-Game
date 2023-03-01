@@ -2,7 +2,7 @@
 
 ### Refactoring Player Step Events
 
-<sub>[previous](../changing-rooms-ii/README.md#user-content-changing-rooms-ii) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../basic-message/README.md#user-content-message-dialogue-box)</sub>
+<sub>[previous](../changing-rooms-iii/README.md#user-content-changing-rooms-iii) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../basic-message/README.md#user-content-message-dialogue-box)</sub>
 
 ![](../images/line3.png)
 
@@ -132,5 +132,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../changing-rooms-ii/README.md#user-content-changing-rooms-ii)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../basic-message/README.md#user-content-message-dialogue-box)|
+| [previous](../changing-rooms-iii/README.md#user-content-changing-rooms-iii)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../basic-message/README.md#user-content-message-dialogue-box)|
 |---|---|---|

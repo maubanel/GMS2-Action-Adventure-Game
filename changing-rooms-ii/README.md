@@ -2,7 +2,7 @@
 
 ### Changing Rooms II
 
-<sub>[previous](../changing-rooms/README.md#user-content-changing-rooms) • [home](../README.md#user-content-gms2-action-adventure-game) • [next](../refactor-player/README.md#user-content-refactoring-player-step-events)</sub>
+<sub>[previous](../changing-rooms/README.md#user-content-changing-rooms) • [home](../README.md#user-content-gms2-action-adventure-game) • [next](../changing-rooms-iii/README.md#user-content-changing-rooms-iii)</sub>
 
 ![](../images/line3.png)
 
@@ -183,5 +183,5 @@ Open up **obj_teleporter_ray | Step** event and add a fade out when the state is
 
 ![](../images/line.png)
 
-| [previous](../changing-rooms/README.md#user-content-changing-rooms)| [home](../README.md#user-content-gms2-action-adventure-game) | [next](../refactor-player/README.md#user-content-refactoring-player-step-events)|
+| [previous](../changing-rooms/README.md#user-content-changing-rooms)| [home](../README.md#user-content-gms2-action-adventure-game) | [next](../changing-rooms-iii/README.md#user-content-changing-rooms-iii)|
 |---|---|---|
