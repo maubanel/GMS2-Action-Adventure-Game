@@ -2,7 +2,7 @@
 
 ### Pathfinding Zombie
 
-<sub>[previous](../collectables-ii/README.md#user-content-collectables-ii) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../pathfinding-ii/README.md#user-content-pathfinding-zombie-ii)</sub>
+<sub>[previous](../collectables-ii/README.md#user-content-collectables-ii) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../pathfinding-ii/README.md#user-content-pathfinding-zombie-ii)</sub>
 
 ![](../images/line3.png)
 
@@ -209,5 +209,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../collectables-ii/README.md#user-content-collectables-ii)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../pathfinding-ii/README.md#user-content-pathfinding-zombie-ii)|
+| [previous](../collectables-ii/README.md#user-content-collectables-ii)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../pathfinding-ii/README.md#user-content-pathfinding-zombie-ii)|
 |---|---|---|

@@ -2,7 +2,7 @@
 
 ### Four Corner Collision Check
 
-<sub>[previous](../collision-volume/README.md#user-content-creating-collision-volume-in-room) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../resolve-collision/README.md#user-content-resolve-collision)</sub>
+<sub>[previous](../collision-volume/README.md#user-content-creating-collision-volume-in-room) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../resolve-collision/README.md#user-content-resolve-collision)</sub>
 
 ![](../images/line3.png)
 
@@ -146,5 +146,5 @@ Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
 ![](../images/line.png)
 
-| [previous](../collision-volume/README.md#user-content-creating-collision-volume-in-room)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../resolve-collision/README.md#user-content-resolve-collision)|
+| [previous](../collision-volume/README.md#user-content-creating-collision-volume-in-room)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../resolve-collision/README.md#user-content-resolve-collision)|
 |---|---|---|

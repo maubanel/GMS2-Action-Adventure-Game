@@ -2,7 +2,7 @@
 
 ### Audio SFX
 
-<sub>[previous](../front-end/README.md#user-content-front-end) • [home](../README.md#user-content-gms2-ue4-space-rocks) </sub>
+<sub>[previous](../front-end/README.md#user-content-front-end) • [home](..//README.md#user-content-gms2-action-adventure-game) </sub>
 
 ![](../images/line3.png)
 
@@ -182,5 +182,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../front-end/README.md#user-content-front-end)| [home](../README.md#user-content-gms2-ue4-space-rocks) | 
+| [previous](../front-end/README.md#user-content-front-end)| [home](..//README.md#user-content-gms2-action-adventure-game) | 
 |---|---|

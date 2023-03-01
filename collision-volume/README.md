@@ -2,7 +2,7 @@
 
 ### Creating Collision Volume in Room
 
-<sub>[previous](../player-anim/README.md#user-content-importing-player-animations) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../collision-check/README.md#user-content-four-corner-collision-check)</sub>
+<sub>[previous](../player-anim/README.md#user-content-importing-player-animations) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../collision-check/README.md#user-content-four-corner-collision-check)</sub>
 
 ![](../images/line3.png)
 
@@ -115,5 +115,5 @@ Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
 ![](../images/line.png)
 
-| [previous](../player-anim/README.md#user-content-importing-player-animations)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../collision-check/README.md#user-content-four-corner-collision-check)|
+| [previous](../player-anim/README.md#user-content-importing-player-animations)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../collision-check/README.md#user-content-four-corner-collision-check)|
 |---|---|---|

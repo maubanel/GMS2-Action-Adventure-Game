@@ -2,7 +2,7 @@
 
 ### Message Dialogue Box
 
-<sub>[previous](../refactor-player/README.md#user-content-refactoring-player-step-events) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../collectables/README.md#user-content-collectables)</sub>
+<sub>[previous](../refactor-player/README.md#user-content-refactoring-player-step-events) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../collectables/README.md#user-content-collectables)</sub>
 
 ![](../images/line3.png)
 
@@ -242,5 +242,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../refactor-player/README.md#user-content-refactoring-player-step-events)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../collectables/README.md#user-content-collectables)|
+| [previous](../refactor-player/README.md#user-content-refactoring-player-step-events)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../collectables/README.md#user-content-collectables)|
 |---|---|---|

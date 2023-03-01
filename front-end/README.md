@@ -2,7 +2,7 @@
 
 ### Front End
 
-<sub>[previous](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../audio/README.md#user-content-audio-sfx)</sub>
+<sub>[previous](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../audio/README.md#user-content-audio-sfx)</sub>
 
 ![](../images/line3.png)
 
@@ -177,5 +177,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../audio/README.md#user-content-audio-sfx)|
+| [previous](../pathfinding-iii/README.md#user-content-pathfinding-zombie-iii)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../audio/README.md#user-content-audio-sfx)|
 |---|---|---|

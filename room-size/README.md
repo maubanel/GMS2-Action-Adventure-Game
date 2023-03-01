@@ -2,7 +2,7 @@
 
 ### Room Size
 
-<sub>[previous](../setting-up/README.md#user-content-setting-up) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../player-anim/README.md#user-content-importing-player-animations)</sub>
+<sub>[previous](../setting-up/README.md#user-content-setting-up) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../player-anim/README.md#user-content-importing-player-animations)</sub>
 
 ![](../images/line3.png)
 
@@ -84,5 +84,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../setting-up/README.md#user-content-setting-up)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../player-anim/README.md#user-content-importing-player-animations)|
+| [previous](../setting-up/README.md#user-content-setting-up)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../player-anim/README.md#user-content-importing-player-animations)|
 |---|---|---|

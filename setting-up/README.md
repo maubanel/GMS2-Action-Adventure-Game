@@ -2,7 +2,7 @@
 
 ### Setting Up
 
-<sub>[home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../room-size/README.md#user-content-room-size)</sub>
+<sub>[home](..//README.md#user-content-gms2-action-adventure-game) • [next](../room-size/README.md#user-content-room-size)</sub>
 
 ![](../images/line3.png)
 
@@ -76,5 +76,5 @@ ___
 
 ![](../images/line.png)
 
-| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../room-size/README.md#user-content-room-size)|
+| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../room-size/README.md#user-content-room-size)|
 |---|---|

@@ -2,7 +2,7 @@
 
 ### Resolve Collision
 
-<sub>[previous](../collision-check/README.md#user-content-four-corner-collision-check) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../changing-rooms/README.md#user-content-changing-rooms)</sub>
+<sub>[previous](../collision-check/README.md#user-content-four-corner-collision-check) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../changing-rooms/README.md#user-content-changing-rooms)</sub>
 
 ![](../images/line3.png)
 
@@ -240,5 +240,5 @@ Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
 ![](../images/line.png)
 
-| [previous](../collision-check/README.md#user-content-four-corner-collision-check)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../changing-rooms/README.md#user-content-changing-rooms)|
+| [previous](../collision-check/README.md#user-content-four-corner-collision-check)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../changing-rooms/README.md#user-content-changing-rooms)|
 |---|---|---|

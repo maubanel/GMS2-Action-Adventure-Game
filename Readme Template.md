@@ -2,7 +2,7 @@
 
 ### Add Title
 
-<sub>[previous](../) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../)</sub>
+<sub>[previous](../) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../)</sub>
 
 ![](../images/line3.png)
 
@@ -79,7 +79,6 @@ Chapter introduction here.
 
 ![](../images/line2.png)
 
-
 ##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 ![alt_text](images/.png)
@@ -149,5 +148,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../)|
+| [previous](../)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../)|
 |---|---|---|

@@ -2,7 +2,7 @@
 
 ### Collectables II
 
-<sub>[previous](../collectables/README.md#user-content-collectables) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../pathfinding/README.md#user-content-pathfinding-zombie)</sub>
+<sub>[previous](../collectables/README.md#user-content-collectables) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../pathfinding/README.md#user-content-pathfinding-zombie)</sub>
 
 ![](../images/line3.png)
 
@@ -86,5 +86,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../collectables/README.md#user-content-collectables)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../pathfinding/README.md#user-content-pathfinding-zombie)|
+| [previous](../collectables/README.md#user-content-collectables)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../pathfinding/README.md#user-content-pathfinding-zombie)|
 |---|---|---|

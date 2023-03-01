@@ -2,7 +2,7 @@
 
 ### Importing Player Animations
 
-<sub>[previous](../room-size/README.md#user-content-room-size) • [home](../README.md#user-content-gms2-ue4-space-rocks) • [next](../collision-volume/README.md#user-content-creating-collision-volume-in-room)</sub>
+<sub>[previous](../room-size/README.md#user-content-room-size) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../collision-volume/README.md#user-content-creating-collision-volume-in-room)</sub>
 
 ![](../images/line3.png)
 
@@ -231,5 +231,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../room-size/README.md#user-content-room-size)| [home](../README.md#user-content-gms2-ue4-space-rocks) | [next](../collision-volume/README.md#user-content-creating-collision-volume-in-room)|
+| [previous](../room-size/README.md#user-content-room-size)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../collision-volume/README.md#user-content-creating-collision-volume-in-room)|
 |---|---|---|
