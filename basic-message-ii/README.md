@@ -2,7 +2,7 @@
 
 ### Message Dialogue Box II
 
-<sub>[previous](../) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../)</sub>
+<sub>[previous](../basic-message/README.md#user-content-message-dialogue-box) • [home](../README.md#user-content-gms2-action-adventure-game) • [next](../collectables/README.md#user-content-collectables)</sub>
 
 ![](../images/line3.png)
 
@@ -66,5 +66,5 @@ Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
 ![](../images/line.png)
 
-| [previous](../)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../)|
+| [previous](../basic-message/README.md#user-content-message-dialogue-box)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../collectables/README.md#user-content-collectables)|
 |---|---|---|
