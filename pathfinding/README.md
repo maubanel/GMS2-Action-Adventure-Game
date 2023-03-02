@@ -77,7 +77,7 @@ Now we open **rm_castle** and add a **Path Layer** and place it under the **Inst
 
 Select the path you just created path_enemy:
 
-![add zombie path](images/zombiePath.png)
+![add zombie path](images/zombiePath2.png)
 
 ![](../images/line2.png)
 
