@@ -2,7 +2,7 @@
 
 ### Collectables
 
-<sub>[previous](../basic-message/README.md#user-content-message-dialogue-box) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../collectables-ii/README.md#user-content-collectables-ii)</sub>
+<sub>[previous](../basic-message-ii/README.md#user-content-message-dialogue-box-ii) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../collectables-ii/README.md#user-content-collectables-ii)</sub>
 
 ![](../images/line3.png)
 
@@ -202,5 +202,5 @@ ___
 
 ![](../images/line.png)
 
-| [previous](../basic-message/README.md#user-content-message-dialogue-box)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../collectables-ii/README.md#user-content-collectables-ii)|
+| [previous](../basic-message-ii/README.md#user-content-message-dialogue-box-ii)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../collectables-ii/README.md#user-content-collectables-ii)|
 |---|---|---|

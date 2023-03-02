@@ -2,7 +2,7 @@
 
 ### Message Dialogue Box
 
-<sub>[previous](../refactor-player/README.md#user-content-refactoring-player-step-events) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../collectables/README.md#user-content-collectables)</sub>
+<sub>[previous](../refactor-player/README.md#user-content-refactoring-player-step-events) • [home](..//README.md#user-content-gms2-action-adventure-game) • [next](../basic-message-ii/README.md#user-content-message-dialogue-box-ii)</sub>
 
 ![](../images/line3.png)
 
@@ -11,7 +11,6 @@ I have provided some code to make dialogue boxes easier to implement.  Lets just
 <br>
 
 ---
-
 
 ##### `Step 1.`\|`TDAAG`|:small_blue_diamond:
 
@@ -121,15 +120,19 @@ https://user-images.githubusercontent.com/5504953/152687270-868137f7-623d-4378-8
 
 We have included a script that will return which message number is going displayed to allow the user to display a new message.  The script `scr_message_number()` returns which message number is being displayed.  Open the **obj_player | Create** event and add a message. 
 
-The open up the **obj_player | Collision**  event and string the last two messages together using `scr_message_number()`.
-
 ![add salutation message to create](images/addSalutation.png)
+
+![](../images/line2.png)
+
+##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+
+Then open up the **obj_player | Collision**  event and string the last two messages together using `scr_message_number()`.
 
 ![order two messages in a row](images/firstMessageCollision.png)
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
 
@@ -137,7 +140,7 @@ https://user-images.githubusercontent.com/5504953/152710591-c3889d20-b70f-4883-a
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
 
 Now we will be asking a yes/no question.  This means we need to pass the message function an array of strings with the question in slot [0], the positive answer if the player selects yes in slot [1] and the no answer if the player selects no in slot [2].  
 
@@ -147,7 +150,7 @@ Open the **obj_npc_tiger | Create** event and add a question array with a questi
 
 ![](../images/line2.png)
 
-##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
 Change the condition on the multiple question from `>=` to `==`.
 
@@ -155,11 +158,11 @@ Add the method `draw_dialogue_question(x, y, text, id, player_id, space_above, t
 
 ![add draw question to collision event](images/askQuestionCollision.png)
 
+Now *pr
 ![](../images/line2.png)
 
-##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
-
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
+##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+ess* the <kbd>Play</kbd> button in the top menu bar to launch the game.
 
 The third message is a question that you can answer with Y or N by selecting the button with the arrow keys and pressing enter. There is a problem though you still move the player.
 
@@ -167,7 +170,7 @@ https://user-images.githubusercontent.com/5504953/152984957-deda275d-0e6a-49da-a
 
 ![](../images/line2.png)
 
-##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 We want to freeze/pause the player (don't accept input) while the player answers the question so we need to add another state. Open the **obj_player | Create** event and add a `paused` state to `player_state`. We do not need any logic for this state, as the player will be doing nothing.
 
@@ -175,7 +178,7 @@ We want to freeze/pause the player (don't accept input) while the player answers
 
 ![](../images/line2.png)
 
-##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now the player will just keep animating in the diretion they are going if we change states.  When we are in `player_state.paused` then we need to stop the player by setting `speed` to `0` and then select the idle animation by calling the animation selection function.  We do not need to resolve collisions as nothing is moving in this level (that will collide with the player) and the player is not moving. Open up `obj_player | Step` event and add the appropriate logic.
 
@@ -183,7 +186,7 @@ Now the player will just keep animating in the diretion they are going if we cha
 
 ![](../images/line2.png)
 
-##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
 
 Now the three message functions return a real number with the state type the message box is in.  State 0 is a regular message, State 1 is a yes no question and State 2 is user inputing text.  Our question goes from State 1 when asking the yes no question to State 0 with the answer.  We just need to freeze the player in State 1.  Open the collision event for the NPC and add:
 
@@ -191,27 +194,19 @@ Now the three message functions return a real number with the state type the mes
 
 ![](../images/line2.png)
 
-##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
+##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can select **Y** and **N** without moving the player.  Control resumes after the yes or no question.
 
 https://user-images.githubusercontent.com/5504953/152987615-5f9618bb-aab2-4209-9a47-2497701b0e2f.mp4
 
-![](../images/line2.png)
-
-##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
-
-Now lets ask the user to type in a name and we will save it.  We want to say "Hi! USERNAME, welcome to our game...".  So we will ask a question "Please enter your first name below" and split the salutation into two parts (we will insert the user created name after).
-
-![add question and split greeting](images/addNameInputandSplitGreeting.png)
-
 ![](../images/line.png)
 
-<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Basic Message II"> -->
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Message Dialogue Box II"> -->
 
 ![next web page of walkthrough](images/banner.png)
 
 ![](../images/line.png)
 
-| [previous](../refactor-player/README.md#user-content-refactoring-player-step-events)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../collectables/README.md#user-content-collectables)|
+| [previous](../refactor-player/README.md#user-content-refactoring-player-step-events)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../basic-message-ii/README.md#user-content-message-dialogue-box-ii)|
 |---|---|---|
