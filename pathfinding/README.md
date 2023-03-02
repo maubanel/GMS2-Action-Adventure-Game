@@ -187,14 +187,6 @@ We also want to know the range that triggers the zombie to chase the player. Thi
         
 ![set enemy_range variable to 200](images/enemyRangeVar.png)
 
-![](../images/line2.png)
-
-##### `Step 22.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-So we will add to the zombie step event script and check to see that the distance between the enemy and the player is less than the enemy_range variable then switch to the `chase` state. We also terminate the path movement as the zombie is no longer following the path and will chase the player. Open up **obj_zombie: End Step** event and stop the zombie and change states.
-
-![stop zombie and change state to chase when close to player](images/StartChase.png)
-
 ![](../images/line.png)
 
 <!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Pathfinding Zombie II"> -->
