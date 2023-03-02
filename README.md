@@ -31,6 +31,7 @@ Lets now take a look at a level that is larger than a single screen and putting 
 <kbd></kbd> &nbsp;&nbsp; [Changing Rooms III](changing-rooms-iii/README.md#user-content-changing-rooms-iii) <br>
 <kbd></kbd> &nbsp;&nbsp; [Refactoring Player Step Events](refactor-player/README.md#user-content-refactoring-player-step-events) <br>
 <kbd></kbd> &nbsp;&nbsp; [Message Dialogue Box](basic-message/README.md#user-content-message-dialogue-box) <br>
+<kbd></kbd> &nbsp;&nbsp; [Message Dialogue Box II](basic-message-ii/README.md#user-content-message-dialogue-box-ii) <br>
 <kbd></kbd> &nbsp;&nbsp; [Collectables](collectables/README.md#user-content-collectables) <br>
 <kbd></kbd> &nbsp;&nbsp; [Collectables II](collectables-ii/README.md#user-content-collectables-ii) <br>
 <kbd></kbd> &nbsp;&nbsp; [Pathfinding Zombie](pathfinding/README.md#user-content-pathfinding-zombie) <br>

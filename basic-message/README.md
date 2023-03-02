@@ -15,22 +15,31 @@ I have provided some code to make dialogue boxes easier to implement.  Lets just
 
 ##### `Step 1.`\|`TDAAG`|:small_blue_diamond:
 
+Open up **P4v**.  Select the top folder of the **GameMaker** project. Press the <kbd>Checkout</kbd> button.  Checkout out all files in P4V so that they are all writable (otherwise they will be read only and none of the changes will be saved). Select a **New** changelist and add a message describing the unit of work you will be performing. Press the <kbd>OK</kbd> button.
+
+Open up the project you are working on in **GameMaker**. 
+
+![checkout files and create new changelist](images/checkoutFiles.png)
+
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
+
 Lets import a sprite to act as an NPC.  This character will not animate, we will just talk to it.  Right click on the **Sprites** title in the **Resources** menu and select **Create | Sprite**.  Call it `spr_npc_tiger`.  Download the artwork [spr_npc_tiger.png](images/spr_npc_tiger.png). Press the <kbd>Import</kbd> button and selet the downloaded **pr_npc_tiger.png sprite**.
 
 ![alt_text](images/downloadNpcTiger.png)
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now lets create an object from this sprite. Right click on the **Objects** title in the **Resources** menu and select **Create | Object**. Bind the `spr_npc_tiger` to this object and call it `obj_npc_tiger`.
-
 
 ![alt_text](images/obj_tiger.png)
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Open **rm_castle** and add a new **Instance Layer** underneath the **Instance** with the player.  Call it `NPC_Instances`.  Drag a copy of the tiger to the top of the castle.
 
@@ -38,7 +47,7 @@ Open **rm_castle** and add a new **Instance Layer** underneath the **Instance** 
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
 
 There are 7 scripts in the **Scripts | Messages** folder.  You will be using 4 of them and the messaging system uses the other three.  The 4 we care about are:
 
@@ -55,7 +64,7 @@ We will trigger the box when the player collides with the collision volume of th
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
+##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run into the NPC and see the dialogue message pops up.  There are two ways to close the message box.  Either hit the <kbd>Enter</kbd> button or walk outside of the collision volume and in both cases the message box dissapears.  There is a 3 second cool down period to where another message box will not appear.
 
@@ -63,7 +72,7 @@ https://user-images.githubusercontent.com/5504953/152686410-dce8f458-928b-416b-9
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Lets add the typewriter effect to game.  Go back to the collision event in the npc and change the typewiter_delay to 2 frames between letters.
 
@@ -71,7 +80,7 @@ Lets add the typewriter effect to game.  Go back to the collision event in the n
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Run into the NPC and see the dialogue message pops up.  Now the text appears slowly. You can't skip the message box until the typewriter completes.  Pressing **Enter** button fast forwards and finishes the typing skipping the effect. The next **Enter** will close the message box. 
 
@@ -79,7 +88,7 @@ https://user-images.githubusercontent.com/5504953/152686664-215682b8-d70d-46f3-9
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Please note that it is up to you to determine if your text fits within the one box.  If your message takes more room it will run out the bottom of the box.  You have the ability to split this longer message into multiple messages in an array.  
 
@@ -91,23 +100,24 @@ Open up **obj_npc_tiger** and press the <kbd>Add Event</kbd> and select a **Crea
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
 
 Open the **obj_npc_tiger | Collision**  event and alter which message to pass.  We want to pass the entire array so we use the array name without the brackets so it sends the entire list to the function. Lets randomize the order.
+
 ![call message array with randomness](images/callArrrayMessages.png)
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
+##### `Step 11.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: 
 
 Now you will see that it displays all the messages in random order before the message disappears.  Notice that the icon is an arrow when there is a message that is coming up.
 
 https://user-images.githubusercontent.com/5504953/152687270-868137f7-623d-4378-83e1-a682aca6e028.mp4
 
-
 ![](../images/line2.png)
 
-##### `Step 11.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: 
+
+##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 We have included a script that will return which message number is going displayed to allow the user to display a new message.  The script `scr_message_number()` returns which message number is being displayed.  Open the **obj_player | Create** event and add a message. 
 
@@ -119,8 +129,7 @@ The open up the **obj_player | Collision**  event and string the last two messag
 
 ![](../images/line2.png)
 
-
-##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
 
@@ -128,7 +137,7 @@ https://user-images.githubusercontent.com/5504953/152710591-c3889d20-b70f-4883-a
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now we will be asking a yes/no question.  This means we need to pass the message function an array of strings with the question in slot [0], the positive answer if the player selects yes in slot [1] and the no answer if the player selects no in slot [2].  
 
@@ -138,7 +147,7 @@ Open the **obj_npc_tiger | Create** event and add a question array with a questi
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
 
 Change the condition on the multiple question from `>=` to `==`.
 
@@ -148,7 +157,7 @@ Add the method `draw_dialogue_question(x, y, text, id, player_id, space_above, t
 
 ![](../images/line2.png)
 
-##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game.
 
@@ -158,7 +167,7 @@ https://user-images.githubusercontent.com/5504953/152984957-deda275d-0e6a-49da-a
 
 ![](../images/line2.png)
 
-##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 We want to freeze/pause the player (don't accept input) while the player answers the question so we need to add another state. Open the **obj_player | Create** event and add a `paused` state to `player_state`. We do not need any logic for this state, as the player will be doing nothing.
 
@@ -166,7 +175,7 @@ We want to freeze/pause the player (don't accept input) while the player answers
 
 ![](../images/line2.png)
 
-##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now the player will just keep animating in the diretion they are going if we change states.  When we are in `player_state.paused` then we need to stop the player by setting `speed` to `0` and then select the idle animation by calling the animation selection function.  We do not need to resolve collisions as nothing is moving in this level (that will collide with the player) and the player is not moving. Open up `obj_player | Step` event and add the appropriate logic.
 
@@ -174,7 +183,7 @@ Now the player will just keep animating in the diretion they are going if we cha
 
 ![](../images/line2.png)
 
-##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now the three message functions return a real number with the state type the message box is in.  State 0 is a regular message, State 1 is a yes no question and State 2 is user inputing text.  Our question goes from State 1 when asking the yes no question to State 0 with the answer.  We just need to freeze the player in State 1.  Open the collision event for the NPC and add:
 
@@ -182,7 +191,7 @@ Now the three message functions return a real number with the state type the mes
 
 ![](../images/line2.png)
 
-##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now you can select **Y** and **N** without moving the player.  Control resumes after the yes or no question.
 
@@ -190,53 +199,15 @@ https://user-images.githubusercontent.com/5504953/152987615-5f9618bb-aab2-4209-9
 
 ![](../images/line2.png)
 
-##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
+##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
 Now lets ask the user to type in a name and we will save it.  We want to say "Hi! USERNAME, welcome to our game...".  So we will ask a question "Please enter your first name below" and split the salutation into two parts (we will insert the user created name after).
 
 ![add question and split greeting](images/addNameInputandSplitGreeting.png)
 
-![](../images/line2.png)
-
-##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
-
-Lets store the name in the player as it is this player's name.  It needs to be an array so we will add an array string in slot 0 called `first_name`.
-
-![add variable array to player](images/addVarToPlayer.png)
-
-![](../images/line2.png)
-
-##### `Step 22.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-Update the order so that the question is first.  Add our final message type `draw_dialogue_input(x, y, question, variable, id, player_id, space_above, typewriter_delay)`. The addition is a `variable` parameter which is the **array** (it has to be an array).  The rest should be the same with the question as a string or an array of multiple strings. For the salutation we need to concatonate the `salutation_part_1` with the newly entered player name and `salutation_part_2`.
-
-![update order and ask question and adjust salutation](images/questionLogic.png)
-
-![](../images/line2.png)
-
-##### `Step 23.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. This is all we have to demonstrate for message boxes. Have fun with them!
-
-![](../images/line2.png)
-
-##### `Step 24.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
-
-https://user-images.githubusercontent.com/5504953/152991038-805fc776-65fa-48ce-851a-c8cef8303593.mp4
-
-![](../images/line2.png)
-
-##### `Step 25.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_orange_diamond:
-
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
-
-![save commit and push to github](images/github.png)
-
-___
-
 ![](../images/line.png)
 
-<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Collectables"> -->
+<!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Basic Message II"> -->
 
 ![next web page of walkthrough](images/banner.png)
 
