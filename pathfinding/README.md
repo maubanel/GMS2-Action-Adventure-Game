@@ -75,7 +75,7 @@ Now we open **rm_castle** and add a **Path Layer** and place it under the **Inst
 
 ##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Select the path you just created path_enemy:
+Select the path you just created **pth_zombie**:
 
 ![add zombie path](images/zombiePath2.png)
 
