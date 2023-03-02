@@ -40,7 +40,7 @@ Repeat the above and create a new **Sprite** then import [spr_gem_hud.png](image
 
 ##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now we have a lot of sprites in our sprites folder, lets clean them up. Right click on the **Sprites** title in the **Resources** menu and select **Add Group**. Call it `Player`. Drag the 3 player sprites into the folder.
+Now we have a lot of sprites in our sprites folder, lets clean them up. Right click on the **Sprites** title in the **Resources** menu and select **Create Group**. Call it `Player`. Drag the 3 player sprites into the folder.
 
 https://user-images.githubusercontent.com/5504953/153754499-c3fb6628-cf69-4596-bd88-a2ffba3ad973.mp4
 
