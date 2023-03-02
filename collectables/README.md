@@ -8,13 +8,21 @@
 
 Lets add an object for the player to collect in the game.  We will use a rare gem.
 
-
 <br>
 
 ---
 
-
 ##### `Step 1.`\|`TDAAG`|:small_blue_diamond:
+
+Open up **P4v**.  Select the top folder of the **GameMaker** project. Press the <kbd>Checkout</kbd> button.  Checkout out all files in P4V so that they are all writable (otherwise they will be read only and none of the changes will be saved). Select a **New** changelist and add a message describing the unit of work you will be performing. Press the <kbd>OK</kbd> button.
+
+Open up the project you are working on in **GameMaker**. 
+
+![checkout files and create new changelist](images/checkoutFiles.png)
+
+![](../images/line2.png)
+
+##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
 
 Download [spr_gem.png](images/spr_gem.png) as a collectible for the game. Right click on the **Sprites** title in the **Resources** menu and select **Create | Sprite**.  Press the **Import** button and navigate to the sprite you just doownloaded. Name the sprite `spr_gem`.
 
@@ -22,7 +30,7 @@ Download [spr_gem.png](images/spr_gem.png) as a collectible for the game. Right 
 
 ![](../images/line2.png)
 
-##### `Step 2.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: 
+##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Repeat the above and create a new **Sprite** then import [spr_gem_hud.png](images/spr_gem_hud.png), naming it `spr_gem_hud`.	
 
@@ -30,7 +38,7 @@ Repeat the above and create a new **Sprite** then import [spr_gem_hud.png](image
 
 ![](../images/line2.png)
 
-##### `Step 3.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now we have a lot of sprites in our sprites folder, lets clean them up. Right click on the **Sprites** title in the **Resources** menu and select **Add Group**. Call it `Player`. Drag the 3 player sprites into the folder.
 
@@ -38,7 +46,7 @@ https://user-images.githubusercontent.com/5504953/153754499-c3fb6628-cf69-4596-b
 
 ![](../images/line2.png)
 
-##### `Step 4.`\|`TDAAG`|:small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
 
 Organize the rest of the sprite folder to your liking.
 
@@ -46,7 +54,7 @@ https://user-images.githubusercontent.com/5504953/153754704-716a7d58-6e16-444f-8
 
 ![](../images/line2.png)
 
-##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
+##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
 
 Organize your game objects into groups as well.
 
@@ -54,7 +62,7 @@ Organize your game objects into groups as well.
 
 ![](../images/line2.png)
 
-##### `Step 6.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond:
+##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Add a new Game Object and call it `obj_gem` and bind `spr_gem` to it and place it in a logical group.
 
@@ -62,7 +70,7 @@ Add a new Game Object and call it `obj_gem` and bind `spr_gem` to it and place i
 
 ![](../images/line2.png)
 
-##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Add a new Game Object and call it `obj_gem_hud` and bind `spr_gem_hud` to it and place it in a logical group.
 
@@ -70,7 +78,7 @@ Add a new Game Object and call it `obj_gem_hud` and bind `spr_gem_hud` to it and
 
 ![](../images/line2.png)
 
-##### `Step 8.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 We want to add the full size gems into the rooms to collect.  First lets center both horizontally and vertically the **Origin** on `spr_gem`. Add a new **Instance Layer** called `PickUps` to both rooms and move just above **Backgrounds**. Now lets add 5 gems in `rm_castle` and 5 gems in `rm_desert` to this new layer.
 
@@ -78,7 +86,7 @@ https://user-images.githubusercontent.com/5504953/153755297-e9a06c22-b1f4-40b2-9
 
 ![](../images/line2.png)
 
-##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
 
 Now the player will be picking up these gems, so they will disapear when the player collects them. We don't want to have a variable saved on the gem object itself. Lets keep track of it in a game controller. Add a new game object and call it `obj_game`. Create a **Group** called `Logic` to put it in.  Do NOT assign a sprite to it.
 
@@ -86,7 +94,7 @@ Now the player will be picking up these gems, so they will disapear when the pla
 
 ![](../images/line2.png)
 
-##### `Step 10.`\|`TDAAG`| :large_blue_diamond:
+##### `Step 11.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: 
 
 Add a **Create** event to `obj_game` and add a variable called `gems` to track how many gems we have collected. We start with `0` gems.
 
@@ -94,7 +102,7 @@ Add a **Create** event to `obj_game` and add a variable called `gems` to track h
 
 ![](../images/line2.png)
 
-##### `Step 11.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: 
+##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
 
 Drag and drop **obj_game** into `rm_castle` anywhere in the level on the **Instances** layer.
 
@@ -102,8 +110,7 @@ Drag and drop **obj_game** into `rm_castle` anywhere in the level on the **Insta
 
 ![](../images/line2.png)
 
-
-##### `Step 12.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: 
+##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now when the gem collides with the player we want the `gem` count to go up by `1` and the gem in the level to dissapear. Create a new collision collision on the **obj_gem** object with the player and add a point, destroy the gem and add an effect to sell the interaction and give positive feedback to the user action:
 
@@ -111,7 +118,7 @@ Now when the gem collides with the player we want the `gem` count to go up by `1
 
 ![](../images/line2.png)
 
-##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Go and collect the gems.  They should disappear with a simple particle effect like so:
 
@@ -119,7 +126,7 @@ https://user-images.githubusercontent.com/5504953/153760303-8d051614-ec7d-4cce-b
 
 ![](../images/line2.png)
 
-##### `Step 14.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
+##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
 
 Now we are going to draw a small version of the gem on the Heads Up Display (HUD) on the top of the screen. We will use our **obj_game** for this and add a **Draw GUI** event type. First lets draw a rectangle to higlight the HUD. 
 
@@ -127,16 +134,15 @@ Now we are going to draw a small version of the gem on the Heads Up Display (HUD
 
 ![](../images/line2.png)
 
-##### `Step 15.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: 
+##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
 
-v Look at the HUD.  It is a bit ugly and you can't see what is happening behind it.  
+Look at the HUD.  It is a bit ugly and you can't see what is happening behind it.  
 
 ![solid hud background in game](images/solidMenu.png)
 
-
 ![](../images/line2.png)
 
-##### `Step 16.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond:   :small_blue_diamond: 
+##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
 I don't like fact that the blue obscures the game screen. Lets make it transluscent. 
 		
@@ -146,7 +152,7 @@ Lets look at the manual for [draw_set_alpha(real)](https://docs.yoyogames.com/so
 
 ![](../images/line2.png)
 
-##### `Step 17.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Look at the HUD.  Now that is a lot better as you can still see behind the HUD.
 
@@ -154,7 +160,7 @@ Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. L
 
 ![](../images/line2.png)
 
-##### `Step 18.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now lets add a visual representation of the gems you collected.  First lets change the color to white an draw a title: "Gems: ".  Then lets loop through the `obj_game` gems and draw them one next to the other.  We will us the [draw_sprite(sprite, subimg, x, y)](https://docs.yoyogames.com/source/dadiospice/002_reference/drawing/drawing%20sprites%20and%20backgrounds/draw_sprite.html) function to perform this action.
 
@@ -162,7 +168,7 @@ Now lets add a visual representation of the gems you collected.  First lets chan
 
 ![](../images/line2.png)
 
-##### `Step 19.`\|`TDAAG`| :large_blue_diamond: :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now go between levels by entering the teleporter to see what happens. Notice the HUD appears only in **rm_castle** and then disappears in the next room. In fact we get a crash with an error message when we collect a gem in the sand level. 
 
@@ -170,7 +176,7 @@ https://user-images.githubusercontent.com/5504953/153761422-6cdbc248-04fd-43f8-b
 
 ![](../images/line2.png)
 
-##### `Step 20.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond:
+##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
 
 We need the controller to persist just like the player so it carries to all levels. Open **obj_game** and click on the **Persistent** radio button:
 
@@ -178,7 +184,7 @@ We need the controller to persist just like the player so it carries to all leve
 
 ![](../images/line2.png)
 
-##### `Step 21.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond:
+##### `Step 22.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
 Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. Now test the game again and voila, the HUD stays active on all rooms no matter how many times you go back and forth. But there is a problem.  It doesn't remember which gems were collected in each room they get reset. So you can just keep collecting new ones for ever as the room's reset their state every time we change rooms.
 
@@ -186,13 +192,27 @@ https://user-images.githubusercontent.com/5504953/153761762-a7960f32-8ddd-4288-9
 
 ![](../images/line2.png)
 
-##### `Step 22.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+##### `Step 23.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Select the **File | Save Project** then press **File | Quit** to make sure everything in the game is saved. If you are using **GitHub** open up **GitHub Desktop** and add a title and longer description (if necessary) and press the <kbd>Commit to main</kbd> button. Finish by pressing **Push origin** to update the server with the latest changes.
+Select the **File | Save Project**, then press **File | Quit** (PC) **Game Maker | Quit** on Mac to make sure everything in the game is saved.
 
-![save commit and push to github](images/github.png)
-___
+![save then quit gamemaker](images/saveQuit.png)
 
+![](../images/line2.png)
+
+##### `Step 24.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
+
+Open up **P4V**.  Select the top folder and press the **Add** button.  We want to add all the new files we created during this last session.  Add these files to the last change list you used at the begining of the session. Make sure the message accurately represents what you have done. Press the <kbd>OK</kbd> button.
+
+![add new and changed files to p4v](images/add.png)
+
+![](../images/line2.png)
+
+##### `Step 25.`\|`TDAAG`| :large_blue_diamond: :large_blue_diamond: :small_orange_diamond: 
+
+Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
+
+![submit changelist to p4v](images/submit.png)
 
 ![](../images/line.png)
 
