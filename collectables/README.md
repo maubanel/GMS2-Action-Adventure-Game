@@ -80,7 +80,7 @@ Add a new Game Object and call it `obj_gem_hud` and bind `spr_gem_hud` to it and
 
 ##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-We want to add the full size gems into the rooms to collect.  First lets center both horizontally and vertically the **Origin** on `spr_gem`. Add a new **Instance Layer** called `PickUps` to both rooms and move just above **Backgrounds**. Now lets add 5 gems in `rm_castle` and 5 gems in `rm_desert` to this new layer.
+We want to add the full size gems into the rooms to collect.  First lets center both horizontally and vertically the **Origin** on `spr_gem`. Add a new **Instance Layer** called `PickUps` to both rooms and move just above **Background_Transparent_Tiles**. Now lets add 5 gems in `rm_castle` and 5 gems in `rm_desert` to this new layer.
 
 https://user-images.githubusercontent.com/5504953/153755297-e9a06c22-b1f4-40b2-9af9-852538eea9aa.mp4
 
@@ -112,7 +112,7 @@ Drag and drop **obj_game** into `rm_castle` anywhere in the level on the **Insta
 
 ##### `Step 13.`\|`TDAAG`| :large_blue_diamond: :small_blue_diamond: :small_blue_diamond:  :small_blue_diamond: 
 
-Now when the gem collides with the player we want the `gem` count to go up by `1` and the gem in the level to dissapear. Create a new collision collision on the **obj_gem** object with the player and add a point, destroy the gem and add an effect to sell the interaction and give positive feedback to the user action:
+Now when the gem collides with the player we want the `gem` count to go up by `1` and the gem in the level to dissapear. Create a new collision event on the **obj_gem | Collision obj_player** and add a point, destroy the gem and add an effect to sell the interaction and give positive feedback to the user action:
 
 ![add 1 when colliding with gem and destroy objectx with effect](images/gemCollision.png)
 
