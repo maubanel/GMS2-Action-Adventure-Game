@@ -80,7 +80,7 @@ Open up the **obj_player Step** event and add a call to `scr_player_movement_fe(
 
 ##### `Step 9.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The player can now turn and will idle but does not move. Our collisions need to be loaded as the collision detection is expecting this information.
+Now *press* the <kbd>Play</kbd> button in the top menu bar to launch the game. The player can now turn and move from button to button.
 
 https://user-images.githubusercontent.com/5504953/154776909-c7d80f8c-aafa-4aea-98ba-9748776d763c.mp4
 
