@@ -64,7 +64,7 @@ https://user-images.githubusercontent.com/5504953/154821724-68ed41be-7c6a-48e3-8
 
 ##### `Step 7.`\|`TDAAG`| :small_orange_diamond: :small_blue_diamond: :small_blue_diamond:
 
-Lets add a sound when leaving the credits screen.  Open `obj_credits_conroller` and add another pressing sound.
+Lets add a sound when leaving the credits screen.  Open **obj_credits_conroller | Step** event and add another pressing sound.
 
 ![audio credits controller](images/audioCreditsController.png)
 
