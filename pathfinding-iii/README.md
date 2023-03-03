@@ -78,6 +78,8 @@ Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
 <!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - Front End"> -->
 
+![next web page of walkthrough](images/banner.png)
+
 ![](../images/line.png)
 
 | [previous](../pathfinding-ii/README.md#user-content-pathfinding-zombie-ii)| [home](..//README.md#user-content-gms2-action-adventure-game) | [next](../front-end/README.md#user-content-front-end)|
