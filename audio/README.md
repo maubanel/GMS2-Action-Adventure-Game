@@ -196,6 +196,10 @@ Now you can submit the changelist by pressing both <kbd>Submit</kbd> buttons.
 
 ![submit changelist to p4v](images/submit.png)
 
+| `action.adventure.game`\|`THE END`| 
+| :--- |
+| **That's All Folks!** Thanks for sticking around. That is it for this tutorial but there is so much more that you can do with this game.  First you can add damage done by the zombie.  Have fun! |
+
 ![](../images/line.png)
 
 <!-- <img src="https://via.placeholder.com/1000x100/45D7CA/000000/?text=Next Up - That's All Folks!"> -->
