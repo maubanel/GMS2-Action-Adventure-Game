@@ -49,7 +49,7 @@ https://user-images.githubusercontent.com/5504953/152679086-364898f6-bb82-45db-8
 
 ##### `Step 5.`\|`TDAAG`| :small_orange_diamond:
 
-Now we go back to **obj_player | End Step** and remove the common elements outsid eof the room if statements.  In both rooms we will chnage states to `teleport_arrive`, and go right at half speed.  We will also add a room change from `rm_desert` to `rm_castle`.  I went into `rm_castle` and found that for my room `484` on the **x** `958` on the **y** brough the player back to the correct position.
+Now we go back to **obj_player | Collision obj_teleporter** and remove the common elements outsid eof the room if statements.  In both rooms we will chnage states to `teleport_arrive`, and go right at half speed.  We will also add a room change from `rm_desert` to `rm_castle`.  I went into `rm_castle` and found that for my room `484` on the **x** `958` on the **y** brough the player back to the correct position.
 
 ![teleport back to castle](images/finishingTouch.png)
 
